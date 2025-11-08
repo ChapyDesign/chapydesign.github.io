@@ -1,0 +1,131 @@
+/* Base reset and font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #111;
+  background-color: #fff;
+  line-height: 1.5;
+}
+
+/* Hero section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.hero-text {
+  padding: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.125rem;
+  max-width: 400px;
+  margin-bottom: 2rem;
+}
+
+.cta {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  width: fit-content;
+  transition: 0.3s ease;
+}
+
+.cta:hover {
+  background-color: #444;
+}
+
+/* Hero image */
+.hero-image {
+  flex: 1;
+  width: 100%;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Projects section */
+.projects {
+  padding: 4rem 2rem;
+}
+
+.projects h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.project-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.project-item {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-item img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.project-item:hover img {
+  transform: scale(1.02);
+}
+
+.project-item span {
+  display: block;
+  margin-top: 0.75rem;
+  font-size: 1rem;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 2rem;
+  border-top: 1px solid #eee;
+  font-size: 0.9rem;
+}
+
+/* Desktop layout */
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+  }
+
+  .hero-text {
+    width: 35%;
+    padding: 4rem;
+  }
+
+  .hero-image {
+    width: 65%;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
