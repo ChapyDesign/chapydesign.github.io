@@ -25,14 +25,14 @@ body {
 /* Logo on left without affecting nav center */
 .logo {
   position: absolute;
-  left: 2rem; /* stays on the left */
+  left: 0.5rem; /* stays on the left */
   display: flex;
   align-items: center;
   height: 100%;
 }
 
 .logo img {
-  height: 60px;
+  height: 50px;
   width: auto;
 }
 
