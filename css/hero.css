@@ -1,132 +1,127 @@
+/* === Hero Slider === */
 .hero-slider {
   position: relative;
   width: 100%;
-  height: 100vh;
   overflow: hidden;
 }
 
-/* Each slide */
+/* Slides */
 .slide {
-  position: absolute;
-  top: 0;
-  left: 0;
+  display: none;
   width: 100%;
-  height: 100%;
-  display: flex;
   flex-direction: column;
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
 
 .slide.active {
+  display: flex;
   opacity: 1;
-  z-index: 1;
 }
 
-/* Hero Image (top on mobile) */
+/* Hero Image */
 .hero-image {
   width: 100%;
-  aspect-ratio: 3 / 2;
-  background-color: #bada55; /* placeholder green */
+  aspect-ratio: 2 / 3;
+  background-color: #888; /* placeholder */
 }
 
-/* Hero Content (below image on mobile) */
+/* Hero Content */
 .hero-content {
-  flex: 1;
-  background-color: #f8f8f8;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  width: 100%;
 }
 
+/* Hero Grid */
 .hero-grid {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  width: 90%;
-  max-width: 1200px;
+  width: 100%;
 }
 
 /* Image Grid */
 .image-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 100px);
-  gap: 0; /* remove spacing between grid items */
-  margin: 0; /* remove any external margin */
-  padding: 0; /* remove internal padding */
+  grid-template-rows: repeat(2, auto);
+  gap: 0;
 }
 
 .image-grid .grid-item {
-  background-color: #ddd; /* placeholder */
-  margin: 0; /* ensure no margins */
-  padding: 0; /* ensure no padding */
+  background-color: #ccc; /* placeholder */
+  aspect-ratio: 2 / 3;
+  margin: 0;
+  padding: 0;
 }
 
 /* Text Block */
 .text-block {
   background-color: #fff;
-  padding: 1rem;
-  border: 1px solid #ccc;
+  padding: 10px;
+  margin-top: 0;
 }
 
 .text-block h2 {
-  margin-bottom: 0.5rem;
+  margin: 0 0 5px 0;
 }
 
 .text-block hr {
   border: none;
   border-top: 1px solid #ccc;
-  margin-bottom: 0.5rem;
+  margin: 5px 0;
 }
 
-/* 🖥 Desktop Layout */
+.text-block p {
+  margin: 0;
+  color: #333;
+}
+
+/* === Desktop Layout === */
 @media (min-width: 768px) {
   .slide {
     flex-direction: row;
+    height: 80vh;
   }
 
+  /* Hero Image (left 2/3) */
   .hero-image {
     width: 66.66%;
     height: 100%;
     aspect-ratio: auto;
   }
 
+  /* Sidebar (right 1/3) */
   .hero-content {
     width: 33.33%;
-    height: 100%;
-    background-color: #f8f8f8;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 2rem 1rem;
+    justify-content: flex-start;
+    position: relative;
+    padding: 1rem;
   }
 
-  /* Stack image grid above text block */
-  .hero-grid {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    gap: 1rem;
-  }
-
+  /* Image Grid in Sidebar: 2 columns × 3 rows */
   .image-grid {
-    flex: 3;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0;
+    flex: 1;
   }
 
   .image-grid .grid-item {
-    flex: 1;
-    background-color: #ccc; /* placeholder for stacked images */
+    aspect-ratio: 3 / 2;
   }
 
+  /* Text block overlaps images */
   .text-block {
-    flex: 1;
-    background-color: #fff;
-    padding: 1rem;
-    border: 1px solid #ccc;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 10px 10px 10px;
+    background-color: rgba(255, 255, 255, 0.95);
+    z-index: 2;
   }
 }
