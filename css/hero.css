@@ -52,11 +52,15 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 100px);
-  gap: 0.5rem;
+  gap: 0; /* remove spacing between grid items */
+  margin: 0; /* remove any external margin */
+  padding: 0; /* remove internal padding */
 }
 
 .image-grid .grid-item {
   background-color: #ddd; /* placeholder */
+  margin: 0; /* ensure no margins */
+  padding: 0; /* ensure no padding */
 }
 
 /* Text Block */
