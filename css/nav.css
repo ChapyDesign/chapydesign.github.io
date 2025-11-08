@@ -1,6 +1,9 @@
 /* ========================
    Top Navigation
 ======================== */
+html {
+  scroll-behavior: smooth;
+}
 .top-nav {
   display: flex;
   align-items: center;
