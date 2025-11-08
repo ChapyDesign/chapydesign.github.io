@@ -1,34 +1,19 @@
-/* === Base Reset === */
-body, html {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-}
-
-/* === Hero Slider === */
+/* === Hero Section === */
 .hero-slider {
-  position: relative;
   width: 100%;
-  overflow: hidden;
 }
 
-/* Each Slide */
+/* Each Slide — no absolute positioning */
 .slide {
-  position: absolute;
-  top: 0;
-  left: 0;
+  display: none;
   width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
 }
 
 .slide.active {
-  opacity: 1;
-  z-index: 1;
+  display: block;
 }
 
-/* === Hero Image === */
+/* Hero Image */
 .hero-image {
   width: 100%;
   aspect-ratio: 3 / 2;
@@ -36,27 +21,27 @@ body, html {
   object-fit: cover;
 }
 
-/* === Hero Content Below Hero Image (Mobile) === */
+/* Hero Content */
 .hero-content {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-top: 0;
+  margin: 0;
 }
 
-/* Image Grid (6 images, mobile stacked 2x3, no gaps) */
+/* Image Grid (6 images, mobile 2x3) */
 .image-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, auto);
-  gap: 0; /* no gaps */
+  gap: 0;
 }
 
 .image-grid div {
   width: 100%;
   aspect-ratio: 3 / 2;
-  background-color: #ccc; /* placeholder */
-  margin: 0; /* no margin */
+  background-color: #ccc;
+  margin: 0;
 }
 
 /* Text Block */
@@ -70,22 +55,7 @@ body, html {
   z-index: 2;
 }
 
-.text-block h2 {
-  margin: 0 0 8px;
-}
-
-.text-block hr {
-  border: none;
-  border-top: 1px solid #ccc;
-  margin: 8px 0;
-}
-
-.text-block p {
-  margin: 0;
-  color: #333;
-}
-
-/* === Desktop Layout === */
+/* Desktop Layout */
 @media (min-width: 768px) {
   .slide {
     display: flex;
@@ -93,26 +63,24 @@ body, html {
     height: 80vh;
   }
 
-  /* Hero Image (left) */
   .hero-image {
     flex: 2;
     height: 100%;
   }
 
-  /* Right column with images + overlapping text */
   .hero-content {
     flex: 1;
     display: flex;
     flex-direction: column;
     position: relative;
-    margin: 0; /* no extra margin */
+    margin: 0;
   }
 
-  /* Images stacked vertically, no gap, full width of column */
+  /* Stack images vertically */
   .image-grid {
     display: flex;
     flex-direction: column;
-    gap: 0; /* no gaps */
+    gap: 0;
     flex: 1;
   }
 
@@ -129,7 +97,6 @@ body, html {
     left: 0;
     right: 0;
     margin: 0 16px 16px 16px;
-    background-color: rgba(255, 255, 255, 0.95); /* slight transparency for style */
-    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.95);
   }
 }
