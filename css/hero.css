@@ -1,82 +1,112 @@
-/* ========================
-   Hero Section
-======================== */
-.hero {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+.hero-slider {
   position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.hero-image {
-  position: fixed; /* <-- keep it behind everything */
-  top: 50px;       /* just below header */
+/* Each slide */
+.slide {
+  position: absolute;
+  top: 0;
   left: 0;
   width: 100%;
-  height: calc(100vh - 50px); /* full viewport minus header */
-  z-index: -1;     /* behind content */
-  background-color: #f0f0f0; /* temp visual */
-}
-
-.hero-image img {
-  width: 100%;
   height: 100%;
-  object-fit: cover;
-  opacity: 0.8; /* optional */
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
-/* Ensure hero-text is in front */
-.hero-text {
+.slide.active {
+  opacity: 1;
   z-index: 1;
-  position: relative;
-  padding: 2rem;
 }
 
-.hero-text h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+/* Hero Image (top on mobile) */
+.hero-image {
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  background-color: #bada55; /* placeholder green */
 }
 
-.hero-text p {
-  font-size: 1.125rem;
-  max-width: 400px;
-  margin-bottom: 2rem;
+/* Hero Content (below image on mobile) */
+.hero-content {
+  flex: 1;
+  background-color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.cta {
-  text-decoration: none;
-  color: white;
-  background-color: black;
-  padding: 0.75rem 1.5rem;
-  border-radius: 50px;
-  width: fit-content;
-  transition: 0.3s ease;
+.hero-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 90%;
+  max-width: 1200px;
 }
 
-.cta:hover {
-  background-color: #444;
+/* Image Grid */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 100px);
+  gap: 0.5rem;
 }
 
-.projects,
-#contact,
-#about {
-  position: relative;
-  z-index: 1;
-  background-color: #fff; /* ensures it scrolls over hero */
+.image-grid .grid-item {
+  background-color: #ddd; /* placeholder */
 }
 
-/* Desktop hero layout */
+/* Text Block */
+.text-block {
+  background-color: #fff;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+.text-block h2 {
+  margin-bottom: 0.5rem;
+}
+
+.text-block hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin-bottom: 0.5rem;
+}
+
+/* 🖥 Desktop Layout */
 @media (min-width: 768px) {
-  .hero {
+  .slide {
     flex-direction: row;
   }
 
-  .hero-text {
-    width: 35%;
-    padding: 4rem;
+  .hero-image {
+    width: 66.66%;
+    height: 100%;
+    aspect-ratio: auto;
   }
 
-  .hero-image {
-    width: 65%;
+  .hero-content {
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-grid {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .image-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    height: 70%;
+  }
+
+  .text-block {
+    height: 30%;
   }
 }
