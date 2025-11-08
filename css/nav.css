@@ -1,16 +1,14 @@
-/* ========================
-   Top Navigation
-======================== */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
 }
 
+/* Header */
 .top-nav {
   display: flex;
   align-items: center;
-  justify-content: center; /* centers nav links */
+  justify-content: center; /* center nav links */
   height: 80px;
   width: 100%;
   background-color: #fff;
@@ -19,15 +17,18 @@ body {
   top: 0;
   left: 0;
   z-index: 1000;
-  gap: 3rem; /* spacing between logo and links */
+  padding: 0 2rem;
+  box-sizing: border-box;
+  gap: 2rem;
 }
 
+/* Logo on left without affecting nav center */
 .logo {
   position: absolute;
-  left: 2rem; /* keep logo on the left */
-  height: 100%;
+  left: 2rem; /* stays on the left */
   display: flex;
   align-items: center;
+  height: 100%;
 }
 
 .logo img {
@@ -35,9 +36,12 @@ body {
   width: auto;
 }
 
+/* Nav links perfectly centered */
 .nav-links {
   display: flex;
   gap: 2rem;
+  justify-content: center;
+  flex: 1;
 }
 
 .nav-button {
@@ -57,10 +61,6 @@ body {
 
 /* Mobile adjustments */
 @media (max-width: 768px) {
-  .top-nav {
-    gap: 1rem;
-  }
-
   .nav-links {
     gap: 1rem;
   }
