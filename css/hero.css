@@ -1,102 +1,136 @@
+/* === Base Reset & Layout === */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
 /* === Hero Section === */
 .hero-slider {
+  position: relative;
+  overflow: hidden;
   width: 100%;
 }
 
-/* Each Slide — no absolute positioning */
-.slide {
+.hero-slide {
   display: none;
   width: 100%;
+  height: auto;
 }
 
-.slide.active {
+.hero-slide.active {
   display: block;
 }
 
-/* Hero Image */
+/* Maintain 3:2 aspect ratio */
 .hero-image {
   width: 100%;
   aspect-ratio: 3 / 2;
-  background-color: #888; /* placeholder */
   object-fit: cover;
+  background: #888;
 }
 
-/* Hero Content */
+/* === Layout Below Hero === */
 .hero-content {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin: 0;
 }
 
-/* Image Grid (6 images, mobile 2x3) */
+/* Section 1: Image Grid */
 .image-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, auto);
-  gap: 0;
+  gap: 8px;
+  padding: 16px;
 }
 
 .image-grid div {
   width: 100%;
-  aspect-ratio: 3 / 2;
-  background-color: #ccc;
-  margin: 0;
+  aspect-ratio: 1 / 1;
+  border-radius: 8px;
+  background: #ccc;
 }
 
-/* Text Block */
+/* Section 2: Text Block */
 .text-block {
-  background-color: #fff;
-  padding: 16px;
-  margin: 16px 0 0 0;
-  border-radius: 6px;
+  background: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  margin: 16px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  position: relative;
-  z-index: 2;
 }
 
-/* Desktop Layout */
-@media (min-width: 768px) {
-  .slide {
+.text-block h2 {
+  margin: 0 0 8px;
+  font-size: 1.2rem;
+}
+
+.text-block hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 8px 0;
+}
+
+.text-block p {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* === Desktop Layout === */
+@media (min-width: 1025px) {
+  .hero-slide {
     display: flex;
     flex-direction: row;
-    height: 80vh;
+    align-items: stretch;
   }
 
   .hero-image {
     flex: 2;
-    height: 100%;
+    aspect-ratio: auto;
+    height: 80vh;
   }
 
   .hero-content {
     flex: 1;
     display: flex;
     flex-direction: column;
-    position: relative;
-    margin: 0;
+    justify-content: flex-start;
+    padding: 16px;
   }
 
-  /* Stack images vertically */
   .image-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    flex: 1;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 0;
   }
 
-  .image-grid div {
-    flex: 1;
-    margin: 0;
-    border-radius: 0;
+  /* Only show first 3 on desktop */
+  .image-grid div:nth-child(n+4) {
+    display: none;
   }
 
-  /* Text block overlaps images */
   .text-block {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0 16px 16px 16px;
-    background-color: rgba(255, 255, 255, 0.95);
+    margin-top: 16px;
+  }
+}
+
+/* === Tablet Layout === */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .image-grid div:nth-child(n+5) {
+    display: none;
+  }
+}
+
+/* === Mobile Layout === */
+@media (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .image-grid div {
+    display: block;
   }
 }
