@@ -25,7 +25,7 @@ body {
 /* Logo on left without affecting nav center */
 .logo {
   position: absolute;
-  left: 0.5rem; /* stays on the left */
+  left: 0; /* stays on the left */
   display: flex;
   align-items: center;
   height: 100%;
