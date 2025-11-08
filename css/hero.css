@@ -1,69 +1,77 @@
-/* === Base Reset & Layout === */
+/* === Base Reset === */
 body, html {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
 }
 
-/* === Hero Section === */
+/* === Hero Slider === */
 .hero-slider {
   position: relative;
+  width: 100%;
   overflow: hidden;
+}
+
+/* Each Slide */
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
-.hero-slide {
-  display: none;
-  width: 100%;
-  height: auto;
+.slide.active {
+  opacity: 1;
+  z-index: 1;
 }
 
-.hero-slide.active {
-  display: block;
-}
-
-/* Maintain 3:2 aspect ratio */
+/* === Hero Image === */
 .hero-image {
   width: 100%;
   aspect-ratio: 3 / 2;
+  background-color: #888; /* placeholder */
   object-fit: cover;
-  background: #888;
 }
 
-/* === Layout Below Hero === */
+/* === Hero Content Below Hero Image (Mobile) === */
 .hero-content {
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin-top: 0;
 }
 
-/* Section 1: Image Grid */
+/* Image Grid (6 images, mobile stacked 2x3, no gaps) */
 .image-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
-  padding: 16px;
+  grid-template-rows: repeat(2, auto);
+  gap: 0; /* no gaps */
 }
 
 .image-grid div {
   width: 100%;
-  aspect-ratio: 1 / 1;
-  border-radius: 8px;
-  background: #ccc;
+  aspect-ratio: 3 / 2;
+  background-color: #ccc; /* placeholder */
+  margin: 0; /* no margin */
 }
 
-/* Section 2: Text Block */
+/* Text Block */
 .text-block {
-  background: #fff;
-  padding: 24px;
-  border-radius: 8px;
-  margin: 16px;
+  background-color: #fff;
+  padding: 16px;
+  margin: 16px 0 0 0;
+  border-radius: 6px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 2;
 }
 
 .text-block h2 {
   margin: 0 0 8px;
-  font-size: 1.2rem;
 }
 
 .text-block hr {
@@ -73,64 +81,55 @@ body, html {
 }
 
 .text-block p {
-  font-size: 0.95rem;
+  margin: 0;
   color: #333;
 }
 
 /* === Desktop Layout === */
-@media (min-width: 1025px) {
-  .hero-slide {
+@media (min-width: 768px) {
+  .slide {
     display: flex;
     flex-direction: row;
-    align-items: stretch;
-  }
-
-  .hero-image {
-    flex: 2;
-    aspect-ratio: auto;
     height: 80vh;
   }
 
+  /* Hero Image (left) */
+  .hero-image {
+    flex: 2;
+    height: 100%;
+  }
+
+  /* Right column with images + overlapping text */
   .hero-content {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    padding: 16px;
+    position: relative;
+    margin: 0; /* no extra margin */
   }
 
+  /* Images stacked vertically, no gap, full width of column */
   .image-grid {
-    grid-template-columns: 1fr;
-    gap: 8px;
-    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0; /* no gaps */
+    flex: 1;
   }
 
-  /* Only show first 3 on desktop */
-  .image-grid div:nth-child(n+4) {
-    display: none;
-  }
-
-  .text-block {
-    margin-top: 16px;
-  }
-}
-
-/* === Tablet Layout === */
-@media (max-width: 1024px) and (min-width: 769px) {
-  .image-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .image-grid div:nth-child(n+5) {
-    display: none;
-  }
-}
-
-/* === Mobile Layout === */
-@media (max-width: 768px) {
-  .image-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
   .image-grid div {
-    display: block;
+    flex: 1;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  /* Text block overlaps images */
+  .text-block {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 16px 16px 16px;
+    background-color: rgba(255, 255, 255, 0.95); /* slight transparency for style */
+    z-index: 2;
   }
 }
