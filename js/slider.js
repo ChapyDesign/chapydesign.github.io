@@ -1,12 +1,18 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const slides = document.querySelectorAll(".slide");
-  let current = 0;
+let slides = document.querySelectorAll(".slide");
+let currentIndex = 0;
+const slideInterval = 6000; // 6 seconds
 
-  function showNextSlide() {
-    slides[current].classList.remove("active");
-    current = (current + 1) % slides.length;
-    slides[current].classList.add("active");
-  }
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.remove("active");
+    if (i === index) slide.classList.add("active");
+  });
+}
 
-  setInterval(showNextSlide, 6000);
-});
+function nextSlide() {
+  currentIndex = (currentIndex + 1) % slides.length;
+  showSlide(currentIndex);
+}
+
+// Start the slider
+setInterval(nextSlide, slideInterval);
