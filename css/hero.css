@@ -1,128 +1,136 @@
+/* === Base Reset & Layout === */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* === Hero Section === */
 .hero-slider {
   position: relative;
-  width: 100%;
-  height: 100vh;
   overflow: hidden;
-}
-
-/* Each slide */
-.slide {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
 }
 
-.slide.active {
-  opacity: 1;
-  z-index: 1;
+.hero-slide {
+  display: none;
+  width: 100%;
+  height: auto;
 }
 
-/* Hero Image (top on mobile) */
+.hero-slide.active {
+  display: block;
+}
+
+/* Maintain 3:2 aspect ratio */
 .hero-image {
   width: 100%;
   aspect-ratio: 3 / 2;
-  background-color: #bada55; /* placeholder green */
+  object-fit: cover;
+  background: #888;
 }
 
-/* Hero Content (below image on mobile) */
+/* === Layout Below Hero === */
 .hero-content {
-  flex: 1;
-  background-color: #f8f8f8;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-grid {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  width: 90%;
-  max-width: 1200px;
+  width: 100%;
 }
 
-/* Image Grid */
+/* Section 1: Image Grid */
 .image-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 100px);
-  gap: 0.5rem;
+  gap: 8px;
+  padding: 16px;
 }
 
-.image-grid .grid-item {
-  background-color: #ddd; /* placeholder */
+.image-grid div {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 8px;
+  background: #ccc;
 }
 
-/* Text Block */
+/* Section 2: Text Block */
 .text-block {
-  background-color: #fff;
-  padding: 1rem;
-  border: 1px solid #ccc;
+  background: #fff;
+  padding: 24px;
+  border-radius: 8px;
+  margin: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
 .text-block h2 {
-  margin-bottom: 0.5rem;
+  margin: 0 0 8px;
+  font-size: 1.2rem;
 }
 
 .text-block hr {
   border: none;
   border-top: 1px solid #ccc;
-  margin-bottom: 0.5rem;
+  margin: 8px 0;
 }
 
-/* 🖥 Desktop Layout */
-@media (min-width: 768px) {
-  .slide {
+.text-block p {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* === Desktop Layout === */
+@media (min-width: 1025px) {
+  .hero-slide {
+    display: flex;
     flex-direction: row;
+    align-items: stretch;
   }
 
   .hero-image {
-    width: 66.66%;
-    height: 100%;
+    flex: 2;
     aspect-ratio: auto;
+    height: 80vh;
   }
 
   .hero-content {
-    width: 33.33%;
-    height: 100%;
-    background-color: #f8f8f8;
+    flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 2rem 1rem;
-  }
-
-  /* Stack image grid above text block */
-  .hero-grid {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    gap: 1rem;
+    justify-content: flex-start;
+    padding: 16px;
   }
 
   .image-grid {
-    flex: 3;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 0;
   }
 
-  .image-grid .grid-item {
-    flex: 1;
-    background-color: #ccc; /* placeholder for stacked images */
+  /* Only show first 3 on desktop */
+  .image-grid div:nth-child(n+4) {
+    display: none;
   }
 
   .text-block {
-    flex: 1;
-    background-color: #fff;
-    padding: 1rem;
-    border: 1px solid #ccc;
+    margin-top: 16px;
+  }
+}
+
+/* === Tablet Layout === */
+@media (max-width: 1024px) and (min-width: 769px) {
+  .image-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .image-grid div:nth-child(n+5) {
+    display: none;
+  }
+}
+
+/* === Mobile Layout === */
+@media (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .image-grid div {
+    display: block;
   }
 }
