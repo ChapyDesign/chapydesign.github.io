@@ -9,7 +9,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center; /* center nav links */
-  height: 60px;
+  height: 51px;
   width: 100%;
   background-color: #fff;
   border-bottom: 1px solid #000;
