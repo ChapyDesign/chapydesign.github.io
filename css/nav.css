@@ -39,8 +39,8 @@ body {
 /* Nav links centered as a bordered group */
 .nav-links {
   display: flex;
-  border: 1px solid #ccc;
-  border-radius: 2px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
   overflow: hidden; /* keeps clean edges if you round corners */
 }
 
