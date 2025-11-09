@@ -1,9 +1,13 @@
 .tray {
   position: relative;
-  z-index: 1;            /* Above hero but below nav */
+  z-index: 1;             /* Above hero but below nav */
   background-color: #dce1e7;
-  min-height: 150vh;      /* Ensure page is scrollable */
+  min-height: 150vh;       /* Ensure page is scrollable */
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  overflow: hidden;        /* Makes sure content doesn’t spill outside the rounded corners */
 }
+
 
 .tray-content {
   max-width: 1200px;
