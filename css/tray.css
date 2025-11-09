@@ -16,8 +16,8 @@
 
 .tray-content {
   box-sizing: border-box;
-  width: 100%;
-  max-width: 100%;
+  width: 100vw;
+  max-width: 100vw;
   overflow-x: hidden;
 }
 
