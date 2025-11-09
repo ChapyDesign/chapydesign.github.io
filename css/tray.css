@@ -1,13 +1,16 @@
-/* Tray Section */
 .tray {
-  position: relative;       /* normal flow scrolls over hero */
-  background-color: #dce1e7; /* desired tray background */
-  z-index: 0;               /* behind nav (nav z-index: 1000) */
-  padding: 4rem 2rem;
+  position: fixed;
+  bottom: -100%; /* start off-screen */
+  left: 0;
+  width: 100%;
+  height: 100vh; /* full screen height */
+  background-color: #dce1e7;
+  z-index: 500; /* below nav which is 1000 */
+  transition: bottom 0.5s ease;
 }
 
-/* Ensure content inside tray has spacing */
 .tray-content {
-  max-width: 1200px;
+  padding: 2rem;
+  max-width: 800px;
   margin: 0 auto;
 }
