@@ -1,18 +1,20 @@
-let slides = document.querySelectorAll(".slide");
-let currentIndex = 0;
-const slideInterval = 6000; // 6 seconds
+// Mobile-first slider for hero section
+const slides = document.querySelectorAll('.slide');
+let currentSlide = 0;
 
 function showSlide(index) {
   slides.forEach((slide, i) => {
-    slide.classList.remove("active");
-    if (i === index) slide.classList.add("active");
+    slide.classList.toggle('active', i === index);
   });
 }
 
 function nextSlide() {
-  currentIndex = (currentIndex + 1) % slides.length;
-  showSlide(currentIndex);
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide(currentSlide);
 }
 
-// Start the slider
-setInterval(nextSlide, slideInterval);
+// Automatically change every 6 seconds
+setInterval(nextSlide, 6000);
+
+// Initialize first slide
+showSlide(currentSlide);

@@ -1,8 +1,16 @@
+// Tray scroll effect: moves over hero while keeping hero partially visible
+const tray = document.querySelector('.tray');
+const hero = document.querySelector('.hero-slider');
+
 window.addEventListener('scroll', () => {
-  const tray = document.querySelector('.tray');
   const scrollY = window.scrollY;
 
-  // Move tray up proportionally to scroll, but stop at top of viewport
-  const trayTop = Math.max(window.innerHeight - scrollY, 0);
-  tray.style.top = trayTop + 'px';
+  // Hero fades out as tray scrolls up
+  const maxFade = 0.5;
+  const heroHeight = hero.offsetHeight;
+  const fade = Math.min(scrollY / heroHeight, maxFade);
+  hero.style.opacity = 1 - fade;
+
+  // Tray moves with scroll
+  tray.style.transform = `translateY(${Math.max(heroHeight - scrollY, 0)}px)`;
 });
