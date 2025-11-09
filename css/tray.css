@@ -12,16 +12,15 @@
   padding: 10px 20px;
   box-sizing: border-box;
 
-  /* ✅ scroll normally, but hide the bar */
-  overflow-y: scroll;             /* allows vertical scroll */
+  /* scroll normally but hide scrollbar */
+  overflow-y: scroll;
   scrollbar-width: none;          /* Firefox */
-  -ms-overflow-style: none;       /* IE and Edge */
+  -ms-overflow-style: none;       /* IE/Edge */
 }
 
 .tray::-webkit-scrollbar {
-  display: none;                  /* Chrome, Safari */
+  display: none;                  /* Chrome/Safari */
 }
-
 
 .tray-content {
   box-sizing: border-box;
@@ -32,7 +31,7 @@
 
 /* Optional: fade hero as tray scrolls */
 .hero-slider {
-  position: fixed;             /* stays in place while tray scrolls over it */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -90,20 +89,39 @@
 /* --- Projects Grid --- */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
   width: 100%;
+}
+
+/* Responsive Columns */
+@media (max-width: 1200px) {
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* --- Project Cards --- */
 .project-card {
   display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  border-radius: 16px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-  background: #fafafa;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-decoration: none;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
@@ -113,23 +131,44 @@
 }
 
 .project-image {
+  width: 100px;
+  height: 100px;
   background-size: cover;
   background-position: center;
-  aspect-ratio: 4 / 3;
+  flex-shrink: 0;
 }
 
-.project-info {
-  padding: 16px;
+.project-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  flex: 1;
 }
 
 .project-title {
-  font-size: 1.1rem;
-  color: #111;
-  margin: 0 0 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 4px 0;
 }
 
-.project-meta {
+.project-divider {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 2px 0 4px 0;
+}
+
+.project-description {
   font-size: 0.85rem;
-  color: #666;
+  color: #555;
   margin: 0;
+}
+
+/* Bottom row: filter and date */
+.project-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #888;
+  padding-top: 10px;
 }
