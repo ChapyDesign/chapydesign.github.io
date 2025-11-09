@@ -8,6 +8,7 @@
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   z-index: 1;                  /* below nav */
+  padding: 10px 20px;
 }
 
 /* Optional: fade hero as tray scrolls */
