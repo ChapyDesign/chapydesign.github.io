@@ -26,6 +26,13 @@
   overflow-x: hidden;
 }
 
+.tray-hero {
+  position: sticky;
+  top: 0;
+  background-color: #dce1e7;
+  z-index: 2;
+}
+
 /* Optional: fade hero as tray scrolls */
 .hero-slider {
   position: fixed;             /* stays in place while tray scrolls over it */
