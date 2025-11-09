@@ -1,27 +1,18 @@
 .tray {
-  position: absolute;
-  top: 100vh;
+  position: absolute;          /* place relative to page top */
+  top: 100vh;                  /* start just below the hero (full viewport height) */
   left: 0;
-  width: 100%;
-  max-width: 100vw;
-  min-height: 150vh;
+  width: 100vw;                /* use full viewport width */
+  max-width: 100vw;            /* prevent accidental overflow */
+  min-height: 150vh;           /* make it long enough to scroll */
   background-color: #dce1e7;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
-  z-index: 1;
+  z-index: 1;                  /* below nav */
   padding: 10px 20px;
-  box-sizing: border-box;
-
-  /* ✅ scroll normally, but hide the bar */
-  overflow-y: scroll;             /* allows vertical scroll */
-  scrollbar-width: none;          /* Firefox */
-  -ms-overflow-style: none;       /* IE and Edge */
+  box-sizing: border-box;      /* include padding inside width */
+  overflow-x: hidden;          /* hide horizontal overflow */
 }
-
-.tray::-webkit-scrollbar {
-  display: none;                  /* Chrome, Safari */
-}
-
 
 .tray-content {
   box-sizing: border-box;
