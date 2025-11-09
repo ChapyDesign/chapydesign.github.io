@@ -5,8 +5,8 @@
   width: 100%;
   min-height: 150vh;           /* make it long enough to scroll */
   background-color: #dce1e7;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
   z-index: 1;                  /* below nav */
 }
 
