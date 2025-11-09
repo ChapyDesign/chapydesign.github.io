@@ -1,73 +1,135 @@
-/* Ensure all elements calculate width correctly including padding */
-* {
+.tray {
+  position: absolute;
+  top: 100vh;
+  left: 0;
+  width: 100%;
+  max-width: 100vw;
+  min-height: 150vh;
+  background-color: #dce1e7;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  z-index: 1;
+  padding: 10px 20px;
+  box-sizing: border-box;
+
+  /* ✅ scroll normally, but hide the bar */
+  overflow-y: scroll;             /* allows vertical scroll */
+  scrollbar-width: none;          /* Firefox */
+  -ms-overflow-style: none;       /* IE and Edge */
+}
+
+.tray::-webkit-scrollbar {
+  display: none;                  /* Chrome, Safari */
+}
+
+
+.tray-content {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Optional: fade hero as tray scrolls */
+.hero-slider {
+  position: fixed;             /* stays in place while tray scrolls over it */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  transition: opacity 0.2s ease;
+}
+
+/* --- Tray Container --- */
+.tray.recent-projects {
+  background: #fff;
+  border-radius: 25px 25px 0 0;
+  padding: 40px;
+  width: 100%;
   box-sizing: border-box;
 }
 
-/* Tray container */
-.tray {
-  position: absolute;
-  top: 100vh;                /* start just below hero */
-  left: 0;
-  width: 100%;
-  min-height: 150vh;         /* enough height to scroll */
-  background-color: #dce1e7;
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  z-index: 1;
-  padding: 20px;
-}
-
-/* Tray content centered */
-.tray-content {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Tray header */
+/* --- Header + Filters --- */
 .tray-header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
 }
 
-.filters button {
-  margin-left: 10px;
-  padding: 5px 10px;
-  border: none;
-  background: #fff;
-  border-radius: 5px;
+.tray-header h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.filters {
+  display: flex;
+  gap: 12px;
+}
+
+.filter {
+  background: transparent;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 6px 16px;
   cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
 }
 
-.filters button.active {
-  background: #a1b2c3;
+.filter:hover,
+.filter.active {
+  background: #000;
   color: #fff;
+  border-color: #000;
 }
 
-/* Projects grid */
+/* --- Projects Grid --- */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 16px;
+  gap: 24px;
+  width: 100%;
 }
 
+/* --- Project Cards --- */
 .project-card {
-  display: block;
-  background: #fff;
-  border-radius: 10px;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
-  color: inherit;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  background: #fafafa;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
 }
 
 .project-image {
-  width: 100%;
-  height: 200px;
   background-size: cover;
   background-position: center;
+  aspect-ratio: 4 / 3;
 }
 
 .project-info {
-  padding: 10px;
+  padding: 16px;
+}
+
+.project-title {
+  font-size: 1.1rem;
+  color: #111;
+  margin: 0 0 4px;
+}
+
+.project-meta {
+  font-size: 0.85rem;
+  color: #666;
+  margin: 0;
 }
