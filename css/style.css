@@ -13,3 +13,7 @@ body::-webkit-scrollbar {
 body {
   scrollbar-width: none; /* hides scrollbar */
 }
+
+* {
+  outline: 1px solid rgba(255, 0, 0, 0.2);
+}
