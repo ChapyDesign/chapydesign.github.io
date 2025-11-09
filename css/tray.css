@@ -1,16 +1,22 @@
 .tray {
-  position: relative;
-  z-index: 1;             /* Above hero but below nav */
+  position: absolute;          /* place relative to page top */
+  top: 100vh;                  /* start just below the hero (full viewport height) */
+  left: 0;
+  width: 100%;
+  min-height: 150vh;           /* make it long enough to scroll */
   background-color: #dce1e7;
-  min-height: 150vh;       /* Ensure page is scrollable */
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
-  overflow: hidden;        /* Makes sure content doesn’t spill outside the rounded corners */
+  z-index: 1;                  /* below nav */
 }
 
-
-.tray-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
+/* Optional: fade hero as tray scrolls */
+.hero-slider {
+  position: fixed;             /* stays in place while tray scrolls over it */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+  transition: opacity 0.2s ease;
 }
