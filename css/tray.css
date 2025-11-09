@@ -1,16 +1,13 @@
 .tray {
-  position: fixed;
-  top: 100vh; /* start below the screen */
-  left: 0;
+  position: relative;
   width: 100%;
-  height: 100vh; /* full viewport */
+  min-height: 100vh;
   background-color: #dce1e7;
-  z-index: 500; /* below nav */
-  transition: top 0.3s ease;
+  z-index: 500; /* behind nav */
+  padding: 2rem;
 }
 
 .tray-content {
-  padding: 2rem;
   max-width: 800px;
   margin: 0 auto;
 }

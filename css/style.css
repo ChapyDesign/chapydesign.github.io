@@ -1,20 +1,4 @@
-/* style.css — main file just imports section CSS */
+/* Include modular CSS */
 @import url('nav.css');
 @import url('hero.css');
-@import url('projects.css');
-@import url('footer.css');
 @import url('tray.css');
-
-/* You can also keep global styles here if needed */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Inter', sans-serif;
-  color: #111;
-  background-color: #fff;
-  line-height: 1.5;
-}
