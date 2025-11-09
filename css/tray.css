@@ -1,13 +1,12 @@
 .tray {
   position: relative;
-  width: 100%;
-  min-height: 100vh;
+  z-index: 1;            /* Above hero but below nav */
   background-color: #dce1e7;
-  z-index: 500; /* behind nav */
-  padding: 2rem;
+  min-height: 150vh;      /* Ensure page is scrollable */
 }
 
 .tray-content {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 2rem;
 }
