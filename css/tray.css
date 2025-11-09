@@ -1,138 +1,73 @@
+/* Ensure all elements calculate width correctly including padding */
+* {
+  box-sizing: border-box;
+}
+
+/* Tray container */
 .tray {
-  position: absolute;      /* stays in page flow */
-  top: 0;                  /* start at top of page */
+  position: absolute;
+  top: 100vh;                /* start just below hero */
   left: 0;
   width: 100%;
-  height: 100vh;           /* full viewport height */
-  overflow-y: scroll;      /* enable vertical scrolling */
-  padding: 10px 20px;
+  min-height: 150vh;         /* enough height to scroll */
   background-color: #dce1e7;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-
-  /* Hide scrollbar */
-  scrollbar-width: none;       /* Firefox */
-  -ms-overflow-style: none;    /* IE/Edge */
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  z-index: 1;
+  padding: 20px;
 }
 
-.tray::-webkit-scrollbar {
-  display: none;               /* Chrome, Safari */
-}
-
+/* Tray content centered */
 .tray-content {
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.tray-hero {
-  position: sticky;
-  top: 0;
-  background-color: #dce1e7;
-  z-index: 2;
-}
-
-/* Optional: fade hero as tray scrolls */
-.hero-slider {
-  position: fixed;             /* stays in place while tray scrolls over it */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  z-index: 0;
-  transition: opacity 0.2s ease;
-}
-
-/* --- Tray Container --- */
-.tray.recent-projects {
-  background: #fff;
-  border-radius: 25px 25px 0 0;
-  padding: 40px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-/* --- Header + Filters --- */
+/* Tray header */
 .tray-header {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  margin-bottom: 32px;
-  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.tray-header h2 {
-  font-size: 1.75rem;
-  font-weight: 700;
-  margin: 0;
-}
-
-.filters {
-  display: flex;
-  gap: 12px;
-}
-
-.filter {
-  background: transparent;
-  border: 1px solid #ccc;
-  border-radius: 20px;
-  padding: 6px 16px;
+.filters button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  background: #fff;
+  border-radius: 5px;
   cursor: pointer;
-  font-size: 0.9rem;
-  transition: all 0.2s ease;
 }
 
-.filter:hover,
-.filter.active {
-  background: #000;
+.filters button.active {
+  background: #a1b2c3;
   color: #fff;
-  border-color: #000;
 }
 
-/* --- Projects Grid --- */
+/* Projects grid */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 24px;
-  width: 100%;
+  gap: 16px;
 }
 
-/* --- Project Cards --- */
 .project-card {
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  border-radius: 16px;
+  display: block;
+  background: #fff;
+  border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
-  background: #fafafa;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.project-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  text-decoration: none;
+  color: inherit;
 }
 
 .project-image {
+  width: 100%;
+  height: 200px;
   background-size: cover;
   background-position: center;
-  aspect-ratio: 4 / 3;
 }
 
 .project-info {
-  padding: 16px;
-}
-
-.project-title {
-  font-size: 1.1rem;
-  color: #111;
-  margin: 0 0 4px;
-}
-
-.project-meta {
-  font-size: 0.85rem;
-  color: #666;
-  margin: 0;
+  padding: 10px;
 }
