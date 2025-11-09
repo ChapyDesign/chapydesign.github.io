@@ -47,7 +47,6 @@ body {
 /* Individual nav buttons */
 .nav-button {
   text-decoration: none;
-  text-transform: capitalize;
   height: 45px;
   line-height: 45px;
   color: #000;
