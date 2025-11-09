@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chapy Design</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/tray.css" />
 </head>
 <body>
 
@@ -22,14 +21,14 @@
     </nav>
   </header>
 
-  <!-- Tray (was Hero Slider) -->
-  <section class="tray">
+  <!-- Hero Slider -->
+  <section class="hero-slider">
 
     <!-- Slide 1 -->
     <div class="slide active">
-      <div class="tray-image"></div>
+      <div class="hero-image"></div>
 
-      <div class="tray-sidebar">
+      <div class="hero-sidebar">
         <div class="image-grid">
           <div class="grid-item"></div>
           <div class="grid-item"></div>
@@ -49,9 +48,9 @@
 
     <!-- Slide 2 -->
     <div class="slide">
-      <div class="tray-image"></div>
+      <div class="hero-image"></div>
 
-      <div class="tray-sidebar">
+      <div class="hero-sidebar">
         <div class="image-grid">
           <div class="grid-item"></div>
           <div class="grid-item"></div>
@@ -64,16 +63,16 @@
         <div class="text-block">
           <h1>Second Slide</h1>
           <hr>
-          <p>Different content for the second tray section.</p>
+          <p>Different content for the second hero section.</p>
         </div>
       </div>
     </div>
 
     <!-- Slide 3 -->
     <div class="slide">
-      <div class="tray-image"></div>
+      <div class="hero-image"></div>
 
-      <div class="tray-sidebar">
+      <div class="hero-sidebar">
         <div class="image-grid">
           <div class="grid-item"></div>
           <div class="grid-item"></div>
@@ -93,16 +92,18 @@
 
   </section>
 
-  <!-- Cover Section -->
-  <section class="cover-section">
-    <div class="cover-content">
-      <h2>Scroll Cover Section</h2>
-      <p>This section scrolls up and covers the tray area.</p>
+  <!-- Tray Section (scrolls over hero) -->
+  <section class="tray">
+    <div class="tray-content">
+      <h2>Tray Title</h2>
+      <p>
+        This tray scrolls up over the hero content but stays behind the nav bar. 
+        You can use this same tray layout on multiple pages with different content.
+      </p>
     </div>
   </section>
 
   <script src="js/slider.js"></script>
-  <script src="js/tray-scroll.js"></script>
 
 </body>
 </html>
