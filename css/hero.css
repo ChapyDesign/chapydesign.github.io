@@ -64,6 +64,7 @@
 
 .text-block h2 {
   margin: 0 0 5px 0;
+  text-align: left;
 }
 
 .text-block hr {
@@ -75,6 +76,7 @@
 .text-block p {
   margin: 0;
   color: #333;
+  text-align: left;
 }
 
 /* === Desktop Layout === */
