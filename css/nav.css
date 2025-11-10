@@ -42,8 +42,9 @@ body {
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
   overflow: hidden; /* keeps clean edges if you round corners */
-  font-family: "Instrument Serif", serif;
-  font-weight: 400;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
   font-style: normal;
 }
 
