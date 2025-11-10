@@ -31,8 +31,8 @@
 
 /* === Hero Image (top on mobile) === */
 .hero-image {
-  width: 100%;
-  height: 40%; /* top portion of mobile view */
+  width: auto;
+  height: 100%; /* top portion of mobile view */
   background-color: #888; /* placeholder */
 }
 
