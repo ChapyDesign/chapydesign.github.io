@@ -9,7 +9,7 @@
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   z-index: 1;
-  padding: 10px 20px;
+  padding: 10px 25px;
   box-sizing: border-box;
 
   /* scroll normally but hide scrollbar */
@@ -56,7 +56,7 @@
   justify-content: space-between;
   margin-bottom: 32px;
   flex-wrap: wrap;
-  padding-top: 20px;
+  padding-top: 15px;
 }
 
 .tray-header h2 {
