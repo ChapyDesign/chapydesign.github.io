@@ -44,7 +44,7 @@ body {
   overflow: hidden; /* keeps clean edges if you round corners */
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 900;
+  font-weight: 400;
   font-style: normal;
 }
 
