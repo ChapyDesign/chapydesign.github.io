@@ -42,10 +42,6 @@ body {
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
   overflow: hidden; /* keeps clean edges if you round corners */
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
 }
 
 /* Individual nav buttons */
@@ -54,8 +50,11 @@ body {
   height: 45px;
   line-height: 45px;
   color: #000;
-  font-weight: 500;
-  font-size: 1rem;
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 0.9rem;
   padding: 0 1.25rem;
   border-right: 1px solid #ccc;
   transition: background-color 0.3s, color 0.3s;
