@@ -74,7 +74,7 @@
 
 /* === Text Block === */
 .text-block {
-  background-color: #b7b7b7;
+  background-color: #fff;
   padding: 15px;
   text-align: center;
   margin-top: 5px;
@@ -87,17 +87,19 @@
   font-weight: 300;
   font-style: normal;
   font-size: 40px;
+  padding-bottom:48px;
+  color: #336677;
 }
 
 .text-block hr {
   border: none;
-  border-top: 1px solid #ccc;
-  margin: 5px 0;
+  border-top: 1px solid #336677;
+  margin: 5px 0 25px 0;
 }
 
 .text-block p {
   margin: 0;
-  color: #000;
+  color: #336677;
   text-align: left;
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
@@ -148,7 +150,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: #fff;
     z-index: 2;
 	padding:15px;
   }
