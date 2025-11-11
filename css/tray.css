@@ -76,6 +76,7 @@
 .filter {
   background: transparent;
   border: 1px solid #fff;
+  color: #fff;
   border-radius: 20px;
   padding: 6px 16px;
   cursor: pointer;
