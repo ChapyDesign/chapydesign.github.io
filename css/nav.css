@@ -30,6 +30,10 @@
   width: auto;
 }
 
+.logo h1 {
+  color:#fff;
+}
+
 /* Nav links centered as a bordered group */
 .nav-links {
   display: flex;
