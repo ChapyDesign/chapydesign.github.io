@@ -5,9 +5,9 @@
   justify-content: center; /* center nav links */
   height: 45px;
   width: 100%;
-  background-color: #1c2a22;
-  border-bottom: 1px solid #ccc;
-  border-top: 1px solid #ccc;
+  background-color: #b7b7b7;
+  /*border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;*/
   position: fixed;
   top: 0;
   left: 0;
@@ -31,7 +31,7 @@
 }
 
 .logo h1 {
-  color:#fff;
+  color:#000;
 }
 
 /* Nav links centered as a bordered group */
