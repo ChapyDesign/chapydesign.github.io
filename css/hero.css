@@ -1,12 +1,13 @@
 /* === Hero Slider === */
 .hero-slider {
   position: fixed;       /* Stay in place */
-  top: 50;
+  top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;         /* Full viewport */
   z-index: 0;            /* Behind tray and nav */
   overflow: hidden;
+  margin-top:50px;
 }
 
 
