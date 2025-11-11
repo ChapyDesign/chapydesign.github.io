@@ -43,7 +43,7 @@
   text-decoration: none;
   height: 45px;
   line-height: 45px;
-  /*color: #000;*/
+  color: #fff;
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -61,8 +61,8 @@
 
 /* Hover effect */
 .nav-button:hover {
-  background-color: #f60;
-  color: blue;
+  /*background-color: ;*/
+  color: #f60;
 }
 
 /* Mobile adjustments */
