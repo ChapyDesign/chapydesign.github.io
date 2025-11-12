@@ -42,6 +42,11 @@
   object-fit: cover; /* keeps composition tight */
 }
 
+.hero-imagebg22 {
+  padding:68px;
+  background-color: aqua;
+}
+
 /* === Sidebar: stacked content under hero image === */
 .hero-sidebar {
   display: flex;
