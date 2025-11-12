@@ -106,51 +106,54 @@
   font-style: normal;
 }
 
-/* === Desktop Layout === */
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .slide {
     flex-direction: row;
   }
 
-  /* Hero image wider (3/4 width) */
+  /* Hero image takes 75% */
   .hero-image {
     width: 75%;
     height: 100%;
     background-color: #888;
   }
 
-  /* Sidebar narrower (1/4 width) */
+  /* Sidebar takes 25% */
   .hero-sidebar {
     width: 25%;
     height: 100%;
     display: flex;
     flex-direction: column;
     position: relative;
-  }
-
-  /* Image grid and text block stay the same */
-  .image-grid {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    gap: 0;
-  }
-
-  .image-grid .grid-item {
-    flex: 1;
-    aspect-ratio: 3 / 2;
-    margin: 0;
     padding: 0;
   }
 
+  /* Image grid: 2 columns x 3 rows, above text-block */
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0;
+    flex: none;
+    height: 70%; /* adjust as needed */
+  }
+
+  .image-grid .grid-item {
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+  }
+
+  /* Text block stays pinned to bottom */
   .text-block {
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #1c2c23;
+    background-color: #000;
     z-index: 2;
     padding: 15px;
+    height: auto;
+    flex-shrink: 0;
   }
 }
-
