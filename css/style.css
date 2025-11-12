@@ -35,7 +35,8 @@ body {
 }
 
 .description-block a {
-  color: #FF8800; /* or your preferred link color */
+  color: #fff; /* or your preferred link color */
+  text-decoration: none;
   transition: color 0.2s ease;
 }
 
