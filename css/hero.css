@@ -111,58 +111,46 @@
     flex-direction: row;
   }
 
-  /* Hero image takes 75% */
+  /* Hero image left 2/3 */
   .hero-image {
-    width: 75%;
+    width: 66.66%;
     height: 100%;
     background-color: #888;
   }
 
-  /* Sidebar takes 25% */
+  /* Sidebar right 1/3 */
   .hero-sidebar {
-    width: 25%;
+    width: 33.33%;
     height: 100%;
     display: flex;
     flex-direction: column;
     position: relative;
-    padding: 0;
   }
 
-  /* Image grid: 2 columns x 3 rows, above text-block */
+  /* Image grid: single column stacked vertically */
   .image-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 0;
-    flex: none;
-    height: 70%; /* adjust as needed */
+    display: flex;
+    flex-direction: column; /* 1 column */
+    flex: 1;
+    gap: 0; /* you can increase this if you want spacing between images */
   }
 
   .image-grid .grid-item {
-    width: 100%;
+    flex: 1;
     aspect-ratio: 3 / 2;
-    overflow: hidden;
-  }
-	
-  .grid-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;        /* fill without distortion */
-    object-position: center;  /* focus on the center */
-    display: block;
+    margin: 0;
+    padding: 0;
   }
 
-
-  /* Text block stays pinned to bottom */
+  /* Text block overlaps bottom */
   .text-block {
-    position: relative;
+    position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     background-color: #000;
     z-index: 2;
     padding: 15px;
-    height: auto;
-    flex-shrink: 0;
   }
 }
+
