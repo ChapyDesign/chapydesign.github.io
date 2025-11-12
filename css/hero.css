@@ -155,25 +155,25 @@
   }
 }
 
-/*============= Tablet breakpoint ===========*/
+/* === Tablet Layout =========================================== */
 @media (min-width: 768px) and (max-width: 1024px) {
   .slide {
-    flex-direction: row;
+    flex-direction: column; /* stack hero image above */
   }
 
-  /* Hero image: left 2/3 of slide */
+  /* Hero image takes full width on top */
   .hero-image {
-    width: 66.66%;
-    height: 100%;
+    width: 100%;
+    height: auto;
   }
 
-  /* Sidebar: right 1/3 of slide */
+  /* Sidebar below hero image */
   .hero-sidebar {
-    width: 33.33%;
-    height: 100%;
     display: flex;
-    flex-direction: row; /* horizontal layout for image-grid + text-block */
-    gap: 10px;           /* optional spacing between image-grid and text-block */
+    flex-direction: row; /* image-grid left, text-block right */
+    min-height: 200px;
+    gap: 20px;
+    width: 100%;
   }
 
   /* Image grid: 3 columns, 2 rows */
@@ -181,25 +181,19 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 5px;
-    flex: 2; /* takes more space than text-block */
-    height: 100%; /* fill the sidebar height */
+    flex: 2; /* takes more space than text block if needed */
+    min-height: 200px;
   }
 
-  .image-grid .grid-item {
-    width: 100%;
-    height: 100%;
-    aspect-ratio: 3 / 2;
-  }
-
-  /* Text block: right of image-grid, same height */
+  /* Text block same height as image grid */
   .text-block {
-    flex: 1;                /* takes remaining width */
-    height: 100%;           /* match image-grid height */
-    margin-top: 0;          /* remove mobile margin */
+    flex: 1; /* occupies remaining space */
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 15px;
-    position: relative;     /* normal flow */
-    background-color: #000;
+    margin-top: 0;
   }
 }
 
