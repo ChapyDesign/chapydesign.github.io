@@ -61,7 +61,7 @@
 
 .tray-header h2 {
   margin: 0;
-  color:#fff;
+  color:#ccc;
   font-family: "Instrument Serif", serif;
   font-weight: 300;
   font-style: normal;
@@ -74,8 +74,8 @@
 
 .filter {
   background: transparent;
-  border: 1px solid #fff;
-  color: #fff;
+  border: 1px solid #ccc;
+  color: #ccc;
   border-radius: 20px;
   padding: 6px 16px;
   cursor: pointer;
