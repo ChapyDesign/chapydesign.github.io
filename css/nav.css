@@ -29,8 +29,8 @@
 }
 
 .logo h1 {
-  color:#fff;
-  font-size:24;
+  color:#ccc;
+  font-size:16;
 }
 
 /* Nav links centered as a bordered group */
@@ -44,7 +44,7 @@
   text-decoration: none;
   height: 45px;
   line-height: 45px;
-  color: #fff;
+  color: #ccc;
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
