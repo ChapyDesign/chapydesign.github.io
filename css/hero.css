@@ -229,12 +229,10 @@
 }
 
 @media (max-width: 767px) {
-  .text-block {
-    margin-top: -40px;  /* pulls it slightly behind the hero image */
-    position: relative;
-    z-index: 2;
+  .hero-image {
+    height: 90vh;      /* hero takes most of the screen */
+    min-height: 400px; /* protects landscape devices */
   }
 }
-
 
 
