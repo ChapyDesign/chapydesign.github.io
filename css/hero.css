@@ -1,3 +1,7 @@
+.hero-bg-green { --hero-bg: #1c2a22; }
+.hero-bg-brown { --hero-bg: #5e493d; }
+.hero-bg-blue  { --hero-bg: #31445d; }
+
 /* === Hero Slider === */
 .hero-slider {
   position: fixed;
@@ -41,6 +45,20 @@
   height: 100%;
   object-fit: cover; /* keeps composition tight */
 }
+
+/* Optional padded hero-image variant */
+.hero-image.padded {
+  padding: 64px;
+  background-color: var(--hero-bg, transparent);
+  box-sizing: border-box;
+}
+
+.hero-image.padded img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* image fits comfortably inside the padding space */
+}
+
 
 /* === Sidebar: stacked content under hero image === */
 .hero-sidebar {
