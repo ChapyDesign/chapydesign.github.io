@@ -124,6 +124,11 @@
   font-style: normal;
 }
 
+/* Hide image grid on mobile */
+.image-grid {
+  display: none;
+}
+
 /*============= Desktop breakpoint ===========*/
 @media (min-width: 1024px) {
   .slide {
