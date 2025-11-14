@@ -48,7 +48,7 @@
 
 /* Optional padded hero-image variant */
 .hero-image.padded {
-  padding: 64px;
+  padding: 114px 64px 64px 64px;
   background-color: var(--hero-bg, transparent);
   box-sizing: border-box;
 }
