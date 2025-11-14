@@ -228,4 +228,13 @@
   }
 }
 
+@media (max-width: 767px) {
+  .text-block {
+    margin-top: -40px;  /* pulls it slightly behind the hero image */
+    position: relative;
+    z-index: 2;
+  }
+}
+
+
 
