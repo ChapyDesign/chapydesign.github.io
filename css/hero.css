@@ -38,6 +38,7 @@
   height: auto;
   display: block;
   overflow: hidden;
+  margin-top:50px;
 }
 
 .hero-image img {
@@ -147,7 +148,7 @@
   .hero-image {
     flex: 1;
     height: 100%;
-    background-color: #888;
+	margin-top:50px;
   }
 
   /* Sidebar fixed width */
