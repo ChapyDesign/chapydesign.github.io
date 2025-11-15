@@ -35,7 +35,7 @@
 /* === Hero Image (top on mobile) === */
 .hero-image {
   width: 100%;
-  height: 80vh;
+  height: auto;
   display: block;
   overflow: hidden;
 }
@@ -43,7 +43,8 @@
 .hero-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* keeps composition tight */
+  object-fit: cover;
+  object-position: center; /* center focal point */
 }
 
 /* Optional padded hero-image variant */
