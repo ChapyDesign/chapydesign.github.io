@@ -1,54 +1,86 @@
+/* ----------------------------------------------------------
+   HERO BACKGROUNDS
+---------------------------------------------------------- */
 .hero-bg-deadwood { --hero-bg: #d1cbc0; }
-.hero-bg-black { --hero-bg: #000; }
-.hero-bg-blue  { --hero-bg: #31445d; }
+.hero-bg-black    { --hero-bg: #000; }
+.hero-bg-blue     { --hero-bg: #31445d; }
 
-/* === Hero Slider === */
+/* ----------------------------------------------------------
+   HERO SLIDER (HORIZONTAL)
+---------------------------------------------------------- */
 .hero-slider {
   position: fixed;
-  top: 50px;                 /* start below nav */
+  top: 50px;                       /* below nav */
   left: 0;
   width: 100vw;
-  height: calc(100vh - 50px); /* full screen minus nav height */
-  z-index: 0;
+  height: calc(100vh - 50px);
   overflow: hidden;
+  z-index: 0;
 }
 
-/* === Slides === */
-.slide {
-  display: none;
+/* Horizontal sliding track */
+.slides-container {
+  display: flex;
   width: 100%;
   height: 100%;
-  flex-direction: column;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-  position: absolute;
-  top: 0;
-  left: 0;
+  transition: transform 0.8s ease-in-out;
 }
 
-.slide.active {
+/* Each slide occupies full viewport */
+.slide {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
   display: flex;
-  opacity: 1;
-  position: relative;
+  flex-direction: column;
 }
 
-/* === Hero Image (top on mobile) === */
+/* ----------------------------------------------------------
+   PAGINATION DOTS
+---------------------------------------------------------- */
+.pagination {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.pagination .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.4);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.pagination .dot.active {
+  background: white;
+}
+
+/* ----------------------------------------------------------
+   HERO IMAGE
+---------------------------------------------------------- */
 .hero-image {
   width: 100%;
   height: auto;
   display: block;
   overflow: hidden;
-  margin-top:50px;
+  margin-top: 50px;
 }
 
-.hero-image img {
+.hero-image img,
+.hero-image picture,
+.hero-image iframe {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center; /* center focal point */
 }
 
-/* Optional padded hero-image variant */
+/* Optional padded variant */
 .hero-image.padded {
   padding: 114px 64px 64px 64px;
   background-color: var(--hero-bg, transparent);
@@ -56,32 +88,23 @@
 }
 
 .hero-image.padded img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain; /* image fits comfortably inside the padding space */
+  object-fit: contain;
 }
 
-.hero-image iframe {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;   /* keeps center content visible */
-  border: none;
-}
-
-
-/* === Sidebar: stacked content under hero image === */
+/* ----------------------------------------------------------
+   SIDEBAR
+---------------------------------------------------------- */
 .hero-sidebar {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
-/* === Image Grid (mobile: 3x2, 3:2 ratio) === */
+/* ----------------------------------------------------------
+   IMAGE GRID (mobile hidden)
+---------------------------------------------------------- */
 .image-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 0;
+  display: none;
 }
 
 .grid-item {
@@ -94,11 +117,11 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
 }
 
-
-/* === Text Block === */
+/* ----------------------------------------------------------
+   TEXT BLOCK
+---------------------------------------------------------- */
 .text-block {
   background-color: #1c2c23;
   padding: 15px;
@@ -111,9 +134,7 @@
   text-align: left;
   font-family: "Instrument Serif", serif;
   font-weight: 300;
-  font-style: normal;
   font-size: 40px;
-  /*padding-bottom:48px;*/
   color: #ccc;
 }
 
@@ -128,73 +149,29 @@
   color: #ccc;
   text-align: left;
   font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
   font-weight: 400;
-  font-style: normal;
 }
 
-/* Hide image grid on mobile */
-.image-grid {
-  display: none;
-}
-
-.hero-slider {
-  position: relative;
-  overflow: hidden;
-  width: 100%;
-}
-
-.slides {
-  display: flex;
-  width: 100%;
-  transition: transform 0.6s ease;
-}
-
-.slide {
-  min-width: 100%;
-  display: flex;
-  flex-direction: column; /* preserves your hero layout */
-}
-
-.pagination {
-  position: absolute;
-  bottom: 24px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 8px;
-}
-
-.pagination .dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: rgba(255,255,255,0.4);
-  cursor: pointer;
-}
-
-.pagination .dot.active {
-  background: white;
-}
-
-/*============= Desktop breakpoint ===========*/
+/* ----------------------------------------------------------
+   DESKTOP 1024px+
+---------------------------------------------------------- */
 @media (min-width: 1024px) {
+
   .slide {
     flex-direction: row;
   }
 
-  /* Hero image fills remaining space */
+  /* Hero image grows, sidebar fixed */
   .hero-image {
     flex: 1;
     height: 100%;
-	margin-top:50px;
+    margin-top: 50px;
   }
 
-  /* Sidebar fixed width */
   .hero-sidebar {
-    width: 400px; /* fixed width on desktop */
-    min-width: 360px; /* optional safety min */
-    max-width: 420px; /* optional safety max */
+    width: 400px;
+    min-width: 360px;
+    max-width: 420px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -210,9 +187,7 @@
 
   .image-grid .grid-item {
     flex: 1;
-    aspect-ratio: 3 / 2;
-    margin: 0;
-    padding: 0;
+    aspect-ratio: 3/2;
   }
 
   .text-block {
@@ -221,59 +196,54 @@
     left: 0;
     right: 0;
     background-color: #1c2c23;
-    z-index: 2;
     padding: 15px;
+    z-index: 2;
   }
 }
 
+/* ----------------------------------------------------------
+   TABLET 768–1023px
+---------------------------------------------------------- */
+@media (min-width: 768px) and (max-width: 1023px) {
 
-/* === Tablet Layout =========================================== */
-@media (min-width: 768px) and (max-width: 1024px) {
   .slide {
-    flex-direction: column; /* stack hero image above */
+    flex-direction: column;
   }
 
-  /* Hero image takes full width on top */
   .hero-image {
     width: 100%;
     height: auto;
   }
 
-  /* Sidebar below hero image */
   .hero-sidebar {
-    display: flex;
-    flex-direction: row; /* image-grid left, text-block right */
+    flex-direction: row;
     min-height: 200px;
     gap: 20px;
-    width: 100%;
   }
 
-  /* Image grid: 3 columns, 2 rows */
   .image-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    flex: 2; /* takes more space than text block if needed */
-    min-height: 200px;
+    flex: 2;
   }
 
-  /* Text block same height as image grid */
   .text-block {
-    flex: 1; /* occupies remaining space */
+    flex: 1;
     min-height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 15px;
     margin-top: 0;
   }
 }
 
+/* ----------------------------------------------------------
+   MOBILE <768px
+---------------------------------------------------------- */
 @media (max-width: 767px) {
   .hero-image {
-    height: 95vh;      /* hero takes most of the screen */
-    min-height: 400px; /* protects landscape devices */
+    height: 95vh;
+    min-height: 400px;
   }
 }
-
-
