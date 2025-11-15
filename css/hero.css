@@ -153,6 +153,33 @@
   font-weight: 400;
 }
 
+/* === Hero Meta === */
+.hero-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 32px;
+  opacity: 0.7;
+  font-family: "Instrument Serif", serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.hero-meta span {
+  display: inline-block;
+}
+
+.hero-meta-filter {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 14px;
+}
+
+.hero-meta-date {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
 /* ----------------------------------------------------------
    DESKTOP 1024px+
 ---------------------------------------------------------- */
