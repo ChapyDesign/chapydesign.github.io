@@ -157,13 +157,12 @@
 .hero-meta {
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-top: 32px;
-  opacity: 0.7;
+  justify-content: space-between; /* <-- THIS pushes date to the right */
+  margin-top: 16px;
   font-family: "Work Sans", sans-serif;
   font-weight: 500;
-  font-size: 16px;
-  color:#ccc;
+  font-size: 0.9rem;
+  color: #ccc;
 }
 
 .hero-meta span {
@@ -171,16 +170,13 @@
 }
 
 .hero-meta-filter {
-  text-transform: uppercase;
   letter-spacing: 0.05em;
-  font-size: 14px;
 }
 
 .hero-meta-date {
-  font-size: 0.9rem;
-  opacity: 1;
-  text-align: right;
+  text-align: right; /* optional—won’t hurt anything */
 }
+
 
 /* ----------------------------------------------------------
    DESKTOP 1024px+
