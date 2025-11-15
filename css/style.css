@@ -18,32 +18,6 @@ body {
   background-color: #1c2c23;
 }
 
-.description-block {
-  margin: 50px auto 0 auto; /* 50px spacing from above */
-  max-width: 33.33%;        /* 1/3 of screen width */
-  text-align: center;        /* center content */
-  font-family: "Instrument Serif", serif;
-  font-weight: 300;
-  font-style: normal;
-}
-
-.description-block p {
-  font-size: 48px;
-  line-height: 1.3;
-  color: #ccc;
-  margin: 0; /* remove default paragraph margin */
-}
-
-.description-block a {
-  color: #fff; /* or your preferred link color */
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-.description-block a:hover {
-  color: blue; /* hover color */
-}
-
 .material-symbols-rounded.icon {
   font-variation-settings:
     "FILL" 0,
