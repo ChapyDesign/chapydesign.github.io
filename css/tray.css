@@ -229,12 +229,12 @@
 }
 
 .description-block a {
-  color: #fff; /* or your preferred link color */
+  color: #FF8800; /* or your preferred link color */
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .description-block a:hover {
-  color: #FF8800; /* hover color */
+  color: #fff; /* hover color */
 }
 
