@@ -133,10 +133,27 @@
   display: none;
 }
 
-/*.project-card:hover {
+.project-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 6px 20px rgba(0,0,0,0.12);
-}*/
+}
+
+/* --- Project Card Hiding for Filter --- */
+.project-card {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Hide with smooth animation */
+.project-card.hidden {
+  opacity: 0;
+  transform: scale(0.95);
+  pointer-events: none;  /* prevents clicking hidden cards */
+  height: 0;             /* optional: collapse space */
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
 
 .project-image {
   width: 100px;
