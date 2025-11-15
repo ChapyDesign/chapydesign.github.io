@@ -138,6 +138,45 @@
   display: none;
 }
 
+.hero-slider {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slides {
+  display: flex;
+  width: 100%;
+  transition: transform 0.6s ease;
+}
+
+.slide {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column; /* preserves your hero layout */
+}
+
+.pagination {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.pagination .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.4);
+  cursor: pointer;
+}
+
+.pagination .dot.active {
+  background: white;
+}
+
 /*============= Desktop breakpoint ===========*/
 @media (min-width: 1024px) {
   .slide {
