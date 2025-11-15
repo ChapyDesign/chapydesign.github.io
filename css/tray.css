@@ -173,6 +173,12 @@
   margin: 0;
 }
 
+.material-symbols-rounded {
+  font-size: 18px;
+  vertical-align: middle;
+  line-height: 1;
+}
+
 /* Bottom row: filter and date */
 .project-meta {
   display: flex;
