@@ -177,8 +177,8 @@
 }
 
 .hero-meta-date {
-  font-size: 14px;
-  opacity: 0.9;
+  font-size: 0.9rem;
+  opacity: 1;
   text-align: right;
 }
 
