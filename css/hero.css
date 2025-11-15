@@ -170,7 +170,17 @@
 }
 
 .hero-meta-filter {
+  display: flex;
+  align-items: center;
   letter-spacing: 0.05em;
+  gap: 6px; /* space between icon and text */
+}
+
+.hero-meta-filter .icon {
+  width: 14px;
+  height: 14px;
+  fill: currentColor; /* matches text color automatically */
+  opacity: 0.9;
 }
 
 .hero-meta-date {
