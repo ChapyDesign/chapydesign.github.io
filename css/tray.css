@@ -273,16 +273,18 @@
   color: #FF8800;
 }
 
-/* Logo */
-.footer-right .logo h1 {
+/* --- Logo (Chapy) --- */
+.footer-logo {
+  font-family: "Instrument Serif", serif; /* match your nav logo */
   font-size: 16px;
-  margin: 0;
-  cursor: pointer;
   color: #ccc;
+  cursor: pointer;
+  text-transform: lowercase;
+  letter-spacing: 0.5px;
   transition: color 0.2s ease;
 }
 
-.footer-right .logo:hover h1 {
+.footer-logo:hover {
   color: #FF8800;
 }
 
