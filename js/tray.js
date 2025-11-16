@@ -11,14 +11,13 @@ window.addEventListener('scroll', () => {
 
 
 // --- Tray Close Button ---
-// Clicking the "chapy" logo scrolls back to the top, collapsing the tray.
-const trayCloseBtn = document.querySelector('.tray-close');
-
-if (trayCloseBtn) {
-  trayCloseBtn.addEventListener('click', () => {
+// Clicking ANY element with .tray-close will collapse the tray by scrolling to top
+document.addEventListener('click', (event) => {
+  // match clicks on .tray-close or inside it
+  if (event.target.closest('.tray-close')) {
     window.scrollTo({
       top: 0,
       behavior: 'smooth'
     });
-  });
-}
+  }
+});
