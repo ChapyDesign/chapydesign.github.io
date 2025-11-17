@@ -1,35 +1,36 @@
 // tray-filter.js
+
 const filterButtons = document.querySelectorAll('.tray .filter');
 
-// IMPORTANT: select the anchor wrappers, not the cards
-const projectLinks = document.querySelectorAll('.projects-grid .project-link');
+// Select the anchor wrappers (correct selector for your HTML)
+const projectLinks = document.querySelectorAll('.projects-grid a');
+
 const grid = document.querySelector('.projects-grid');
 
 filterButtons.forEach(button => {
   button.addEventListener('click', () => {
 
-    // 1. Button state
+    // Update button active states
     filterButtons.forEach(btn => btn.classList.remove('active'));
     button.classList.add('active');
 
     const filter = button.dataset.filter;
     const visible = [];
 
-    // 2. Filter visibility
+    // Filter project cards
     projectLinks.forEach(link => {
       const card = link.querySelector('.project-card');
       const type = card.dataset.type;
 
       if (filter === 'all' || type === filter) {
-        link.classList.remove('hidden');
+        card.classList.remove('hidden');
         visible.push(link);
       } else {
-        link.classList.add('hidden');
+        card.classList.add('hidden');
       }
     });
 
-    // 3. Reflow visible cards by moving the *links*, not cards
+    // Reflow visible cards
     visible.forEach(link => grid.appendChild(link));
-
   });
 });
