@@ -1,3 +1,15 @@
+.logo a {
+  color: #ccc;              /* text color */
+  text-decoration: none;    /* remove underline */
+  font-weight: 600;          /* match previous logo font weight */
+  cursor: pointer;           /* pointer on hover */
+  transition: color 0.2s ease; /* smooth color change on hover */
+}
+
+.logo a:hover {
+  color: #FF8800;            /* hover color */
+}
+
 /* --- FULLSCREEN HERO IMAGE --- */
 .project-hero {
   position: relative;
