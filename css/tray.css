@@ -124,25 +124,16 @@
   background-color: #fff;
   border-radius: 5px;
   overflow: hidden;
-  /*box-shadow: 0 2px 6px rgba(0,0,0,0.1);*/
   text-decoration: none;
-
-  /* Add for filtering animation */
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  position: relative; /* keeps them in flow initially */
+  transition: transform 0.3s ease;
 }
 
-/* Hidden state for filtered-out cards */
 .project-card.hidden {
   opacity: 0;
   transform: scale(0.95);
   pointer-events: none;
-  display: none; /* remove from flow */
-  position: static; /* ensure it's back in normal flow if needed */
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  display: none; /* removes from flow */
 }
-
-
 
 .project-card .hero-meta-filter span {
   display: none;
