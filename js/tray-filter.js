@@ -11,19 +11,18 @@ filterButtons.forEach(button => {
 
     const filter = button.dataset.filter;
 
+    // 2. Show/hide cards
     const visibleCards = [];
-
-    // 2. Show/hide cards with animation
     projectCards.forEach(card => {
       if (filter === 'all' || card.dataset.type === filter) {
-        card.classList.remove('hidden');
+        card.style.display = "flex"; // make sure it's in the flow
         visibleCards.push(card);
       } else {
-        card.classList.add('hidden');
+        card.style.display = "none"; // remove from flow
       }
     });
 
-    // 3. Shuffle visible cards inline by re-appending them
+    // 3. Re-append visible cards to shuffle them inline
     visibleCards.forEach(card => grid.appendChild(card));
   });
 });
