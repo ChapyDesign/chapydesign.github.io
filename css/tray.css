@@ -119,14 +119,16 @@
 
 /* --- Project Cards --- */
 .project-card {
-  display: block;   /* IMPORTANT — keep it a grid item */
-  height: 100px;
+  display: flex;       /* side-by-side layout */
+  align-items: stretch; /* ensure both image and details take full height */
+  height: 100px;       /* or auto for dynamic height */
   background-color: #fff;
   border-radius: 5px;
   overflow: hidden;
   text-decoration: none;
   transition: transform 0.3s ease;
 }
+
 
 .projects-grid a.hidden {
   display: none !important; /* removes the entire grid item */
