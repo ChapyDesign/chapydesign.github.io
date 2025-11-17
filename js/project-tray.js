@@ -37,3 +37,57 @@ projects.forEach(p => {
     }
   }
 });
+
+// --- Auto-populate Related Projects ---
+const currentType = document.body.dataset.type; // e.g., "design"
+const relatedGrid = document.getElementById('related-projects-grid');
+
+// Example project data (replace with your real projects)
+const allProjects = [
+  {
+    title: 'Project 2',
+    type: 'design',
+    thumb: '/images/projects/project-2/thumb.jpg',
+    url: '/project/project-2'
+  },
+  {
+    title: 'Project 3',
+    type: 'design',
+    thumb: '/images/projects/project-3/thumb.jpg',
+    url: '/project/project-3'
+  },
+  {
+    title: 'Project 4',
+    type: 'mml',
+    thumb: '/images/projects/project-4/thumb.jpg',
+    url: '/project/project-4'
+  },
+  {
+    title: 'Project 5',
+    type: 'art',
+    thumb: '/images/projects/project-5/thumb.jpg',
+    url: '/project/project-5'
+  }
+];
+
+// Filter by current project type
+const relatedProjects = allProjects.filter(p => p.type === currentType);
+
+// Generate HTML
+relatedProjects.forEach(p => {
+  const card = document.createElement('a');
+  card.href = p.url;
+  card.className = 'project-card';
+  card.dataset.type = p.type;
+  card.innerHTML = `
+    <div class="project-image" style="background-image: url('${p.thumb}');"></div>
+    <div class="project-details">
+      <h2 class="project-title">${p.title}</h2>
+      <div class="project-meta">
+        <span class="project-filter"><span class="material-symbols-rounded icon">gradient</span></span>
+        <span class="project-date">2025</span>
+      </div>
+    </div>
+  `;
+  relatedGrid.appendChild(card);
+});
