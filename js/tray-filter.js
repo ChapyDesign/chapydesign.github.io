@@ -1,30 +1,35 @@
 // tray-filter.js
 const filterButtons = document.querySelectorAll('.tray .filter');
-const projectCards = document.querySelectorAll('.projects-grid > a'); // FIXED
+
+// IMPORTANT: select the anchor wrappers, not the cards
+const projectLinks = document.querySelectorAll('.projects-grid .project-link');
 const grid = document.querySelector('.projects-grid');
 
 filterButtons.forEach(button => {
   button.addEventListener('click', () => {
 
-    // 1. Active state toggle
+    // 1. Button state
     filterButtons.forEach(btn => btn.classList.remove('active'));
     button.classList.add('active');
 
     const filter = button.dataset.filter;
+    const visible = [];
 
-    // 2. Filter cards
-    const visibleCards = [];
+    // 2. Filter visibility
+    projectLinks.forEach(link => {
+      const card = link.querySelector('.project-card');
+      const type = card.dataset.type;
 
-    projectCards.forEach(card => {
-      if (filter === 'all' || card.dataset.type === filter) {
-        card.style.display = "flex";  // card is the <a>, and its child is flex — works perfectly
-        visibleCards.push(card);
+      if (filter === 'all' || type === filter) {
+        link.classList.remove('hidden');
+        visible.push(link);
       } else {
-        card.style.display = "none"; // <a> removed from flow — no gaps
+        link.classList.add('hidden');
       }
     });
 
-    // 3. Reposition visible ones
-    visibleCards.forEach(card => grid.appendChild(card));
+    // 3. Reflow visible cards by moving the *links*, not cards
+    visible.forEach(link => grid.appendChild(link));
+
   });
 });
