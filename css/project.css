@@ -3,6 +3,10 @@
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  position: fixed; /* stays in place while scrolling */
+  top: 0;
+  left: 0;
+  z-index: -1; /* behind the tray */
 }
 
 .project-hero img {
@@ -10,6 +14,7 @@
   height: 100%;
   object-fit: cover;
 }
+
 
 /* --- TRAY CONTENT --- */
 .project-tray {
