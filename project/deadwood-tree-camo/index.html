@@ -13,6 +13,8 @@
 </head>
 
 <body>
+	
+	<div id="nav-container"></div>
 
   <!-- FULL SCREEN HEADER IMAGE -->
   <header class="project-hero">
@@ -98,5 +100,15 @@
   </main>
 
   <script src="/js/project-tray.js"></script>
+	
+	<script>
+  fetch('/nav.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('nav-container').innerHTML = html;
+    });
+</script>
+
+	
 </body>
 </html>
