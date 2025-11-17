@@ -1,26 +1,27 @@
 /* --- FULLSCREEN HERO IMAGE --- */
 .project-hero {
+  position: relative;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  position: fixed; /* stays in place while scrolling */
-  top: 0;
-  left: 0;
-  z-index: -1; /* behind the tray */
 }
 
 .project-hero img {
+  position: fixed; /* keep it behind tray */
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
+  z-index: -1; /* ensures tray scrolls over it */
 }
-
 
 /* --- TRAY CONTENT --- */
 .project-tray {
   background-color: #ccc;
   padding: 20px;
 }
+
 
 /* --- HEADER TEXT AREA --- */
 .project-header {
