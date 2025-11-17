@@ -14,7 +14,7 @@
 /* --- TRAY CONTENT --- */
 .project-tray {
   background-color: #ccc;
-  padding: 60px 20px;
+  padding: 20px;
 }
 
 /* --- HEADER TEXT AREA --- */
@@ -27,7 +27,6 @@
 
 .project-title h1 {
   font-family: "Instrument Serif", serif;
-  font-size: clamp(2rem, 5vw, 3.5rem);
   margin: 0;
 }
 
