@@ -17,26 +17,31 @@ document.addEventListener('DOMContentLoaded', () => {
     { title: "Art Project", folder: "art-project", category: "art", thumb: "/images/projects/art-project/thumb.jpg" },
   ];
 
-  const currentCategory = document.body.dataset.category;
+  const currentCategory = document.body.dataset.type; // "design"
   const currentTitle = document.querySelector('.project-title h1').textContent;
   const relatedContainer = document.getElementById('related-projects-grid');
 
   projects.forEach(p => {
     if (p.category === currentCategory && p.title !== currentTitle) {
+      // Create project-card element like home page
       const card = document.createElement('a');
       card.href = `/project/${p.folder}`;
       card.className = "project-card";
-      card.dataset.category = p.category;
+      card.dataset.type = p.category;
+
       card.innerHTML = `
         <div class="project-image" style="background-image: url('${p.thumb}');"></div>
         <div class="project-details">
           <h2 class="project-title">${p.title}</h2>
           <div class="project-meta">
-            <span class="project-filter"><span class="material-symbols-rounded icon">gradient</span></span>
+            <span class="project-filter">
+              <span class="material-symbols-rounded icon">gradient</span>
+            </span>
             <span class="project-date">2025</span>
           </div>
         </div>
       `;
+
       relatedContainer.appendChild(card);
     }
   });
