@@ -13,18 +13,7 @@
 </head>
 <body>
 
-  <!-- Header Navigation -->
-  <header class="top-nav">
-    <div class="logo">
-		<h1 style="font-size: 16px;">chapy</h1>
-    </div>
-    <nav class="nav-links">
-      <a href="#design" class="nav-button">Design</a>
-      <a href="#mml" class="nav-button">MML</a>
-	  <a href="#art" class="nav-button">Art</a>
-      <a href="#about" class="nav-button">Chapster</a>
-    </nav>
-  </header>
+<div id="nav-container"></div>
 
   <!-- Hero Section (fixed) -->s
   <section class="hero-slider">
@@ -337,6 +326,15 @@
   <script src="js/slider.js"></script>
   <script src="js/tray.js"></script>
   <script src="js/tray-filter.js"></script>
+	
+  <script>
+  fetch('/nav.html')
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById('nav-container').innerHTML = html;
+    });
+  </script>
+
 
 </body>
 
