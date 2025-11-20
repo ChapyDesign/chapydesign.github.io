@@ -139,6 +139,10 @@
   color: #ccc;
 }
 
+.text-block p {
+  padding-bottom: 40px;
+}
+
 .text-block hr {
   border: none;
   border-top: 1px solid #ccc;
