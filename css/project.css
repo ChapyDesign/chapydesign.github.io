@@ -43,10 +43,17 @@
   margin-bottom: 60px;
 }
 
-.project-title h1 {
+.project-description h1 {
   font-family: "Instrument Serif", serif;
   margin: 0;
   color: #ccc;
+}
+
+.project-description p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.9rem;
+  color: #ccc;
+  font-weight:300;
 }
 
 /* Info grid (4 columns) */
@@ -94,8 +101,8 @@
 
 .related-projects h2 {
   margin-bottom: 30px;
-  font-family: "Instrument Serif", serif;
-  color: #ccc;
+  font-family: "Work Sans", sans-serif;
+  color: #000;
 }
 
 /* reuse your existing project-card styles */
@@ -116,7 +123,7 @@
   align-items: center;
   margin-top: 60px;
   padding: 20px 0;
-  color: #333;
+  color: #ccc;
   font-family: "Work Sans";
 }
 
@@ -132,7 +139,7 @@
 
 .footer-right a {
   text-decoration: none;
-  color: #333;
+  color: #ccc;
 }
 
 .footer-right a:hover {
