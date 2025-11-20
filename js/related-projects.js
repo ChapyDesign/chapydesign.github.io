@@ -9,28 +9,35 @@ const projects = [
   { title: "Art Project", folder: "art-project", type: "art", thumb: "/images/projects/art-project/thumb.jpg" }
 ];
 
-// Get the current project title and type from the page
-const currentProjectTitle = document.querySelector('.project-title h1').textContent.trim();
-const currentProjectType = document.body.dataset.type || 
-  document.querySelector('.project-info div:nth-child(2)').textContent.trim().toLowerCase();
+// --- GET CURRENT PROJECT TITLE ---
+const currentProjectTitleEl = document.querySelector('.project-description h1');
+const currentProjectTitle = currentProjectTitleEl
+  ? currentProjectTitleEl.textContent.trim()
+  : "";
 
-// Container to append related projects
+// --- GET CURRENT PROJECT TYPE ---
+const currentProjectType = document.body.dataset.type?.toLowerCase() || "";
+
+// --- GET CONTAINER ---
 const relatedContainer = document.getElementById('related-projects-grid');
+
 if (!relatedContainer) {
-  console.warn('No related projects container found on this page.');
+  console.warn("Related projects container not found.");
 } else {
-  // Filter projects by type and exclude the current project
-  const relatedProjects = projects.filter(p => 
-    p.type.toLowerCase() === currentProjectType.toLowerCase() &&
+
+  // Filter by matching type and excluding current project
+  const relatedProjects = projects.filter(p =>
+    p.type.toLowerCase() === currentProjectType &&
     p.title !== currentProjectTitle
   );
 
-  // Generate HTML for each related project
+  // Create cards
   relatedProjects.forEach(p => {
     const card = document.createElement('a');
     card.href = `/project/${p.folder}`;
     card.className = 'project-card';
     card.dataset.type = p.type;
+
     card.innerHTML = `
       <div class="project-image" style="background-image: url('${p.thumb}');"></div>
       <div class="project-details">
@@ -43,10 +50,11 @@ if (!relatedContainer) {
         </div>
       </div>
     `;
+
     relatedContainer.appendChild(card);
   });
 
   if (relatedProjects.length === 0) {
-    relatedContainer.innerHTML = '<p>No related projects found.</p>';
+    relatedContainer.innerHTML = `<p>No related projects found.</p>`;
   }
 }
