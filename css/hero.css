@@ -139,10 +139,6 @@
   color: #ccc;
 }
 
-.text-block p {
-  padding-bottom: 40px;
-}
-
 .text-block hr {
   border: none;
   border-top: 1px solid #ccc;
@@ -155,6 +151,7 @@
   text-align: left;
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
+  padding-bottom: 40px;
 }
 
 /* === Hero Meta === */
@@ -286,4 +283,9 @@
     height: 95vh;
     min-height: 400px;
   }
+	
+  .hero-meta {
+  padding-top:40px;
+}
+
 }
