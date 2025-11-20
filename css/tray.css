@@ -280,4 +280,19 @@
   color: #FF8800;
 }
 
+/* --- MOBILE STACKING --- */
+@media (max-width: 600px) {
+  .tray-footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px; /* space between top and bottom sections */
+  }
+
+  .footer-right {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
 
