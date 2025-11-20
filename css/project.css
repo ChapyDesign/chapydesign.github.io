@@ -70,6 +70,17 @@
   font-weight: 600;
 }
 
+.project-info a {
+  color: #FF8800;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.project-info a:hover {
+  color: #fff;
+}
+
+
 /* --- IMAGE GRID --- */
 .project-images {
   display: grid;
@@ -101,8 +112,8 @@
 
 .related-projects h2 {
   margin-bottom: 30px;
-  font-family: "Work Sans", sans-serif;
-  color: #000;
+  font-family: "Instrument Serif", serif;
+  color: #ccc;
 }
 
 /* reuse your existing project-card styles */
