@@ -30,7 +30,7 @@
 
 /* --- TRAY CONTENT --- */
 .project-tray {
-  background-color: #ccc;
+  background-color: #1c2c23;
   padding: 20px;
 }
 
@@ -46,6 +46,7 @@
 .project-title h1 {
   font-family: "Instrument Serif", serif;
   margin: 0;
+  color: #ccc;
 }
 
 /* Info grid (4 columns) */
@@ -55,6 +56,7 @@
   gap: 10px 20px;
   font-family: "Work Sans", sans-serif;
   font-size: 0.9rem;
+  color: #ccc;
 }
 
 .project-info .label {
@@ -93,6 +95,7 @@
 .related-projects h2 {
   margin-bottom: 30px;
   font-family: "Instrument Serif", serif;
+  color: #ccc;
 }
 
 /* reuse your existing project-card styles */
