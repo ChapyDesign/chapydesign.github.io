@@ -30,7 +30,7 @@ function goToSlide(index) {
 setInterval(() => {
   currentIndex = (currentIndex + 1) % totalSlides;
   goToSlide(currentIndex);
-}, 6000);
+}, 7000);
 
 // Dot click behavior
 dots.forEach(dot => {
