@@ -72,15 +72,20 @@
 }
 
 /* Hamburger Button */
+/* Hamburger Button */
 .hamburger {
   display: none;
   cursor: pointer;
   padding: 10px;
+  position: absolute;
+  right: 0;       /* move to the right edge */
+  top: 50%;
+  transform: translateY(-50%); /* vertically center it */
 }
 
 .hamburger span {
   font-size: 28px;
-  color: #000;
+  color: #ccc; /* match other nav text */
 }
 
 /* Mobile adjustments */
