@@ -122,6 +122,15 @@ a:hover {
     color: #cccccc;
 }
 
+.project-image {
+  width: 100%;
+  padding-top: 66.66%; /* 2:3 aspect ratio */
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
 /* --------------------------
    Description Block
 --------------------------- */
