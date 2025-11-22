@@ -163,8 +163,12 @@
   font-size: 1rem;
   font-weight: 600;
   margin: 0 0 4px 0;
+}
+
+h2.project-title {
   color:#000;
   font-family: "Work Sans", sans-serif;
+  font-weight: 600;
 }
 
 .project-divider {
