@@ -1,174 +1,187 @@
-/* Scope everything to Projects page */
+/* --------------------------
+   Base Styles
+--------------------------- */
 body.projects {
-  margin: 0;
-  font-family: 'Work Sans', sans-serif;
-  background-color: #1c2c23;
-  color: #cccccc;
-  line-height: 1.5;
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #1c2c23;
+    color: #cccccc;
+    line-height: 1.5;
 }
 
-body.projects a {
-  color: #cccccc;
-  text-decoration: none;
+a {
+    color: #cccccc;
+    text-decoration: none;
+}
+a:hover {
+    color: #FF8800;
 }
 
-body.projects a:hover {
-  color: #FF8800;
-  text-decoration: none;
-}
-
-/* Top Nav */
-body.projects .top-nav {
-  display: flex;
-  justify-content: center;
-  padding: 1rem;
-  background-color: #1c2c23;
-  border-bottom: 1px solid #333;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-}
-
-/* Filter Bar */
-body.projects .filter-bar {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  padding: 1rem 0;
-  flex-wrap: wrap;
-  border-bottom: 1px solid #333;
-}
-
-body.projects .filter-bar button {
-  background: none;
-  border: 1px solid #cccccc;
-  color: #cccccc;
-  padding: 0.5rem 1rem;
-  border-radius: 25px;
-  cursor: pointer;
-  font-family: 'Work Sans', sans-serif;
-  font-weight: 600;
-  transition: all 0.2s ease;
-}
-
-body.projects .filter-bar button:hover,
-body.projects .filter-bar button.active {
-  background-color: #1c2c23;
-  color: #FF8800;
-}
-
-/* Projects Grid */
-body.projects .projects-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns desktop */
-  gap: 2rem;
-  padding: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* Project Card */
-body.projects .project-card {
-  display: flex;
-  flex-direction: column;
-  background-color: #263732;
-  border-radius: 12px;
-  overflow: hidden;
-  transition: transform 0.2s ease;
-}
-
-body.projects .project-card:hover {
-  transform: translateY(-5px);
-}
-
-body.projects .project-card img {
-  width: 100%;
-  aspect-ratio: 2/3;
-  object-fit: cover;
-}
-
-body.projects .project-content {
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
-}
-
-body.projects .project-title {
-  font-weight: 600;
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
-  color: #cccccc;
-}
-
-body.projects .project-description {
-  flex-grow: 1;
-  font-size: 0.95rem;
-  margin-bottom: 1rem;
-}
-
-body.projects .project-footer {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.85rem;
-  color: #cccccc;
-}
-
-/* Description Block */
-body.projects .description-block {
-  text-align: center;
-  padding: 2rem;
-  font-size: 1rem;
-  border-top: 1px solid #333;
-}
-
-/* Footer */
-body.projects .tray-footer {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 1.5rem 2rem;
-  border-top: 1px solid #333;
-  font-size: 0.9rem;
-  color: #cccccc;
-}
-
-body.projects .tray-footer a {
-  margin-left: 1rem;
-}
-
-body.projects .footer-left {
-  flex: 1;
-}
-
-body.projects .footer-right {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-body.projects .footer-logo {
-  font-weight: 600;
-  cursor: pointer;
-  padding-left: 1rem;
-}
-
-/* Responsive Adjustments */
-/* Tablet: 3 columns */
-@media (max-width: 1024px) {
-  body.projects .projects-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-/* Mobile: 1 column */
-@media (max-width: 768px) {
-  body.projects .projects-grid {
-    grid-template-columns: 1fr;
+/* --------------------------
+   Top Nav Placeholder
+--------------------------- */
+.top-nav {
+    display: flex;
+    justify-content: center;
     padding: 1rem;
-  }
-  body.projects .project-card img {
+    background-color: #1c2c23;
+    border-bottom: 1px solid #333;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* --------------------------
+   Filter Bar
+--------------------------- */
+.filter-bar {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #333;
+}
+.filter-bar button {
+    background: none;
+    border: 1px solid #cccccc;
+    color: #cccccc;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+.filter-bar button:hover,
+.filter-bar button.active {
+    background-color: #1c2c23;
+    color: #FF8800;
+}
+
+/* --------------------------
+   Projects Grid
+--------------------------- */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Desktop default */
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* --------------------------
+   Project Card
+--------------------------- */
+.project-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #263732;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    position: relative;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 100%;
     aspect-ratio: 2/3;
-  }
+    object-fit: cover;
+    display: block;
+}
+
+.project-content {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    color: #cccccc;
+}
+
+.project-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-description {
+    flex-grow: 1;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.project-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: #cccccc;
+}
+
+/* --------------------------
+   Description Block
+--------------------------- */
+.description-block {
+    text-align: center;
+    padding: 2rem;
+    font-size: 1rem;
+    border-top: 1px solid #333;
+}
+
+/* --------------------------
+   Footer
+--------------------------- */
+.tray-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1.5rem 2rem;
+    border-top: 1px solid #333;
+    font-size: 0.9rem;
+    color: #cccccc;
+}
+.tray-footer a {
+    margin-left: 1rem;
+}
+.footer-left {
+    flex: 1;
+}
+.footer-right {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+.footer-logo {
+    font-weight: 600;
+    cursor: pointer;
+    padding-left: 1rem;
+}
+
+/* --------------------------
+   Responsive Adjustments
+--------------------------- */
+@media (max-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr); /* Tablet */
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr); /* Small tablets / large phones */
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-grid {
+        grid-template-columns: 1fr; /* Mobile */
+    }
+    .project-card img {
+        aspect-ratio: 2/3;
+    }
 }
