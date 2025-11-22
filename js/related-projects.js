@@ -2,11 +2,11 @@
 
 // Example project data
 const projects = [
-  { title: "Deadwood Tree Camo", folder: "deadwood-tree-camo", type: "design", thumb: "/images/projects/deadwood-tree-camo/thumb.jpg" },
-  { title: "Example 1", folder: "example-1", type: "design", thumb: "/images/projects/example-1/thumb.jpg" },
-  { title: "Example 2", folder: "example-2", type: "design", thumb: "/images/projects/example-2/thumb.jpg" },
-  { title: "MML Project", folder: "mml-project", type: "mml", thumb: "/images/projects/mml-project/thumb.jpg" },
-  { title: "Art Project", folder: "art-project", type: "art", thumb: "/images/projects/art-project/thumb.jpg" }
+  { title: "Deadwood Tree Camo", folder: "deadwood-tree-camo", type: "design", thumb: "/img/project/design/deadwood/project-tray-image.jpg" },
+  { title: "Spring Mountain", folder: "spring-mountain", type: "design", thumb: "/img/project/design/deadwood/project-tray-image.jpg" },
+  { title: "Example 2", folder: "example-2", type: "design", thumb: "/img/project/design/deadwood/project-tray-image.jpg" },
+  { title: "MML Project", folder: "mml-project", type: "mml", thumb: "/img/project/design/deadwood/project-tray-image.jpg" },
+  { title: "Art Project", folder: "art-project", type: "art", thumb: "/img/project/design/deadwood/project-tray-image.jpg" }
 ];
 
 // --- GET CURRENT PROJECT TITLE ---
