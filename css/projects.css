@@ -92,12 +92,13 @@ a:hover {
 /* Project Image */
 .projects-all-image {
     width: 100%;
-    aspect-ratio: 2 / 3;
+    aspect-ratio: 3 / 2; /* wider than tall */
     background-size: cover;
     background-position: center;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
 }
+
 
 /* Project Content */
 .projects-all-content {
