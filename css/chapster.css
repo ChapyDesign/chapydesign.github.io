@@ -1,0 +1,150 @@
+/* -------------------------
+   Base Page Styling
+-------------------------- */
+body.chapster {
+    background-color: #1c2c23;
+    color: #cccccc;
+    margin: 0;
+    font-family: "Work Sans", sans-serif;
+}
+
+.chapster-wrapper {
+    width: 100%;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+/* -------------------------
+   2-Column Responsive Grid
+-------------------------- */
+.chapster-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+/* Make the Publications card span full width on desktop */
+.chapster-span {
+    grid-column: span 2;
+}
+
+/* Mobile: switch to 1-col */
+@media (max-width: 768px) {
+    .chapster-grid {
+        grid-template-columns: 1fr;
+    }
+    .chapster-span {
+        grid-column: span 1;
+    }
+}
+
+/* -------------------------
+   Card Styling
+-------------------------- */
+.chapster-card {
+    padding: 10px;
+    border: 1px solid #263732;
+    border-radius: 8px;
+    transition: border 0.2s ease, background-color 0.2s ease;
+}
+
+.chapster-card:hover {
+    border: none;
+}
+
+/* Typography */
+.chapster-card h2 {
+    font-family: "Instrument Serif", serif;
+    font-size: 1.6rem;
+    margin-top: 0;
+    color: #ffffff;
+}
+
+.chapster-card p {
+    margin-top: 0.5rem;
+    line-height: 1.6;
+}
+
+.chapster-card small {
+    font-size: 0.85rem;
+    opacity: 0.85;
+}
+
+/* -------------------------
+   Social Links
+-------------------------- */
+.social-links a {
+    color: #FF8800;
+    font-weight: 500;
+}
+
+.social-links a:hover {
+    color: #66aaff;
+}
+
+/* -------------------------
+   Image Block
+-------------------------- */
+.chapster-image img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+/* -------------------------
+   Publications Section
+-------------------------- */
+
+/* Filters */
+.chapster-filters {
+    margin: 1rem 0;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.chapster-filters button {
+    background: none;
+    border: 1px solid #cccccc;
+    padding: 6px 14px;
+    border-radius: 20px;
+    color: #cccccc;
+    cursor: pointer;
+    font-family: "Work Sans", sans-serif;
+    transition: all 0.2s ease;
+}
+
+.chapster-filters button:hover,
+.chapster-filters .active {
+    color: #FF8800;
+    border-color: #FF8800;
+}
+
+/* Item list (2-col inside Publications) */
+.chapster-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+@media (max-width: 600px) {
+    .chapster-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+.chapster-item h3 {
+    font-family: "Instrument Serif", serif;
+    color: #ffffff;
+    margin-bottom: 0.25rem;
+}
+
+.chapster-item p {
+    margin: 0.5rem 0 0.75rem;
+}
+
+.chapster-item .meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    opacity: 0.75;
+}
