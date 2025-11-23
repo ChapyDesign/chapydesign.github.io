@@ -25,7 +25,6 @@ a:hover {
     justify-content: center;
     padding: 1rem;
     background-color: #1c2c23;
-    border-bottom: 1px solid #cccccc;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -40,7 +39,7 @@ a:hover {
     gap: 1rem;
     padding: 1rem 0;
     flex-wrap: wrap;
-    border-bottom: 1px solid #cccccc;
+	background-color: #18271f;
 }
 .filter-bar button {
     background: none;
