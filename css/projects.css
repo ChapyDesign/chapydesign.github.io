@@ -25,7 +25,7 @@ a:hover {
     justify-content: center;
     padding: 1rem;
     background-color: #1c2c23;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #cccccc;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -40,7 +40,7 @@ a:hover {
     gap: 1rem;
     padding: 1rem 0;
     flex-wrap: wrap;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #cccccc;
 }
 .filter-bar button {
     background: none;
@@ -141,7 +141,6 @@ a:hover {
     text-align: center;
     padding: 2rem;
     font-size: 1rem;
-    border-top: 1px solid #333;
 }
 
 /* --------------------------
@@ -152,7 +151,6 @@ a:hover {
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 1.5rem 2rem;
-    border-top: 1px solid #333;
     font-size: 0.9rem;
     color: #cccccc;
 }
