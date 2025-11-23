@@ -57,6 +57,7 @@ a:hover {
 .filter-bar button.active {
     background-color: #1c2c23;
     color: #FF8800;
+	border-color: #FF8800;
 }
 
 /* --------------------------
@@ -79,7 +80,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     background-color: #263732;
-    border-radius: 12px;
+    /*border-radius: 12px;*/
     overflow: hidden;
     transition: transform 0.2s ease;
     position: relative;
@@ -95,8 +96,8 @@ a:hover {
     aspect-ratio: 3 / 2; /* wider than tall */
     background-size: cover;
     background-position: center;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
+    /*border-top-left-radius: 12px;
+    border-top-right-radius: 12px;*/
 }
 
 
