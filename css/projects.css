@@ -114,17 +114,18 @@ a:hover {
 
 /* Title & Description */
 .projects-all-title {
-    font-weight: 600;
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
-    color: #ffffff;
+    color: #cccccc;
+    font-family: "Instrument Serif", serif;
+    font-weight: 300;
 }
 
 .projects-all-description {
     flex-grow: 1;
     font-size: 0.95rem;
     margin-bottom: 1rem;
-    color: #ffffff;
+    color: #cccccc;
 }
 
 /* Footer */
