@@ -78,15 +78,17 @@ a:hover {
 .projects-all-card {
     display: flex;
     flex-direction: column;
-    background-color: #263732;
-    /*border-radius: 12px;*/
+    /*background-color: #263732;*/
+    border-radius: 10px;
     overflow: hidden;
     transition: transform 0.2s ease;
     position: relative;
+	border: 1px solid #263732;
 }
 
 .projects-all-card:hover {
     transform: translateY(-5px);
+	border: none;
 }
 
 /* Project Image */
