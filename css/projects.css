@@ -172,6 +172,12 @@ a:hover {
     padding-left: 1rem;
 }
 
+.projects-all-category,
+.projects-all-date {
+    color: #cccccc;
+    font-size: 0.85rem;
+}
+
 /* --------------------------
    Responsive Adjustments
 --------------------------- */
