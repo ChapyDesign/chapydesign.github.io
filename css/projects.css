@@ -65,11 +65,13 @@ a:hover {
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Desktop default */
-    gap: 2rem;
-    padding: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    gap: 2rem; /* spacing between cards */
+    padding: 2rem; /* space around the grid */
+    width: 100%; /* make full width */
+    margin: 0; /* remove auto centering */
+    box-sizing: border-box; /* ensures padding doesn't exceed viewport */
 }
+
 
 /* --------------------------
    Project Card
