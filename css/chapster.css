@@ -1,135 +1,147 @@
- /* ----------------------------------------
-       Base Page Style
-    ----------------------------------------- */
-    body {
-      background-color: #1c2c23;
-      color: #ccc;
-      font-family: "Work Sans", sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.65;
-    }
+/* ----------------------------------------
+   Base Page Style
+----------------------------------------- */
+body {
+  background-color: #1c2c23;
+  color: #ccc;
+  font-family: "Work Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.55; /* Slightly tighter */
+}
 
-    a {
-      color: #ff8800;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    a:hover {
-      color: #6bb6ff; /* elegant blue hover */
-    }
+a {
+  color: #ff8800;
+  text-decoration: none;
+  font-weight: 500;
+}
+a:hover {
+  color: #6bb6ff; /* elegant blue hover */
+}
 
-    /* ----------------------------------------
-       Page Layout
-    ----------------------------------------- */
-    .about-container {
-      width: 100%;
-      max-width: 1200px;
-      margin: auto;
-      padding: 2rem 1.5rem;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 3rem;
-    }
+/* ----------------------------------------
+   Page Layout
+----------------------------------------- */
+.about-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
 
-    @media (min-width: 850px) {
-      .about-container {
-        grid-template-columns: 1fr 1fr;
-        gap: 4rem;
-      }
-    }
+@media (min-width: 850px) {
+  .about-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+  }
+}
 
-    /* ----------------------------------------
-       Reusable Section Style
-    ----------------------------------------- */
-    .about-section {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
+/* ----------------------------------------
+   Reusable Section Style
+----------------------------------------- */
+.about-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem; /* much tighter */
+}
 
-    .about-title {
-      font-family: "Instrument Serif", serif;
-      font-size: 2rem;
-      line-height: 1.2;
-      color: #fff;
-    }
+.about-title {
+  font-family: "Instrument Serif", serif;
+  font-size: 2rem;
+  line-height: 1.15;
+  color: #fff;
+  margin: 0 0 0.25rem 0;  /* ↓↓↓ LESS padding under H2 */
+}
 
-    .about-subtitle {
-      font-family: "Instrument Serif", serif;
-      font-size: 1.5rem;
-      color: #fff;
-      margin-top: 1rem;
-    }
+/* Optional subtitle style */
+.about-subtitle {
+  font-family: "Instrument Serif", serif;
+  font-size: 1.4rem;
+  color: #fff;
+  margin: 0 0 0.25rem 0;
+}
 
-    .tiny {
-      font-size: 0.8rem;
-      opacity: 0.85;
-    }
+/* Paragraph spacing tightened */
+.about-section p {
+  margin: 0; /* ← no space between paragraphs */
+  padding: 0;
+}
 
-    /* ----------------------------------------
-       Social Links
-    ----------------------------------------- */
-    .social-links a {
-      margin-right: 1.25rem;
-      font-weight: 600;
-    }
+.tiny {
+  font-size: 0.8rem;
+  opacity: 0.85;
+}
 
-    /* ----------------------------------------
-       Image Area
-    ----------------------------------------- */
-    .about-image {
-      width: 100%;
-      height: 300px;
-      background-size: cover;
-      background-position: center;
-      border-radius: 12px;
-    }
+/* ----------------------------------------
+   Social Links
+----------------------------------------- */
+.social-links a {
+  margin-right: 1.25rem;
+  font-weight: 600;
+}
 
-    /* ----------------------------------------
-       Publications Section
-    ----------------------------------------- */
-    .pub-filter {
-      display: flex;
-      gap: 1rem;
-      margin: 1rem 0;
-      flex-wrap: wrap;
-    }
+/* ----------------------------------------
+   Image Area
+----------------------------------------- */
+.about-image {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+}
 
-    .pub-filter a {
-      font-weight: 600;
-      padding-bottom: 2px;
-      border-bottom: 1px solid transparent;
-    }
+/* ----------------------------------------
+   Publications Section
+----------------------------------------- */
+.pub-filter {
+  display: flex;
+  gap: 1rem;
+  margin: 0.5rem 0 0.75rem 0;
+  flex-wrap: wrap;
+}
 
-    .pub-filter a:hover {
-      border-bottom: 1px solid #6bb6ff;
-    }
+.pub-filter a {
+  font-weight: 600;
+  padding-bottom: 2px;
+  border-bottom: 1px solid transparent;
+}
+.pub-filter a:hover {
+  border-bottom: 1px solid #6bb6ff;
+}
 
-    .pub-list {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
-    }
+.pub-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.2rem; /* slightly tighter */
+}
 
-    @media (min-width: 600px) {
-      .pub-list {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
+@media (min-width: 600px) {
+  .pub-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
-    .pub-item {
-      padding: 1rem 0;
-    }
+.pub-item {
+  padding: 0.5rem 0;
+}
 
-    .pub-item-title {
-      font-weight: 600;
-      font-size: 1.1rem;
-      margin-bottom: 0.25rem;
-      color: #fff;
-    }
+.pub-item-title {
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin-bottom: 0.15rem;
+  color: #fff;
+}
 
-    .pub-meta {
-      font-size: 0.85rem;
-      opacity: 0.75;
-    }
+.pub-item p {
+  margin: 0.15rem 0 0.35rem 0; /* minimal spacing around text */
+  padding: 0;
+}
+
+.pub-meta {
+  font-size: 0.85rem;
+  opacity: 0.75;
+}
