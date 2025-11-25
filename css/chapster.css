@@ -46,6 +46,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   gap: 0.5rem; /* much tighter */
+  padding: 25px 0;
 }
 
 .about-title {
