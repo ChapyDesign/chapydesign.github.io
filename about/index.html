@@ -1,136 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects | Chapy Design</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapster | About</title>
+
+  <link rel="stylesheet" href="/css/nav.css" />
   <link rel="stylesheet" href="/css/style.css" />
-  <link rel="stylesheet" href="/css/nav.css">
-  <link rel="stylesheet" href="/css/chapster.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:wght@300" />
+  <link rel="stylesheet" href="/css/chapster.css" />
+	
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
 </head>
-<body class="about">
-	
-	<div id="nav-placeholder"></div>
-	
-<div class="chapster-wrapper">
 
-  <!-- LEFT COLUMN -->
-  <div class="chapster-grid">
+<body>
 
-    <!-- Who is Chapy -->
-    <div class="chapster-card">
-      <h2>Who is Chapy</h2>
-      <p>
-        Michael “Chapy” Chapman is a multidisciplinary creative working across graphic design,
-        apparel development, MML coding, and emerging 3D interfaces. With a background in action sports,
-        product design, and brand development, he brings a hybrid creative-technical approach to every project.
-      </p>
+  <div id="nav-placeholder"></div>
+
+  <div class="about-container">
+
+    <!-- LEFT COLUMN -->
+    <div class="left-col">
+
+      <!-- Who is Chapy -->
+      <div class="about-section">
+        <h2 class="about-title">Who is Chapy</h2>
+        <p>
+          Michael Chapman, also known as <strong>Chapy</strong>, is an Art Director, Designer, and MML developer 
+          exploring 3D, experimental interfaces, and creative storytelling across digital and physical mediums.
+        </p>
+      </div>
+
+      <!-- Roles -->
+      <div class="about-section">
+        <h2 class="about-title">Roles</h2>
+        <p>Art Director</p>
+        <p class="tiny">at Independent Trading Co.</p>
+      </div>
+
+      <!-- Social Media -->
+      <div class="about-section">
+        <h2 class="about-title">Social Media</h2>
+        <div class="social-links">
+          <a href="#" target="_blank">X</a>
+          <a href="#" target="_blank">LinkedIn</a>
+          <a href="#" target="_blank">Instagram</a>
+          <a href="#" target="_blank">YouTube</a>
+        </div>
+      </div>
+
+      <!-- Image -->
+      <div class="about-section">
+        <div class="about-image" style="background-image:url('/img/about/chapy.jpg');"></div>
+      </div>
+
+      <!-- Education -->
+      <div class="about-section">
+        <h2 class="about-title">Education</h2>
+        <p>The Art Institute of California – San Diego</p>
+        <p class="tiny">Bachelor of Science</p>
+        <p class="tiny">3.8 GPA</p>
+      </div>
+
     </div>
 
-    <!-- Roles -->
-    <div class="chapster-card">
-      <h2>Roles</h2>
-      <p><strong>Art Director</strong></p>
-      <small>at Independent Trading Co.</small>
-    </div>
-
-    <!-- Social Media -->
-    <div class="chapster-card">
-      <h2>Social Media</h2>
-      <p class="social-links">
-        <a href="#" target="_blank">X</a> · 
-        <a href="#" target="_blank">LinkedIn</a> · 
-        <a href="#" target="_blank">Instagram</a> · 
-        <a href="#" target="_blank">YouTube</a>
-      </p>
-    </div>
-
-    <!-- Image Block -->
-    <div class="chapster-card chapster-image">
-      <img src="/img/chapster/profile-placeholder.jpg" alt="Chapy Portrait">
-    </div>
-
-    <!-- Education -->
-    <div class="chapster-card">
-      <h2>Education</h2>
-      <p><strong>The Art Institute of California – San Diego</strong></p>
-      <small>Bachelor of Science</small><br>
-      <small>3.8 GPA</small>
-    </div>
 
     <!-- RIGHT COLUMN -->
+    <div class="right-col">
 
-    <!-- Publications -->
-    <div class="chapster-card chapster-span">
-      <h2>Publications</h2>
+      <!-- Publications Section -->
+      <div class="about-section">
+        <h2 class="about-title">Publications</h2>
 
-      <div class="chapster-filters">
-        <button class="active" data-filter="all">All</button>
-        <button data-filter="exhibition">Exhibition</button>
-        <button data-filter="publication">Publications</button>
-        <button data-filter="interview">Interview</button>
+        <div class="pub-filter">
+          <a href="#">Exhibition</a>
+          <a href="#">Publications</a>
+          <a href="#">Interview</a>
+        </div>
+
+        <div class="pub-list">
+
+          <div class="pub-item">
+            <div class="pub-item-title">Work Featured in Digital Arts Expo</div>
+            <p>
+              A showcase of experimental graphic systems and interface concepts created for 
+              browser-based interactive spaces.
+            </p>
+            <div class="pub-meta">Exhibition • 2024</div>
+          </div>
+
+          <div class="pub-item">
+            <div class="pub-item-title">Interview with Creative Minds</div>
+            <p>
+              A conversation about design thinking, workflow, and navigating cross-disciplinary creative roles.
+            </p>
+            <div class="pub-meta">Interview • 2023</div>
+          </div>
+
+        </div>
       </div>
 
-      <div class="chapster-list">
-
-        <!-- Example Item -->
-        <div class="chapster-item" data-type="exhibition">
-          <h3>Modern Surf Visuals</h3>
-          <p>A collection of contemporary surf-inspired prints showcased in Laguna Beach.</p>
-          <div class="meta">
-            <span>Exhibition</span>
-            <span>2024</span>
-          </div>
-        </div>
-
-        <div class="chapster-item" data-type="publication">
-          <h3>Designing for Movement</h3>
-          <p>Interview and feature on technical apparel construction for active sportswear.</p>
-          <div class="meta">
-            <span>Publication</span>
-            <span>2023</span>
-          </div>
-        </div>
-
-        <div class="chapster-item" data-type="interview">
-          <h3>The Future of MML Spaces</h3>
-          <p>Conversation about building interactive environments on Bitcoin parcels.</p>
-          <div class="meta">
-            <span>Interview</span>
-            <span>2025</span>
-          </div>
-        </div>
-
-      </div>
     </div>
 
   </div>
-</div>
-	
-	<!-- Footer -->
-  <div class="tray-footer">
-    <div class="footer-left">
-      Website by Chapy.
-    </div>
-    <div class="footer-right">
-      <a href="#" target="_blank">X/Twitter</a>
-      <a href="#" target="_blank">Instagram</a>
-      <a href="#" target="_blank">LinkedIn</a>
-      <a href="#" target="_blank">YouTube</a>
-      <span class="footer-logo tray-close">chapy</span>
-    </div>
-  </div>
-	
-	
+
   <script src="/js/load-nav.js"></script>
   <script src="/js/hamburger.js"></script>
-  <script src="/js/projects-filter.js"></script>
-
-
 </body>
 </html>
-
