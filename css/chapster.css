@@ -27,6 +27,7 @@ a:hover {
   max-width: 1200px;
   margin: auto;
   padding: 2rem 1.5rem;
+  margin-top: 50px;
 
   display: grid;
   grid-template-columns: 1fr;
@@ -38,6 +39,7 @@ a:hover {
   .about-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-flow: dense;
+	margin-top: 50px;
   }
 
   /* Make the image tall and visually break the grid */
