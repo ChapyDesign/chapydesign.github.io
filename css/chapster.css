@@ -30,12 +30,14 @@ a:hover {
   display: grid;
   grid-template-columns: 1fr;
   gap: 3rem;
+  margin-top:  50px;
 }
 
 @media (min-width: 850px) {
   .about-container {
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
+	margin-top:  50px;
   }
 }
 
