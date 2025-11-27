@@ -154,6 +154,16 @@
   padding-bottom: 40px;
 }
 
+.text-block h1 a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.text-block h1 a:hover {
+  color: #FF8800;
+}
+
 /* === Hero Meta === */
 .hero-meta {
   display: flex;
