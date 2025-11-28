@@ -203,3 +203,26 @@
   }
 }
 
+/* === IFRAME HERO SUPPORT === */
+.project-hero.iframe-hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Fullscreen iframe behind content */
+.project-hero .hero-iframe {
+  position: fixed;            /* exactly like your img hero */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  object-fit: cover;
+  z-index: -1;
+  pointer-events: none;       /* <<< disables interaction */
+  user-select: none;          /* prevent text/image selection */
+}
+
+
