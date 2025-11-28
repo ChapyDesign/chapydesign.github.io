@@ -82,13 +82,12 @@ a:hover {
     border-radius: 8px;
     overflow: hidden;
 	padding:10px;
-    /*transition: transform 0.2s ease;*/
     position: relative;
-	border: 1px solid #263732;
+	border: none;
 }
 
 .projects-all-card:hover {
-	border: none;
+	border: 1px solid #18271f;
 }
 
 /* Project Image */
@@ -108,7 +107,7 @@ a:hover {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    color: #ffffff; /* ensures text is visible */
+    color: #cccccc; /* ensures text is visible */
     background-color: #1c2c23;
 }
 
