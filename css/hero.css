@@ -113,6 +113,22 @@
   width: 100%;
 }
 
+.hero-sidebar a {
+  text-decoration: none;     /* Removes underline from everything inside */
+  color: inherit;            /* Keeps original text colors */
+  display: block;            /* Ensures full-area clickable */
+}
+
+.text-block h1 {
+  color: #ccc;
+  transition: color 0.2s ease;
+}
+
+.text-block:hover h1 {
+  color: #FF8800;
+}
+
+
 /* ----------------------------------------------------------
    IMAGE GRID (mobile hidden)
 ---------------------------------------------------------- */
