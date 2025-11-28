@@ -121,6 +121,14 @@ a:hover {
     font-weight: 300;
 }
 
+.projects-all-title a {
+    color: #cccccc;
+}
+
+.projects-all-title a:hover {
+    color: #FF8800;
+}
+
 .projects-all-description {
     flex-grow: 1;
     font-size: 0.95rem;
