@@ -121,12 +121,17 @@ a:hover {
 }
 
 .projects-all-title a {
-    color: #cccccc;
+    color: #cccccc;       /* base color */
+    text-decoration: none; /* remove underline */
+    font-weight: 300;      /* same as parent h2 */
+    transition: color 0.2s ease; /* smooth color transition */
 }
 
 .projects-all-title a:hover {
-    color: #FF8800;
+    color: #FF8800;       /* hover color */
+    text-decoration: none; /* explicitly remove underline */
 }
+
 
 .projects-all-description {
     flex-grow: 1;
