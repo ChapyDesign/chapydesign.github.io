@@ -303,12 +303,17 @@
 ---------------------------------------------------------- */
 @media (max-width: 767px) {
   .hero-image {
-    height: 95vh;
-    min-height: 400px;
+    height: auto;
+    min-height: 280px; /* optional */
   }
-	
+
+  .text-block {
+    margin-top: 0;
+    padding: 20px;
+  }
+
   .hero-meta {
-  padding-top:40px;
+    padding-top: 20px;
+  }
 }
 
-}
