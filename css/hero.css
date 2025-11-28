@@ -311,6 +311,10 @@
     margin-top: 0;
     padding: 20px;
   }
+	
+ .text-block a {
+    text-decoration: none;
+  }
 
   .hero-meta {
     padding-top: 20px;
