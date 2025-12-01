@@ -54,6 +54,6 @@ if (!relatedContainer) {
   });
 
   if (relatedProjects.length === 0) {
-    relatedContainer.innerHTML = `<p>No related projects found.</p>`;
+    relatedContainer.innerHTML = `<p style="color:#cccccc;">No related projects found.</p>`;
   }
 }
