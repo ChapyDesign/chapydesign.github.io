@@ -3,9 +3,9 @@
 // Example project data
 const projects = [
   { title: "Deadwood Tree Camo", folder: "deadwood-tree-camo", type: "design", thumb: "/img/project/design/deadwood/project-tray-image.jpg" },
-  { title: "Spring Mountain", folder: "spring-mountain", type: "design", thumb: "/img/project/design/deadwood/project-tray-image.jpg" },
-  { title: "Example 2", folder: "example-2", type: "design", thumb: "/img/project/design/deadwood/project-tray-image.jpg" },
-  { title: "MML Project", folder: "mml-project", type: "mml", thumb: "/img/project/design/deadwood/project-tray-image.jpg" },
+  { title: "Spring Mountain", folder: "spring-mountain", type: "design", thumb: "/img/project/design/spring-mountain/Project-Tray-Image.jpg" },
+  { title: "Immurement", folder: "immurement", type: "mml", thumb: "/img/project/mml/immurement/Project-Tray-Image.jpg" },
+  { title: "Hooters", folder: "hooters", type: "design", thumb: "img/project/design/hooters/Project-Tray-Image.jpg" },
   { title: "Art Project", folder: "art-project", type: "art", thumb: "/img/project/design/deadwood/project-tray-image.jpg" }
 ];
 
