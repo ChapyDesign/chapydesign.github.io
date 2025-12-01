@@ -5,8 +5,7 @@ const projects = [
   { title: "Deadwood Tree Camo", folder: "deadwood-tree-camo", type: "design", thumb: "/img/project/design/deadwood/project-tray-image.jpg" },
   { title: "Spring Mountain", folder: "spring-mountain", type: "design", thumb: "/img/project/design/spring-mountain/Project-Tray-Image.jpg" },
   { title: "Immurement", folder: "immurement", type: "mml", thumb: "/img/project/mml/immurement/Project-Tray-Image.jpg" },
-  { title: "Hooters", folder: "hooters", type: "design", thumb: "img/project/design/hooters/Project-Tray-Image.jpg" },
-  { title: "Art Project", folder: "art-project", type: "art", thumb: "/img/project/design/deadwood/project-tray-image.jpg" }
+  { title: "Hooters", folder: "hooters", type: "design", thumb: "img/project/design/hooters/Project-Tray-Image.jpg" }
 ];
 
 // --- GET CURRENT PROJECT TITLE ---
@@ -34,7 +33,7 @@ if (!relatedContainer) {
   // Create cards
   relatedProjects.forEach(p => {
     const card = document.createElement('a');
-    card.href = `/project/${p.folder}`;
+    card.href = `/projects/${p.folder}`;
     card.className = 'project-card';
     card.dataset.type = p.type;
 
