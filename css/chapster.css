@@ -85,7 +85,7 @@ p {
    Image Block
 ----------------------------------------- */
 .about-image {
-  max-width: 500px;
+  width: 500px;
   height: auto;
   background-size: cover;
   background-position: center;
