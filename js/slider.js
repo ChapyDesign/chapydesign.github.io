@@ -90,7 +90,7 @@ slidesContainer.addEventListener("touchend", (e) => {
   autoSlide = setInterval(() => {
     currentIndex = (currentIndex + 1) % totalSlides;
     goToSlide(currentIndex);
-  }, 7000);
+  }, 8000);
 });
 
 // Initialize
