@@ -34,11 +34,12 @@ a:hover {
 /* Tablet / Desktop */
 @media (min-width: 850px) {
   .about-grid {
-    grid-template-columns: 1fr 2fr; /* left column for "who", right for others */
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* left: who, right: others */
     grid-template-areas:
       "who content"
       "who content"
-      "pub pub"; /* publications full width */
+      "pub pub";
     gap: 2.5rem;
   }
 
@@ -46,7 +47,7 @@ a:hover {
     grid-area: who;
   }
 
-  /* All other blocks go in right column */
+  /* Make right column a grid itself */
   .block-experience,
   .block-social,
   .block-education,
@@ -54,26 +55,34 @@ a:hover {
     grid-area: content;
   }
 
-  /* Image block sizing */
+  /* Wrap all content in right column into a subgrid */
+  .about-grid > .block-experience,
+  .about-grid > .block-social,
+  .about-grid > .block-education,
+  .about-grid > .block-image {
+    display: block; /* reset flex if needed */
+  }
+
+  /* Right column layout: flex column inside grid-area */
+  .about-grid::before {
+    content: "";
+    grid-area: content;
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 2rem;
+  }
+
+  /* IMAGE STYLING */
   .block-image .about-image {
-    width: 300px;           /* square size */
+    width: 300px;
     height: 300px;
     background-size: cover;
     background-position: center;
     border-radius: 12px;
     margin-bottom: 1rem;
   }
-
-  /* Optionally stack content blocks inside right column */
-  .block-experience,
-  .block-social,
-  .block-education,
-  .block-image {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
 }
+
 
 /* ------------------------------
    FULL-WIDTH Publications
