@@ -20,11 +20,8 @@ a:hover {
 }
 
 /* ----------------------------------------
-   MAIN GRID — LEFT COLUMN + RIGHT COLUMN
-   block-who = left column
-   everything else = right column (auto flow)
+   MAIN GRID — two-column layout
 ----------------------------------------- */
-
 .about-grid {
   max-width: 1200px;
   margin: auto;
@@ -32,36 +29,46 @@ a:hover {
   margin-top: 50px;
 
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr; /* mobile default */
   gap: 2.5rem;
 }
 
-/* Desktop layout */
-@media (min-width: 900px) {
+/* Tablet / Desktop */
+@media (min-width: 850px) {
   .about-grid {
-    grid-template-columns: 1fr 1fr; /* Left + Right */
-    grid-auto-flow: dense;
+    grid-template-columns: 1fr 2fr; /* left = block-who, right = rest */
+    grid-template-areas:
+      "who experience"
+      "who social"
+      "who image"
+      "who education";
+    gap: 2.5rem;
   }
 
-  /* Force WHO block to ALWAYS be left column + tall */
   .block-who {
-    grid-column: 1;
-    grid-row: span 2; /* Makes it visually tall */
+    grid-area: who;
   }
-
-  /* All other blocks appear in the right column */
-  .about-block:not(.block-who) {
-    grid-column: 2;
+  .block-experience {
+    grid-area: experience;
   }
-
-  /* Make the image block visually tall (optional), stays right side */
+  .block-social {
+    grid-area: social;
+  }
   .block-image {
-    grid-row: span 2;
+    grid-area: image;
+  }
+  .block-education {
+    grid-area: education;
   }
 
-  /* Publications remain full-width */
-  .pub-section {
-    grid-column: 1 / -1;
+  /* Stack right-hand blocks vertically with consistent spacing */
+  .block-experience,
+  .block-social,
+  .block-image,
+  .block-education {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
   }
 }
 
@@ -112,7 +119,6 @@ p {
 /* ----------------------------------------
    FULL-WIDTH Publications
 ----------------------------------------- */
-
 .pub-section {
   grid-column: 1 / -1; /* Full width */
   display: flex;
