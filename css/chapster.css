@@ -1,4 +1,25 @@
 /* ----------------------------------------
+   Base Page
+----------------------------------------- */
+body {
+  background: #1c2c23;
+  color: #ccc;
+  font-family: "Work Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+a {
+  color: #ff8800;
+  text-decoration: none;
+  font-weight: 500;
+}
+a:hover {
+  color: #6bb6ff;
+}
+
+/* ----------------------------------------
    MAIN GRID — LEFT COLUMN + RIGHT COLUMN
    block-who = left column
    everything else = right column (auto flow)
@@ -42,4 +63,110 @@
   .pub-section {
     grid-column: 1 / -1;
   }
+}
+
+/* ----------------------------------------
+   Section Base Styles
+----------------------------------------- */
+.about-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.about-block h2 {
+  font-family: "Instrument Serif", serif;
+  font-size: 2.2rem;
+  color: #fff;
+  margin: 0 0 0.25rem 0;
+}
+
+p {
+  margin: 0;
+}
+
+.tiny {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+/* ----------------------------------------
+   Social Links
+----------------------------------------- */
+.social-links a {
+  margin-right: 1.25rem;
+  font-weight: 600;
+}
+
+/* ----------------------------------------
+   Image Block
+----------------------------------------- */
+.about-image {
+  width: 100%;
+  height: 588px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+}
+
+/* ----------------------------------------
+   FULL-WIDTH Publications
+----------------------------------------- */
+
+.pub-section {
+  grid-column: 1 / -1; /* Full width */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.pub-section h2 {
+  font-family: "Instrument Serif";
+  font-size: 2.4rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+/* Filter links */
+.pub-filter {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.pub-filter a {
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+}
+
+.pub-filter a:hover {
+  border-bottom-color: #6bb6ff;
+}
+
+/* Publication List — flexible responsive layout */
+.pub-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+}
+
+@media (min-width: 600px) {
+  .pub-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.pub-item h3 {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 0 0.35rem;
+}
+
+.pub-item p {
+  margin: 0 0 0.25rem;
+}
+
+.pub-meta {
+  font-size: 0.85rem;
+  opacity: 0.75;
 }
