@@ -28,6 +28,17 @@
   z-index: -1; /* ensures tray scrolls over it */
 }
 
+.project-hero picture.hero-image,
+.project-hero picture.hero-image img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
 /* --- TRAY CONTENT --- */
 .project-tray {
   background-color: #1c2c23;
