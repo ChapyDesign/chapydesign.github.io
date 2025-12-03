@@ -19,58 +19,72 @@ a:hover {
   color: #6bb6ff;
 }
 
-/* ----------------------------------------
-   MAIN GRID — two-column layout
------------------------------------------ */
+/* ------------------------------
+   MAIN GRID — TWO COLUMN LAYOUT
+-------------------------------- */
 .about-grid {
   max-width: 1200px;
-  margin: auto;
+  margin: 50px auto 0 auto;
   padding: 2rem 1.5rem;
-  margin-top: 50px;
-
   display: grid;
-  grid-template-columns: 1fr; /* mobile default */
+  grid-template-columns: 1fr; /* single column for mobile */
   gap: 2.5rem;
 }
 
 /* Tablet / Desktop */
 @media (min-width: 850px) {
   .about-grid {
-    grid-template-columns: 1fr 2fr; /* left = block-who, right = rest */
+    grid-template-columns: 1fr 2fr; /* left column for "who", right for others */
     grid-template-areas:
-      "who experience"
-      "who social"
-      "who image"
-      "who education";
+      "who content"
+      "who content"
+      "pub pub"; /* publications full width */
     gap: 2.5rem;
   }
 
   .block-who {
     grid-area: who;
   }
-  .block-experience {
-    grid-area: experience;
-  }
-  .block-social {
-    grid-area: social;
-  }
-  .block-image {
-    grid-area: image;
-  }
-  .block-education {
-    grid-area: education;
-  }
 
-  /* Stack right-hand blocks vertically with consistent spacing */
+  /* All other blocks go in right column */
   .block-experience,
   .block-social,
-  .block-image,
-  .block-education {
+  .block-education,
+  .block-image {
+    grid-area: content;
+  }
+
+  /* Image block sizing */
+  .block-image .about-image {
+    width: 300px;           /* square size */
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+  }
+
+  /* Optionally stack content blocks inside right column */
+  .block-experience,
+  .block-social,
+  .block-education,
+  .block-image {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
   }
 }
+
+/* ------------------------------
+   FULL-WIDTH Publications
+-------------------------------- */
+.pub-section {
+  grid-area: pub;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
 
 /* ----------------------------------------
    Section Base Styles
