@@ -1,5 +1,5 @@
 /* ----------------------------------------
-   Base Page
+   Base Styling
 ----------------------------------------- */
 body {
   background: #1c2c23;
@@ -20,67 +20,86 @@ a:hover {
   color: #6bb6ff;
 }
 
+h2 {
+  font-family: "Instrument Serif", serif;
+  font-size: 2.2rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
 /* ----------------------------------------
-   MAIN GRID — MOBILE FIRST
+   MOBILE FIRST — STACKED LAYOUT
 ----------------------------------------- */
 .about-grid {
   max-width: 1200px;
-  margin: 50px auto 0 auto;
+  margin: 50px auto;
   padding: 2rem 1.5rem;
   display: grid;
-  grid-template-columns: 1fr; /* single column for mobile */
-  gap: 2.5rem;
+  grid-template-columns: 1fr;
+  gap: 2rem;
 }
 
-/* Tablet / Desktop */
+/* LEFT PROFILE IMAGE */
+.profile-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-image: url('/img/about/chapy-katoshi-prime-24341.jpg');
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+}
+
+/* Section spacing */
+.about-block {
+  margin-bottom: 25px;
+}
+
+/* ----------------------------------------
+   DESKTOP/TABLET — TWO COLUMNS
+----------------------------------------- */
 @media (min-width: 850px) {
   .about-grid {
-    grid-template-columns: 2fr 1fr; /* left 2/3, right 1/3 */
-    gap: 2.5rem;
+    grid-template-columns: 1fr 2fr; /* left 1/3, right 2/3 */
+    gap: 3rem;
   }
 
-  /* LEFT COLUMN */
-  .block-who {
+  .about-left {
     grid-column: 1 / 2;
   }
 
-  /* RIGHT COLUMN — all blocks stay in column */
-  .block-experience,
-  .block-social,
-  .block-image,
-  .block-education {
+  .about-right {
     grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* spacing between sections */
   }
 
-  /* IMAGE STYLING */
-  .block-image .about-image {
-    width: 300px;   /* square */
-    height: 300px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 12px;
-    margin-bottom: 1rem;
+  .profile-image {
+    width: 240px;
+    height: 240px;
+    margin: 0;
   }
 }
 
 /* ----------------------------------------
-   FULL-WIDTH Publications
+   Social Links
 ----------------------------------------- */
-.pub-section {
-  grid-column: 1 / -1; /* full width */
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+.social-links a {
+  margin-right: 1.25rem;
+  font-weight: 600;
 }
+
+/* ----------------------------------------
+   Publications Section
+----------------------------------------- */
 
 .pub-section h2 {
   font-family: "Instrument Serif", serif;
   font-size: 2.4rem;
   color: #fff;
-  margin-bottom: 0.5rem;
 }
 
-/* Filter links */
 .pub-filter {
   display: flex;
   gap: 1rem;
@@ -96,7 +115,6 @@ a:hover {
   border-bottom-color: #6bb6ff;
 }
 
-/* Publication List — responsive grid */
 .pub-list {
   display: grid;
   grid-template-columns: 1fr;
@@ -109,46 +127,13 @@ a:hover {
   }
 }
 
-/* ----------------------------------------
-   Section Base Styles
------------------------------------------ */
-.about-block {
-  display: flex;
-  flex-direction: column;
-  gap: 0.65rem;
-}
-
-.about-block h2 {
-  font-family: "Instrument Serif", serif;
-  font-size: 2.2rem;
+.pub-item h3 {
+  font-size: 1.2rem;
   color: #fff;
-  margin: 0 0 0.25rem 0;
+  margin: 0 0 0.35rem;
 }
 
-p {
-  margin: 0;
-}
-
-.tiny {
+.pub-meta {
   font-size: 0.85rem;
-  opacity: 0.8;
-}
-
-/* ----------------------------------------
-   Social Links
------------------------------------------ */
-.social-links a {
-  margin-right: 1.25rem;
-  font-weight: 600;
-}
-
-/* ----------------------------------------
-   Image Block
------------------------------------------ */
-.about-image {
-  width: 100%; /* mobile default */
-  height: auto;
-  background-size: cover;
-  background-position: center;
-  border-radius: 12px;
+  opacity: 0.75;
 }
