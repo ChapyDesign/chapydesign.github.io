@@ -21,15 +21,29 @@
 <div id="nav-placeholder"></div>
 
   <!-- FULL SCREEN HEADER IMAGE -->
-  <header class="project-hero iframe-hero">
-  <iframe 
-    src="https://editor.p5js.org/chapy/full/Aawvcsj4a"
-    class="hero-iframe"
-    loading="lazy">
-  </iframe>
+  <header class="project-hero">
+  <picture>
+    <!-- Desktop -->
+    <source 
+      media="(min-width: 1024px)" 
+      srcset="/img/art/runes-summer/Hero-Desktop.jpg"
+    >
+
+    <!-- Tablet -->
+    <source 
+      media="(min-width: 768px)" 
+      srcset="/img/art/runes-summer/Hero-Tablet.jpg"
+    >
+
+    <!-- Mobile (default) -->
+    <img 
+  	src="/img/art/runes-summer/Hero-Mobile.jpg" 
+  	alt="Digital art created from code using p5.js."
+  	loading="eager"
+	>
+
+  </picture>
 </header>
-
-
 
   <!-- TRAY WRAPPER -->
   <main class="project-tray">
