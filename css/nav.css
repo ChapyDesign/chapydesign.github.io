@@ -28,31 +28,21 @@
   width: auto;
 }*/
 
-.logo-link {
-  color: #ccc;
-  text-decoration: none;
+.logo h1 {
+  color:#ccc;
 }
 
-/* normal colors */
-.logo-chapy {
-  color: #ccc; /* default color */
-  transition: color 0.25s ease;
+.logo a {
+  color: #ccc;              /* text color */
+  text-decoration: none;    /* remove underline */
+  font-weight: 600;          /* match previous logo font weight */
+  cursor: pointer;           /* pointer on hover */
+  transition: color 0.2s ease; /* smooth color change on hover */
 }
 
-.logo-design {
-  color: #ccc; /* stays the same on hover */
+.logo a:hover {
+  color: #FF8800;            /* hover color */
 }
-
-/* hover only changes "chapy" */
-.logo-link:hover .logo-chapy {
-  color: #ff8800; /* your orange */
-}
-
-/* ensure "design" stays gray even on hover */
-.logo-link:hover .logo-design {
-  color: #ccc;
-}
-
 
 
 /* Nav links centered as a bordered group */
