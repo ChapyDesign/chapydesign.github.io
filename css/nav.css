@@ -101,12 +101,12 @@
     position: absolute;
     top: 50px;
     right: 0;
-    background: #fff;
+    background: #1c2c23;
     width: 100%;
     display: none;
     flex-direction: column;
     padding: 20px 0;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #18271f;
     z-index: 999;
     border-radius: 0; /* from your original mobile rules */
   }
@@ -125,7 +125,7 @@
   }
 
   .nav-links a:hover {
-    background: #1c2c23;
+    background: #18271f;
     color: #FF8800;
   }
 
