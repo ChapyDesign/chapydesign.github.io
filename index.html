@@ -500,6 +500,20 @@
   </div>
 </section>
 
+  <script>
+function setVh() {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+
+// Set on load
+setVh();
+
+// Update on resize / orientation change
+window.addEventListener('resize', setVh);
+window.addEventListener('orientationchange', setVh);
+</script>
+
 
   <script src="/js/slider.js"></script>
   <script src="/js/tray.js"></script>
