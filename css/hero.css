@@ -206,7 +206,7 @@
 ---------------------------------------------------------- */
 .text-block {
   background-color: #1c2c23;
-  padding: 15px;
+  padding: 15px 15px 50px 15px;
   text-align: center;
   margin-top: 5px;
 }
@@ -233,7 +233,6 @@
   text-align: left;
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
-  margin-bottom: 50px;
 }
 
 .text-block h1 a {
