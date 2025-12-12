@@ -39,27 +39,53 @@
    HERO BUTTON
 ---------------------------------------------------------- */
 .hero-button {
-  position: absolute;        /* overlay on top of hero image */
-  top: 20px;                 /* adjust vertical position */
-  left: 20px;                /* adjust horizontal position */
-  padding: 8px 20px;         /* pill shape */
+  position: absolute;
+  padding: 8px 20px;
   border: 1px solid #ccc;
-  border-radius: 50px;       /* makes it fully pill-shaped */
+  border-radius: 50px;
   color: #ccc;
   text-decoration: none;
   font-family: "Work Sans", sans-serif;
   font-weight: 500;
   font-size: 0.9rem;
-  background: rgba(0,0,0,0.3); /* optional semi-transparent bg for readability */
+  background: rgba(0,0,0,0.3);
   transition: all 0.2s ease;
-  z-index: 5;                /* above hero image */
+  z-index: 5;
 }
 
+/* Desktop: bottom left of hero-image */
+@media (min-width: 1024px) {
+  .hero-button {
+    bottom: 20px;
+    left: 20px;
+  }
+}
+
+/* Tablet: center of hero-image */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hero-button {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Mobile: center of hero-image */
+@media (max-width: 767px) {
+  .hero-button {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Hover effect */
 .hero-button:hover {
-  color: #fff;
-  border-color: #fff;
+  color: #FF8800;
+  border-color: #FF8800;
   background: rgba(0,0,0,0.5);
 }
+
 
 /* ----------------------------------------------------------
    PAGINATION DOTS
