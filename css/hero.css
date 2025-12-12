@@ -36,6 +36,32 @@
 }
 
 /* ----------------------------------------------------------
+   HERO BUTTON
+---------------------------------------------------------- */
+.hero-button {
+  position: absolute;        /* overlay on top of hero image */
+  top: 20px;                 /* adjust vertical position */
+  left: 20px;                /* adjust horizontal position */
+  padding: 8px 20px;         /* pill shape */
+  border: 1px solid #ccc;
+  border-radius: 50px;       /* makes it fully pill-shaped */
+  color: #ccc;
+  text-decoration: none;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  background: rgba(0,0,0,0.3); /* optional semi-transparent bg for readability */
+  transition: all 0.2s ease;
+  z-index: 5;                /* above hero image */
+}
+
+.hero-button:hover {
+  color: #fff;
+  border-color: #fff;
+  background: rgba(0,0,0,0.5);
+}
+
+/* ----------------------------------------------------------
    PAGINATION DOTS
 ---------------------------------------------------------- */
 .pagination {
