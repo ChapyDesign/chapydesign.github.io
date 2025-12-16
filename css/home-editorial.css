@@ -18,14 +18,14 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 1rem;
-  padding: 1rem;
+  padding: 3.5rem 1rem 1rem 1rem;
 }
 
 /* Desktop layout */
 @media (min-width: 768px) {
   .tiles-grid {
     grid-template-columns: repeat(2, 1fr);
-    padding: 2rem;
+    padding: 3.5rem 2rem;
   }
 }
 
@@ -48,8 +48,8 @@
 
 /* =========================================================
    3. IMAGE LAYER
-   - Uses background-image per tile
-   - Subtle scale on hover
+   - Uses background-image per 
+   - Subtle scale on hovertile
    ========================================================= */
 
 .tile-image {
