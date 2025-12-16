@@ -279,7 +279,7 @@
 .footer-logo {
   font-family: "Work Sans", sans-serif;
   font-size: 16px;
-  color: #ccc;
+  color: #000;
   cursor: pointer;
   text-transform: lowercase;
   transition: color 0.2s ease;
