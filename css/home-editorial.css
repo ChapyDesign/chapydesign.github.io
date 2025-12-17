@@ -47,19 +47,19 @@
 
 
 /* =========================================================
-   TILE IMAGE SIZE
-   Reduced height for more white space and a cleaner layout
+   TILE IMAGE
+   Locked aspect ratio (prevents distortion)
    ========================================================= */
 
 .tile-image {
   position: relative;
   width: 100%;
-  height: 42vh;
-  min-height: 260px;
+  aspect-ratio: 16 / 10; /* adjust if needed */
   background-size: cover;
   background-position: center;
   transition: transform 0.6s ease;
 }
+
 
 
 @media (min-width: 768px) {
