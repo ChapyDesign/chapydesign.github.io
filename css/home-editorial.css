@@ -9,25 +9,26 @@
 
 
 /* =========================================================
-   1. TILE GRID LAYOUT
-   - 1 column on small screens
-   - 2 columns on desktop
+   TILE GRID LAYOUT
+   Controls spacing between tiles
    ========================================================= */
 
 .tiles-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1rem;
-  padding: 3.5rem 1rem 1rem 1rem;
+  gap: 2.75rem; /* MORE vertical spacing */
+  padding: 4rem 1.25rem 2rem;
 }
 
-/* Desktop layout */
+
 @media (min-width: 768px) {
   .tiles-grid {
     grid-template-columns: repeat(2, 1fr);
-    padding: 3.5rem 2rem;
+    gap: 4rem; /* MORE space between tiles */
+    padding: 5rem 3rem;
   }
 }
+
 
 
 /* =========================================================
