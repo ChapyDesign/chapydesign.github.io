@@ -29,6 +29,14 @@
   }
 }
 
+@media (min-width: 1024px) {
+  .tiles-grid {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 
 /* =========================================================
    2. TILE LINK WRAPPER
