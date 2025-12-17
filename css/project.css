@@ -1,5 +1,5 @@
 .logo a {
-  color: #ccc;              /* text color */
+  color: #000;              /* text color */
   text-decoration: none;    /* remove underline */
   font-weight: 600;          /* match previous logo font weight */
   cursor: pointer;           /* pointer on hover */
@@ -57,13 +57,13 @@
 .project-description h1 {
   font-family: "Instrument Serif", serif;
   margin: 0;
-  color: #ccc;
+  color: #000;
 }
 
 .project-description p {
   font-family: "Work Sans", sans-serif;
   font-size: 1.2rem;
-  color: #ccc;
+  color: #000;
   font-weight:300;
 }
 
@@ -74,7 +74,7 @@
   gap: 10px 20px;
   font-family: "Work Sans", sans-serif;
   font-size: 0.9rem;
-  color: #ccc;
+  color: #000;
 }
 
 .project-info .label {
@@ -88,7 +88,7 @@
 }
 
 .project-info a:hover {
-  color: #fff;
+  color: #000;
 }
 
 
@@ -124,7 +124,7 @@
 .related-projects h2 {
   margin-bottom: 30px;
   font-family: "Instrument Serif", serif;
-  color: #ccc;
+  color: #000;
 }
 
 /* reuse your existing project-card styles */
@@ -145,7 +145,7 @@
   align-items: center;
   margin-top: 60px;
   padding: 20px 0;
-  color: #ccc;
+  color: #000;
   font-family: "Work Sans";
 }
 
@@ -161,7 +161,7 @@
 
 .footer-right a {
   text-decoration: none;
-  color: #ccc;
+  color: #000;
 }
 
 .footer-right a:hover {
