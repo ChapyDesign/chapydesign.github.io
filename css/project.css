@@ -1,5 +1,5 @@
 .logo a {
-  color: #fff;              /* text color */
+  color: #000;              /* text color */
   text-decoration: none;    /* remove underline */
   font-weight: 600;          /* match previous logo font weight */
   cursor: pointer;           /* pointer on hover */
@@ -7,7 +7,7 @@
 }
 
 .logo a:hover {
-  color: #FF8800;            /* hover color */
+  color: darkorange;            /* hover color */
 }
 
 /* --- FULLSCREEN HERO IMAGE --- */
@@ -41,7 +41,7 @@
 
 /* --- TRAY CONTENT --- */
 .project-tray {
-  background-color: #000;
+  background-color: #fbf9f7;
   padding: 20px;
 }
 
@@ -55,16 +55,15 @@
 }
 
 .project-description h1 {
-  font-family: 'ReplicaRegular', 'Helvetica', Arial, sans-serif;
-  font-weight:700;
+  font-family: "Instrument Serif", serif;
   margin: 0;
-  color: #fff;
+  color: #000;
 }
 
 .project-description p {
-  font-family: 'ReplicaRegular', 'Helvetica', Arial, sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-size: 1.2rem;
-  color: #fff;
+  color: #000;
   font-weight:300;
 }
 
@@ -75,7 +74,7 @@
   gap: 10px 20px;
   font-family: "Work Sans", sans-serif;
   font-size: 0.9rem;
-  color: #fff;
+  color: #000;
 }
 
 .project-info .label {
@@ -83,13 +82,13 @@
 }
 
 .project-info a {
-  color: #FF8800;
+  color: #909090;
   text-decoration: none;
   transition: color 0.2s ease;
 }
 
 .project-info a:hover {
-  color: #fff;
+  color: darkorange;
 }
 
 
@@ -124,9 +123,8 @@
 
 .related-projects h2 {
   margin-bottom: 30px;
-  font-family: 'ReplicaRegular', 'Helvetica', Arial, sans-serif;
-  font-weight: 700;
-  color: #fff;
+  font-family: "Instrument Serif", serif;
+  color: #000;
 }
 
 /* reuse your existing project-card styles */
@@ -147,8 +145,8 @@
   align-items: center;
   margin-top: 60px;
   padding: 20px 0;
-  color:  #fff;
-  font-family: 'ReplicaRegular', 'Helvetica', Arial, sans-serif;
+  color:  #000;
+  font-family: "Work Sans", sans-serif;
 }
 
 .footer-left {
@@ -163,11 +161,11 @@
 
 .footer-right a {
   text-decoration: none;
-  color: #fff;
+  color: #000;
 }
 
 .footer-right a:hover {
-  color: #FF8800;
+  color: darkorange;
 }
 
 /* logo button */
@@ -178,7 +176,7 @@
 }
 
 .chapy-logo:hover {
-  color: #FF8800;
+  color: darkorange;
 }
 
 /* --- MOBILE: stack project header content vertically --- */
