@@ -4,17 +4,17 @@
 body.projects {
     margin: 0;
     font-family: 'Work Sans', sans-serif;
-    background-color: #fff;
-    color: #000;
+    background-color: #000;
+    color: #fff;
     line-height: 1.5;
 }
 
 a {
-    color: #000;
+    color: #FF8800;
     text-decoration: none;
 }
 a:hover {
-    color: #FF8800;
+    color: #ccc;
 }
 
 /* --------------------------
@@ -24,7 +24,7 @@ a:hover {
     display: flex;
     justify-content: center;
     padding: 1rem;
-    background-color: #fff;
+    background-color: #000;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -39,12 +39,12 @@ a:hover {
     gap: 1rem;
     padding: 1rem 0;
     flex-wrap: wrap;
-	background-color: #f5f5f5;
+	background-color: #222;
 }
 .filter-bar button {
     background: none;
-    border: 1px solid #cccccc;
-    color: #fff;
+    border: 1px solid #fff;
+    color: #000;
     padding: 0.5rem 1rem;
     border-radius: 25px;
     cursor: pointer;
@@ -54,7 +54,7 @@ a:hover {
 }
 .filter-bar button:hover,
 .filter-bar button.active {
-    background-color: #fff;
+    background-color: #000;
     color: #FF8800;
 	border-color: #FF8800;
 }
@@ -87,7 +87,7 @@ a:hover {
 }
 
 .projects-all-card:hover {
-	border: 1px solid #f5f5f5;
+	border: 1px solid #222;
 }
 
 /* Project Image */
@@ -107,8 +107,8 @@ a:hover {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    color: #cccccc; /* ensures text is visible */
-    background-color: #fff;
+    color: #fff; /* ensures text is visible */
+    background-color: #000;
 }
 
 /* Title & Description */
@@ -121,7 +121,7 @@ a:hover {
 }
 
 .projects-all-title a {
-    color: #cccccc;       /* base color */
+    color: #fff;       /* base color */
     text-decoration: none; /* remove underline */
     font-weight: 300;      /* same as parent h2 */
     transition: color 0.2s ease; /* smooth color transition */
