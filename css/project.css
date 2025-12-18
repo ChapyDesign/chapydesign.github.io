@@ -1,5 +1,5 @@
 .logo a {
-  color: #000;              /* text color */
+  color: #fff;              /* text color */
   text-decoration: none;    /* remove underline */
   font-weight: 600;          /* match previous logo font weight */
   cursor: pointer;           /* pointer on hover */
@@ -41,7 +41,7 @@
 
 /* --- TRAY CONTENT --- */
 .project-tray {
-  background-color: #231f20;
+  background-color: #000;
   padding: 20px;
 }
 
@@ -55,15 +55,16 @@
 }
 
 .project-description h1 {
-  font-family: "Instrument Serif", serif;
+  font-family: 'ReplicaRegular', 'Helvetica', Arial, sans-serif;
+  font-weight:700;
   margin: 0;
-  color: #89949b;
+  color: #fff;
 }
 
 .project-description p {
-  font-family: "Work Sans", sans-serif;
+  font-family: 'ReplicaRegular', 'Helvetica', Arial, sans-serif;
   font-size: 1.2rem;
-  color: #89949b;
+  color: #fff;
   font-weight:300;
 }
 
@@ -74,7 +75,7 @@
   gap: 10px 20px;
   font-family: "Work Sans", sans-serif;
   font-size: 0.9rem;
-  color: #89949b;
+  color: #fff;
 }
 
 .project-info .label {
@@ -88,7 +89,7 @@
 }
 
 .project-info a:hover {
-  color: #89949b;
+  color: #fff;
 }
 
 
@@ -123,8 +124,9 @@
 
 .related-projects h2 {
   margin-bottom: 30px;
-  font-family: "Instrument Serif", serif;
-  color: #89949b;
+  font-family: 'ReplicaRegular', 'Helvetica', Arial, sans-serif;
+  font-weight: 700;
+  color: #fff;
 }
 
 /* reuse your existing project-card styles */
@@ -145,8 +147,8 @@
   align-items: center;
   margin-top: 60px;
   padding: 20px 0;
-  color:  #89949b;
-  font-family: "Work Sans";
+  color:  #fff;
+  font-family: 'ReplicaRegular', 'Helvetica', Arial, sans-serif;
 }
 
 .footer-left {
@@ -161,7 +163,7 @@
 
 .footer-right a {
   text-decoration: none;
-  color: #89949b;
+  color: #fff;
 }
 
 .footer-right a:hover {
