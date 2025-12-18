@@ -41,7 +41,7 @@
 
 /* --- TRAY CONTENT --- */
 .project-tray {
-  background-color: #1c2c23;
+  background-color: #231f20;
   padding: 20px;
 }
 
@@ -57,13 +57,13 @@
 .project-description h1 {
   font-family: "Instrument Serif", serif;
   margin: 0;
-  color: #000;
+  color: #89949b;
 }
 
 .project-description p {
   font-family: "Work Sans", sans-serif;
   font-size: 1.2rem;
-  color: #000;
+  color: #89949b;
   font-weight:300;
 }
 
@@ -74,7 +74,7 @@
   gap: 10px 20px;
   font-family: "Work Sans", sans-serif;
   font-size: 0.9rem;
-  color: #000;
+  color: #89949b;
 }
 
 .project-info .label {
@@ -88,7 +88,7 @@
 }
 
 .project-info a:hover {
-  color: #000;
+  color: #89949b;
 }
 
 
@@ -124,7 +124,7 @@
 .related-projects h2 {
   margin-bottom: 30px;
   font-family: "Instrument Serif", serif;
-  color: #000;
+  color: #89949b;
 }
 
 /* reuse your existing project-card styles */
@@ -145,7 +145,7 @@
   align-items: center;
   margin-top: 60px;
   padding: 20px 0;
-  color: #000;
+  color:  #89949b;
   font-family: "Work Sans";
 }
 
@@ -161,7 +161,7 @@
 
 .footer-right a {
   text-decoration: none;
-  color: #000;
+  color: #89949b;
 }
 
 .footer-right a:hover {
