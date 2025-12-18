@@ -101,7 +101,7 @@
     position: absolute;
     top: 50px;
     right: 0;
-    background: #020408;
+    /*background: #020408;*/
     width: 100%;
     display: none;
     flex-direction: column;
