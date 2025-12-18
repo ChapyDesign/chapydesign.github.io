@@ -15,7 +15,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'ReplicaRegular', 'Helvetica', Arial, sans-serif;
-  background-color: #231f20;
+  background-color: #0c1117;
 }
 
 .material-symbols-rounded.icon {
@@ -67,7 +67,7 @@ body {
     position: absolute;
     top: 20px;
     right: 30px;
-    color: #89949b;
+    color: #fff;
     font-size: 3rem;
     cursor: pointer;
     user-select: none;
@@ -86,7 +86,7 @@ body {
     position: absolute;
     top: 50%;
     font-size: 4rem;
-    color: #89949b;
+    color: #fff;
     cursor: pointer;
     user-select: none;
     padding: 0 20px;
