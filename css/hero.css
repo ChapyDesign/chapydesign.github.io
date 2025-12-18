@@ -42,11 +42,11 @@
 .hero-button {
   position: absolute;
   padding: 8px 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #89949b;
   border-radius: 50px;
   color: #ccc;
   text-decoration: none;
-  font-family: "Work Sans", sans-serif;
+  font-family: 'ReplicaRegular', 'Helvetica', Arial, sans-serif;
   font-weight: 500;
   font-size: 0.9rem;
   /*background: rgba(0,0,0,0.3);*/
@@ -205,7 +205,7 @@
    TEXT BLOCK
 ---------------------------------------------------------- */
 .text-block {
-  background-color: #1c2c23;
+  background-color: #231f20;
   padding: 15px 15px 50px 15px;
   text-align: center;
   margin-top: 5px;
@@ -218,25 +218,25 @@
   font-family: "Instrument Serif", serif;
   font-weight: 300;
   font-size: 32px;
-  color: #ccc;
+  color: #89949b;
 }
 
 .text-block hr {
   border: none;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #89949b;
   margin: 5px 0 25px 0;
 }
 
 .text-block p {
   margin: 0;
-  color: #ccc;
+  color: #89949b;
   text-align: left;
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
 }
 
 .text-block h1 a {
-  color: #ccc;
+  color: #89949b;
   text-decoration: none;
   transition: color 0.2s ease;
 }
@@ -254,7 +254,7 @@
   font-family: "Work Sans", sans-serif;
   font-weight: 500;
   font-size: 0.9rem;
-  color: #ccc;
+  color: #89949b;
 }
 
 .hero-meta span {
@@ -323,7 +323,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #1c2c23;
+    background-color: #231f20;
     padding: 15px;
     z-index: 2;
   }
