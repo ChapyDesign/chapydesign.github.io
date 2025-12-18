@@ -5,7 +5,7 @@
   justify-content: center; /* center nav links */
   height: 50px;
   width: 100%;
-  background-color: #000;
+  background-color: #fbf9f7;
   position: fixed;
   top: 0;
   left: 0;
@@ -29,11 +29,11 @@
 }*/
 
 .logo h1 {
-  color:#fff;
+  color:#000;
 }
 
 .logo a {
-  color: #fff;              /* text color */
+  color: #000;              /* text color */
   text-decoration: none;    /* remove underline */
   font-weight: 600;          /* match previous logo font weight */
   cursor: pointer;           /* pointer on hover */
@@ -56,7 +56,7 @@
   text-decoration: none;
   height: 45px;
   line-height: 45px;
-  color: #fff;
+  color: #000;
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
@@ -85,7 +85,7 @@
 
 .hamburger span {
   font-size: 28px;
-  color: #fff; /* match other nav text */
+  color: #000; /* match other nav text */
 }
 
 /* Mobile adjustments */
@@ -101,7 +101,7 @@
     position: absolute;
     top: 50px;
     right: 0;
-    background: #000;
+    background: #fbf9f7;
     width: 100%;
     display: none;
     flex-direction: column;
@@ -119,13 +119,13 @@
   .nav-links a {
     padding: 12px 20px;
     font-size: 1rem;
-    color: #fff;
+    color: #000;
     width: 100%;
     border-radius: 0;
   }
 
   .nav-links a:hover {
-    background: #000;
+    background: #fbf9f7;
     color: #FF8800;
   }
 

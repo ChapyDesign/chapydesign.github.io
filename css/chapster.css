@@ -2,8 +2,8 @@
    Base Styling
 ----------------------------------------- */
 body {
-  background: #000;
-  color: #fff;
+  background: #fbf9f7;
+  color: #000;
   font-family: "Work Sans", sans-serif;
   margin: 0;
   padding: 0;
@@ -11,19 +11,19 @@ body {
 }
 
 a {
-  color: #ccc;
+  color: ;
   text-decoration: none;
   font-weight: 500;
 }
 
 a:hover {
-  color: #123cff;
+  color: orange;
 }
 
 h2 {
   font-family: "Instrument Serif", serif;
   font-size: 2.2rem;
-  color: #fff;
+  color: #000;
   margin-bottom: 0.5rem;
 }
 
@@ -97,7 +97,7 @@ h2 {
 .pub-section h2 {
   font-family: "Instrument Serif", serif;
   font-size: 2.4rem;
-  color: #fff;
+  color: #000;
   font-weight: 700;
 }
 
@@ -130,7 +130,7 @@ h2 {
 
 .pub-item h3 {
   font-size: 1.2rem;
-  color: #fff;
+  color: #000;
   margin: 0 0 0.35rem;
 }
 
