@@ -78,7 +78,7 @@ a:hover {
 .projects-all-card {
     display: flex;
     flex-direction: column;
-    background-color: #fff;
+   /* background-color: #fff;*/
     border-radius: 8px;
     overflow: hidden;
 	padding:10px;
@@ -87,7 +87,7 @@ a:hover {
 }
 
 .projects-all-card:hover {
-	border: 1px solid darkorange;
+	border: 1px solid #909090;
 }
 
 /* Project Image */
