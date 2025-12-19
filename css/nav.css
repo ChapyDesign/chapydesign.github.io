@@ -42,9 +42,9 @@
   transition: color 0.2s ease; /* smooth color change on hover */
 }
 
-.logo a:hover {
-  font-weight: 700;            /* hover weight */
-}
+/*.logo a:hover {
+  font-weight: 700;
+}*/
 
 
 /* Nav links centered as a bordered group */
@@ -70,7 +70,7 @@
 
 /* Hover effect */
 .nav-button:hover {
-  font-weight: 700; 
+  font-weight: 500; 
 }
 
 /* Hamburger Button */
