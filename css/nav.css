@@ -68,7 +68,7 @@
 
 /* Hover effect */
 .nav-button:hover {
-  color: #ff00fe;
+  color: #dedeff;
 }
 
 /* Hamburger Button */
@@ -126,7 +126,7 @@
 
   .nav-links a:hover {
     background: #fff;
-    color: #fff0fe;
+    color: #dedeff;
   }
 
   /* Nav button tweaks */
