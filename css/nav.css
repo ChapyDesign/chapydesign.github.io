@@ -61,7 +61,7 @@
   color: #0000fe;
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 300;
+  font-weight: 500;
   font-style: normal;
   font-size: 1rem;
   padding: 0 1.25rem;
@@ -70,7 +70,7 @@
 
 /* Hover effect */
 .nav-button:hover {
-  font-weight: 500; 
+  font-weight: 400; 
 }
 
 /* Hamburger Button */
