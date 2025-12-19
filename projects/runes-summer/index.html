@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Runes Summer | Chapy Design</title>
+
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/project.css" /> <!-- new file for page-specific styling -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:wght@300" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:opsz@8..144&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body data-type="mml">
+	
+<div id="nav-placeholder"></div>
+
+  <!-- FULL SCREEN HEADER IMAGE -->
+  <header class="project-hero">
+  <picture>
+    <!-- Desktop -->
+    <source 
+      media="(min-width: 1024px)" 
+      srcset="/img/art/runes-summer/Hero-Desktop.jpg"
+    >
+
+    <!-- Tablet -->
+    <source 
+      media="(min-width: 768px)" 
+      srcset="/img/art/runes-summer/Hero-Tablet.jpg"
+    >
+
+    <!-- Mobile (default) -->
+    <img 
+  	src="/img/art/runes-summer/Hero-Mobile.jpg" 
+  	alt="Digital art created from code using p5.js."
+  	loading="eager"
+	>
+
+  </picture>
+</header>
+
+  <!-- TRAY WRAPPER -->
+  <main class="project-tray">
+
+    <!-- TOP TEXT AREA -->
+    <section class="project-header">
+      <div class="project-description">
+        <h1>Runes Summer</h1>
+		<p><strong>A quiet postcard from the 2024 crypto winter.</strong></p>
+        <p>Runes Summer is a looping, browser-based digital artwork built entirely in p5.js that captures the strange calm that fell over the Ordinals and Runes ecosystem once the frenzy died down. A tattooed woman in red-and-blue 3D glasses, the unofficial mascot of every NFT bull run,stands knee-deep in bright water, grinning for one last tourist photo next to a towering, bird-poop-splattered Runestone. The stone, once the most talked-about airdrop on Bitcoin Twitter and the key to the free DOG rune, now just sits there while two gulls drift back and forth overhead.
+		</p>
+		<p>Everything you see is driven by code. I started with a 1950s bikini photo that I completely redrew and re-imagined – adding classic sailor tattoos, the anachronistic 3D glasses, and a subtle halftone newspaper texture so she feels like a memory lifted from an old magazine. The Runestone and birds are masked photographs, placed by hand. From there the scene comes to life: multiple layers of sine-wave ripples (with different frequencies and slight Perlin noise offsets) radiate from her legs and the base of the stone, the birds glide on smooth back-and-forth paths with gentle randomness, and an interactive splash of blue particles appears wherever you click in the water.
+		</p>
+		<p>Small, self-contained, and running at 60 fps in any browser, it’s equal parts nostalgia, gentle satire, and a quiet love letter to making art one line of code at a time.
+		</p>
+      </div>
+
+      <div class="project-info">
+        <div><span class="label">Artist</span><br>Michael Chapman</div>
+        <div><span class="label">Category</span><br>Digital</div>
+        <div><span class="label">Date</span><br>2024</div>
+		<div><span class="label">Link</span><br><a href="https://editor.p5js.org/chapy/full/Aawvcsj4a" target="_blank" >Project Link</a></div>
+      </div>
+    </section>
+
+
+    <!-- IMAGE GRID -->
+    <section class="project-images">
+      <img src="/img/art/runes-summer/Grid-Image-1.jpg" alt="digital art made with p5.js of a woman in a bikini standing in water next to a runestone">
+    </section>
+
+
+    <!-- RELATED PROJECTS -->
+   <section class="related-projects">
+  	<h2>Related Projects</h2>
+
+  		<div class="projects-grid" id="related-projects-grid"> 
+    	<!-- JS will populate this -->
+  		</div>
+	   
+   </section>
+
+
+    <!-- TRAY FOOTER -->
+    <footer class="tray-footer">
+
+      <div class="footer-left">
+        Website by Chapy.
+      </div>
+
+      <div class="footer-right">
+        <a href="https://x.com/yourprofile" target="_blank">X/Twitter</a>
+        <a href="https://instagram.com/yourprofile" target="_blank">Instagram</a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+        <a href="https://youtube.com/@ChapyDesign" target="_blank">YouTube</a>
+
+        <span class="tray-close chapy-logo">chapy</span>
+      </div>
+
+    </footer>
+
+  </main>
+
+	<!-- LIGHTBOX OVERLAY -->
+<div id="lightbox" class="lightbox">
+  <span class="lightbox-close">&times;</span>
+
+  <!-- Navigation arrows -->
+  <span class="lightbox-prev">&#10094;</span>
+  <span class="lightbox-next">&#10095;</span>
+
+  <img class="lightbox-image" src="">
+</div>
+	
+  <script src="/js/project-tray.js"></script>
+  <script src="/js/related-projects.js"></script>
+  <script src="/js/load-nav.js"></script>
+  <script src="/js/lightbox.js"></script>
+
+	
+</body>
+</html>
