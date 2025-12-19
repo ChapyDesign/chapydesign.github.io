@@ -43,7 +43,7 @@
 }
 
 .logo a:hover {
-  color: #ff00fe;            /* hover color */
+  font-weight: 700;            /* hover weight */
 }
 
 
