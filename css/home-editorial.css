@@ -48,7 +48,7 @@
   position: relative;
   display: block;
   text-decoration: none;
-  color: #0000f3;
+  color: #fff;
   overflow: hidden;
   /*border-radius: 16px;*/
 }
@@ -87,7 +87,7 @@
 .tile-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -145,7 +145,7 @@
 
 .tile-editorial:hover .tile-overlay,
 .tile-editorial:focus-visible .tile-overlay {
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(0, 0, 0, 0.12);
 }
 
 .tile-editorial:hover .tile-image,
@@ -171,7 +171,7 @@
    ========================================================= */
 
 .tile-editorial:active .tile-overlay {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(0, 0, 0, 0.15);
 }
 
 .tile-editorial:active .tile-text p {
