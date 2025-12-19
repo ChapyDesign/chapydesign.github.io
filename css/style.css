@@ -4,9 +4,9 @@
 @import url('tray.css');
 
 /*
-BG: #fbf9f7
-GREY: #909090
-BLACK: #000   
+BG: #fff
+BLUE: #0000fe
+PINK: #ff00fe  
 */
 
 /* Hide scrollbar in WebKit browsers (Chrome, Safari, Edge) */
@@ -33,6 +33,76 @@ body {
   font-size: 16px; /* matches small meta text */
   vertical-align: -2px; /* aligns perfectly with text */
   margin-right: 4px; /* spacing before word */
+}
+
+/* =========================================================
+   HOME — DESKTOP TYPE-LED REVEAL
+   ========================================================= */
+
+/* Hide desktop layout by default */
+.home-desktop {
+  display: none;
+}
+
+/* =========================================================
+   DESKTOP ONLY
+   ========================================================= */
+
+@media (min-width: 1024px) {
+  .home-desktop {
+    display: block;
+    padding: 6rem 3rem;
+  }
+
+  .home-desktop-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  /* LEFT MENU */
+  .home-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .menu-item {
+    font-family: "Instrument Serif", serif;
+    font-size: 4rem;
+    color: #0000fe;
+    text-decoration: none;
+    line-height: 1.05;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+  }
+
+  .menu-item:hover,
+  .menu-item:focus-visible {
+    opacity: 0.65;
+    transform: translateX(4px);
+  }
+
+  .menu-item.active {
+    opacity: 1;
+  }
+
+  /* RIGHT IMAGE */
+  .home-image {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+  }
+
+  .home-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+  }
 }
 
 /* --------------------------
