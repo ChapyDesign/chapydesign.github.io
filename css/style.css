@@ -54,14 +54,15 @@ body {
     padding: 6rem 3rem;
   }
 
-  .home-desktop-inner {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: 4rem;
-    align-items: center;
-  }
+ .home-desktop-inner {
+  max-width: 1400px; /* optional but recommended */
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.85fr 1.6fr;
+  gap: 5rem;
+  align-items: center;
+}
+
 
   /* LEFT MENU */
   .home-menu {
@@ -88,8 +89,33 @@ body {
 
   .menu-item.active {
     opacity: 1;
-	font-weight: bold;
   }
+	
+  .menu-item {
+  font-family: "Instrument Serif", serif;
+  font-size: 3rem;
+  color: #0000fe;
+  text-decoration: none;
+  line-height: 1.05;
+  opacity: 0.45;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+/* Default featured item */
+.menu-item.active {
+  opacity: 1;
+}
+
+/* Hovered item temporarily becomes featured */
+.menu-item:hover,
+.menu-item:focus-visible {
+  opacity: 1;
+}
+
+/* Non-hovered items fade slightly when interacting */
+.home-menu:hover .menu-item:not(:hover) {
+  opacity: 0.35;
+}
 
   /* RIGHT IMAGE */
   .home-image {
