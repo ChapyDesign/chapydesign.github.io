@@ -56,12 +56,12 @@
   text-decoration: none;
   height: 45px;
   line-height: 45px;
-  color: #000;
+  color: #0000fe;
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  font-size: 0.9rem;
+  font-size: 1rem;
   padding: 0 1.25rem;
   transition: background-color 0.3s, color 0.3s;
 }
