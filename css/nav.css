@@ -5,7 +5,7 @@
   justify-content: center; /* center nav links */
   height: 50px;
   width: 100%;
-  background-color: #fbf9f7;
+  background-color: #fff;
   position: fixed;
   top: 0;
   left: 0;
@@ -29,11 +29,11 @@
 }*/
 
 .logo h1 {
-  color:#000;
+  color:#0000fe;
 }
 
 .logo a {
-  color: #000;              /* text color */
+  color: #0000fe;              /* text color */
   text-decoration: none;    /* remove underline */
   font-weight: 600;          /* match previous logo font weight */
   cursor: pointer;           /* pointer on hover */
@@ -41,7 +41,7 @@
 }
 
 .logo a:hover {
-  color: #FF8800;            /* hover color */
+  color: #ff00fe;            /* hover color */
 }
 
 
@@ -68,7 +68,7 @@
 
 /* Hover effect */
 .nav-button:hover {
-  color: #FF8800;
+  color: #ff00fe;
 }
 
 /* Hamburger Button */
@@ -85,7 +85,7 @@
 
 .hamburger span {
   font-size: 28px;
-  color: #000; /* match other nav text */
+  color: #0000fe; /* match other nav text */
 }
 
 /* Mobile adjustments */
@@ -101,12 +101,12 @@
     position: absolute;
     top: 50px;
     right: 0;
-    background: #fbf9f7;
+    background: #fff;
     width: 100%;
     display: none;
     flex-direction: column;
     padding: 20px 0;
-    border-bottom: 1px solid #89949b;
+    border-bottom: 1px solid #0000fe;
     z-index: 999;
     border-radius: 0; /* from your original mobile rules */
   }
@@ -119,14 +119,14 @@
   .nav-links a {
     padding: 12px 20px;
     font-size: 1rem;
-    color: #000;
+    color: #0000fe;
     width: 100%;
     border-radius: 0;
   }
 
   .nav-links a:hover {
-    background: #fbf9f7;
-    color: #FF8800;
+    background: #fff;
+    color: #fff0fe;
   }
 
   /* Nav button tweaks */
