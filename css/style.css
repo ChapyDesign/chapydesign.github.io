@@ -105,6 +105,20 @@ body {
   }
 }
 
+/* =========================================================
+   MOBILE / DESKTOP VISIBILITY
+   ========================================================= */
+
+.home-mobile {
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  .home-mobile {
+    display: none;
+  }
+}
+
 /* --------------------------
    Lightbox Container
 --------------------------- */
