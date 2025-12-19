@@ -80,12 +80,11 @@ body {
     transition: opacity 0.25s ease, transform 0.25s ease;
   }
 
-  .menu-item:hover,
+/*  .menu-item:hover,
   .menu-item:focus-visible {
-	font-weight: bold;
-    /*opacity: 0.65;
-    transform: translateX(4px);*/
-  }
+    opacity: 0.65;
+    transform: translateX(4px);
+  }*/
 
   .menu-item.active {
     opacity: 1;
