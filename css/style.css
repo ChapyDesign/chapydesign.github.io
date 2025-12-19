@@ -120,6 +120,38 @@ body {
   }
 }
 
+/* =========================================================
+   TILE GRID — RESPONSIVE LAYOUT
+   ========================================================= */
+
+/* Mobile default (phones, small tablets) */
+.tiles-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  padding: 3rem 1rem 1rem;
+}
+
+/* Tablet landscape & up */
+@media (min-width: 640px) {
+  .tiles-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.75rem;
+    padding: 3.5rem 2rem;
+  }
+}
+
+/* Large desktop — more white space, less stretch */
+@media (min-width: 1200px) {
+  .tiles-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 2.25rem;
+    padding: 4rem 2rem;
+  }
+}
+
+
 /* --------------------------
    Lightbox Container
 --------------------------- */
