@@ -70,7 +70,7 @@
 
 /* Hover effect */
 .nav-button:hover {
-  color: #ff00fe;
+  font-weight: 700; 
 }
 
 /* Hamburger Button */
