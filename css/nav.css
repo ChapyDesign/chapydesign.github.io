@@ -41,7 +41,7 @@
 }
 
 .logo a:hover {
-  color: #dedeff;            /* hover color */
+  color: #ff00fe;            /* hover color */
 }
 
 
@@ -68,7 +68,7 @@
 
 /* Hover effect */
 .nav-button:hover {
-  color: #dedeff;
+  color: #ff00fe;
 }
 
 /* Hamburger Button */
@@ -126,7 +126,7 @@
 
   .nav-links a:hover {
     background: #fff;
-    color: #dedeff;
+    color: #fff0fe;
   }
 
   /* Nav button tweaks */
