@@ -6,16 +6,15 @@
 /*
 BG: #fff
 BLUE: #0000fe
-PINK: #ff00fe  
+PINK: #ff00fe
 */
 
-/* Hide scrollbar in WebKit browsers */
+/* Hide scrollbar */
 body::-webkit-scrollbar {
-  width: 0px;
+  width: 0;
   background: transparent;
 }
 
-/* Hide scrollbar in Firefox */
 body {
   scrollbar-width: none;
   margin: 0;
@@ -25,17 +24,6 @@ body {
   color: #000;
 }
 
-.material-symbols-rounded.icon {
-  font-variation-settings:
-    "FILL" 0,
-    "wght" 400,
-    "GRAD" 0,
-    "opsz" 36;
-  font-size: 16px;
-  vertical-align: -2px;
-  margin-right: 4px;
-}
-
 /* =========================================================
    HOME — DESKTOP TYPE-LED REVEAL
 ========================================================= */
@@ -43,10 +31,6 @@ body {
 .home-desktop {
   display: none;
 }
-
-/* =========================================================
-   DESKTOP ONLY
-========================================================= */
 
 @media (min-width: 1024px) {
 
@@ -64,57 +48,62 @@ body {
     align-items: center;
   }
 
-  /* LEFT MENU */
-.home-menu {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
+  /* ================= LEFT MENU ================= */
 
-/* Base menu item */
-.menu-item {
-  font-family: "Work Sans", sans-serif;
-  font-size: 2.5rem;
-  font-weight: 400;
-  color: #fff;
-  text-decoration: none;
-  line-height: 1.05;
-  opacity: 0.35;
-  transition:
-    opacity 0.25s ease,
-    font-weight 0.25s ease,
-    transform 0.25s ease;
-}
+  .home-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 
-/* Active (default featured item) */
-.menu-item.active {
-  opacity: 1;
-  font-weight: 600;
-}
+  .menu-item {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 1.05;
+    color: #000;
+    text-decoration: none;
+    opacity: 0.35;
+    transition:
+      opacity 0.25s ease,
+      transform 0.25s ease;
+  }
 
-/* Hovered item becomes featured */
-.menu-item:hover,
-.menu-item:focus-visible {
-  opacity: 1;
-  font-weight: 600;
-  transform: translateX(4px);
-}
+  /* Default featured item */
+  .menu-item.active {
+    opacity: 1;
+    font-weight: 600;
+  }
 
-/* When hovering the menu, fade all non-hovered + non-active items */
-.home-menu:hover .menu-item:not(:hover):not(.active) {
-  opacity: 0.2;
-  font-weight: 400;
-}
+  /* Hovered item temporarily becomes featured */
+  .menu-item:hover,
+  .menu-item:focus-visible {
+    opacity: 1;
+    font-weight: 600;
+    transform: translateX(4px);
+  }
 
-/* If hovering something that is NOT the active item,
-   temporarily dim the active one */
-.home-menu:hover .menu-item.active:not(:hover) {
-  opacity: 0.2;
-  font-weight: 400;
-}
-	
-}
+  /* Fade everything except hovered */
+  .home-menu:hover .menu-item:not(:hover) {
+    opacity: 0.2;
+    font-weight: 400;
+  }
 
+  /* ================= RIGHT IMAGE ================= */
+
+  .home-image {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+  }
+
+  .home-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
 
 /* =========================================================
    MOBILE / DESKTOP VISIBILITY
@@ -131,7 +120,7 @@ body {
 }
 
 /* =========================================================
-   TILE GRID — RESPONSIVE LAYOUT
+   TILE GRID
 ========================================================= */
 
 .tiles-grid {
@@ -173,7 +162,6 @@ body {
 .description-block p {
   font-size: 36px;
   line-height: 1.3;
-  color: #000;
   margin: 0;
 }
 
@@ -210,49 +198,8 @@ body {
 .lightbox-image {
   max-width: 90%;
   max-height: 90%;
-  border-radius: 6px;
-  box-shadow: 0 0 25px rgba(0,0,0,0.6);
   object-fit: contain;
 }
-
-/* Close Button */
-.lightbox-close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  color: #fff;
-  font-size: 3rem;
-  cursor: pointer;
-  user-select: none;
-  transition: opacity 0.2s ease;
-}
-
-.lightbox-close:hover {
-  opacity: 1;
-}
-
-/* Next / Prev */
-.lightbox-prev,
-.lightbox-next {
-  position: absolute;
-  top: 50%;
-  font-size: 4rem;
-  color: #fff;
-  cursor: pointer;
-  user-select: none;
-  padding: 0 20px;
-  transform: translateY(-50%);
-  opacity: 0.7;
-  transition: opacity 0.2s ease;
-}
-
-.lightbox-prev:hover,
-.lightbox-next:hover {
-  opacity: 1;
-}
-
-.lightbox-prev { left: 10px; }
-.lightbox-next { right: 10px; }
 
 /* =========================================================
    ANIMATIONS
