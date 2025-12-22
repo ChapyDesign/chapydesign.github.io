@@ -65,55 +65,54 @@ body {
   }
 
   /* LEFT MENU */
-  .home-menu {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-
-  .menu-item {
-    font-size: 2.5rem;
-    font-weight: 400;
-    color: #000;
-    text-decoration: none;
-    line-height: 1.05;
-    opacity: 0.4;
-    transition: opacity 0.25s ease, transform 0.25s ease;
-  }
-
-  /* Default featured (first image) */
-  .menu-item.active {
-    font-weight: 600;
-    opacity: 1;
-  }
-
-  /* Hover behavior */
-  .menu-item:hover,
-  .menu-item:focus-visible {
-    opacity: 1;
-    transform: translateX(4px);
-  }
-
-  /* Fade non-hovered items */
-  .home-menu:hover .menu-item:not(:hover) {
-    opacity: 0.35;
-  }
-
-  /* RIGHT IMAGE */
-  .home-image {
-    position: relative;
-    width: 100%;
-    aspect-ratio: 16 / 10;
-    overflow: hidden;
-  }
-
-  .home-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: opacity 0.3s ease;
-  }
+.home-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
+
+/* Base menu item */
+.menu-item {
+  font-family: "Work Sans", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  line-height: 1.05;
+  opacity: 0.35;
+  transition:
+    opacity 0.25s ease,
+    font-weight 0.25s ease,
+    transform 0.25s ease;
+}
+
+/* Active (default featured item) */
+.menu-item.active {
+  opacity: 1;
+  font-weight: 600;
+}
+
+/* Hovered item becomes featured */
+.menu-item:hover,
+.menu-item:focus-visible {
+  opacity: 1;
+  font-weight: 600;
+  transform: translateX(4px);
+}
+
+/* When hovering the menu, fade all non-hovered + non-active items */
+.home-menu:hover .menu-item:not(:hover):not(.active) {
+  opacity: 0.2;
+  font-weight: 400;
+}
+
+/* If hovering something that is NOT the active item,
+   temporarily dim the active one */
+.home-menu:hover .menu-item.active:not(:hover) {
+  opacity: 0.2;
+  font-weight: 400;
+}
+
 
 /* =========================================================
    MOBILE / DESKTOP VISIBILITY
