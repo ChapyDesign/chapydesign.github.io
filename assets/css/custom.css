@@ -1,0 +1,12 @@
+
+/*.syne-<uniquifier> {
+  font-family: "Syne", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}*/
+
+body {
+	font-family: "Syne", sans-serif;
+	font-weight: 600;
+}
