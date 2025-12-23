@@ -1342,6 +1342,8 @@ body:not(.tt-m-menu-open) #tt-header.tt-header-scroll.tt-fly-up {
 		margin-right: 0;
 		padding-right: 0;
 	}
+	
+	/* NAV Text*/
 	.tt-main-menu-list > li > a,
 	.tt-main-menu-list > li > .tt-submenu-trigger > a {
 		position: relative;
@@ -1349,7 +1351,7 @@ body:not(.tt-m-menu-open) #tt-header.tt-header-scroll.tt-fly-up {
 		padding: 4px 0;
 		/*text-transform: uppercase;*/
 		font-family: "Syne", sans-serif;
-		font-size: 24px;
+		font-size: 16px;
 		font-weight: bold;
 		font-weight: 600;
 		color: var(--tt-text-color);
@@ -9468,7 +9470,7 @@ body.is-mobile .tt-avlist-item:focus {
 	font-size: 90%;
 }
 .tt-footer-widget-list li a {
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	font-size: 17px;
 	color: var(--tt-text-color);
 }
