@@ -130,7 +130,7 @@ body {
 	margin: 0;
 	background-color: var(--tt-bg-color);
 	line-height: 1.4;
-	font-family: var(--tt-body-font);
+	font-family: "Syne", sans-serif;
 	font-size: 19px;
 	font-weight: normal;
 	-webkit-font-smoothing: antialiased;
@@ -285,7 +285,7 @@ hr {
 
 /* Secondary font */
 .tt-font-alter { 
-	font-family: var(--tt-alter-font);
+	font-family: "Syne", sans-serif;
 	font-weight: 600;
 }
 
@@ -476,8 +476,8 @@ body.tt-magic-cursor #magic-cursor {
 #ball.ball-view {
 	background-color: var(--tt-ball-bg-color);
 	text-align: center;
-	text-transform: uppercase;
-	font-family: var(--tt-alter-font);
+	/*text-transform: uppercase;*/
+	font-family: "Syne", sans-serif;
 	font-size: 21px;
 	font-weight: 600;
 	color: var(--tt-ball-color);
@@ -615,8 +615,8 @@ body.tt-magic-cursor #magic-cursor {
 	position: absolute;
 	padding: 0 5px;
 	text-align: center;
-	text-transform: uppercase;
-	font-family: var(--tt-alter-font);
+	/*text-transform: uppercase;*/
+	font-family: "Syne", sans-serif;
 	font-size: 21px;
 	font-weight: 600;
 	color: var(--tt-light-color);
@@ -745,8 +745,8 @@ h6.tt-text-uppercase {
 /* tt-Headings title */
 .tt-heading-title {
 	margin: 0;
-	text-transform: uppercase;
-	font-family: var(--tt-alter-font);
+	/*text-transform: uppercase;*/
+	font-family: "Syne", sans-serif;
 	font-size: clamp(32px, 3vw, 42px);
 	font-weight: bold;
 	font-weight: 600;
@@ -1115,9 +1115,9 @@ h6.tt-text-uppercase {
 }
 .tt-404-error-title {
 	margin: 0;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	text-align: center;
-	font-family: var(--tt-alter-font);
+	font-family: "Syne", sans-serif;
 	font-size: clamp(72px, 12vw, 230px);
 	font-weight: bold;
 	font-weight: 700;
@@ -1347,8 +1347,8 @@ body:not(.tt-m-menu-open) #tt-header.tt-header-scroll.tt-fly-up {
 		position: relative;
 		display: block;
 		padding: 4px 0;
-		text-transform: uppercase;
-		font-family: var(--tt-alter-font);
+		/*text-transform: uppercase;*/
+		font-family: "Syne", sans-serif;
 		font-size: 24px;
 		font-weight: bold;
 		font-weight: 600;
@@ -1589,8 +1589,8 @@ body:not(.tt-m-menu-open) #tt-header.tt-header-scroll.tt-fly-up {
 	.tt-main-menu-list > li > .tt-submenu-trigger > a {
 		position: relative;
 		display: inline-block;
-		text-transform: uppercase;
-		font-family: var(--tt-alter-font);
+		/*text-transform: uppercase;*/
+		font-family: "Syne", sans-serif;
 		font-size: 42px;
 		font-weight: bold;
 		font-weight: 600;
@@ -1774,8 +1774,8 @@ body:not(.tt-m-menu-open) #tt-header.tt-header-scroll.tt-fly-up {
 		float: left;
 		padding-right: 2px;
 		overflow: hidden;
-		text-transform: uppercase;
-		font-family: var(--tt-alter-font);
+		/*text-transform: uppercase;*/
+		font-family: "Syne", sans-serif;
 		text-align: right;
 		font-size: 21px;
 		font-weight: bold;
@@ -2006,8 +2006,7 @@ body:not(.tt-m-menu-open) #tt-header.tt-header-scroll.tt-fly-up {
 /* Page header caption title */
 .ph-caption-title {
 	margin: 0;
-	text-transform: uppercase;
-	font-family: var(--tt-alter-font);
+	font-family: "Syne", sans-serif;
 	font-size: clamp(48px, 5vw, 82px);
 	font-weight: bold;
 	font-weight: 600;
@@ -2395,10 +2394,10 @@ body.is-mobile .ph-mask {
 	}
 }
 .tt-scroll-down text { 
-	font-family: var(--tt-alter-font);
+	font-family: "Syne", sans-serif;
 	font-size: 54px;
 	font-weight: 600;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	letter-spacing: 14px;
 	fill: var(--tt-text-color);
 	transition: fill .2s;
@@ -3689,8 +3688,8 @@ input[type=range] {
 
 .tt-split-box-title {
 	margin: 0 0 30px 0;
-	text-transform: uppercase;
-	font-family: var(--tt-alter-font);
+	/*text-transform: uppercase;*/
+	font-family: "Syne", sans-serif;
 	font-size: clamp(42px, 3vw, 52px);
 	font-weight: bold;
 	font-weight: 600;
@@ -4280,9 +4279,9 @@ body:not(.is-mobile) .tt-btn:hover .tt-btn-line {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	text-align: center;
-	font-family: var(--tt-alter-font);
+	font-family: "Syne", sans-serif;
 	font-size: clamp(21px, 2vw, 28px);
 	font-weight: 600;
 	color: var(--tt-text-color);
@@ -4708,8 +4707,8 @@ a.tt-logo-wall-item:hover img {
 	position: relative;
 	display: flex;
 	padding: 10px 0;
-	text-transform: uppercase;
-	font-family: var(--tt-alter-font);
+	/*text-transform: uppercase;*/
+	font-family: "Syne", sans-serif;
 	font-size: calc(21px + 5.5vw);
 	line-height: 1;
 	font-weight: bold;
@@ -5095,8 +5094,8 @@ body:not(.is-mobile) .tt-accordion.tt-ac-hover .tt-accordion-item.active .tt-acc
 	padding-bottom: 25px;
 }
 .tt-accordion.tt-ac-lg .tt-ac-head-title {
-	text-transform: uppercase;
-	font-family: var(--tt-alter-font);
+	/*text-transform: uppercase;*/
+	font-family: "Syne", sans-serif;
 	font-size: clamp(28px, 3vw, 48px);
 	font-weight: 600;
 	line-height: 1;
@@ -5116,8 +5115,8 @@ body:not(.is-mobile) .tt-accordion.tt-ac-hover .tt-accordion-item.active .tt-acc
 	padding-bottom: 30px;
 }
 .tt-accordion.tt-ac-xlg .tt-ac-head-title {
-	text-transform: uppercase;
-	font-family: var(--tt-alter-font);
+	/*text-transform: uppercase;*/
+	font-family: "Syne", sans-serif;
 	font-size: clamp(28px, 4vw, 74px);
 	font-weight: 600;
 	line-height: 1;
@@ -5137,8 +5136,8 @@ body:not(.is-mobile) .tt-accordion.tt-ac-hover .tt-accordion-item.active .tt-acc
 	padding-bottom: 30px;
 }
 .tt-accordion.tt-ac-xxlg .tt-ac-head-title {
-	text-transform: uppercase;
-	font-family: var(--tt-alter-font);
+	/*text-transform: uppercase;*/
+	font-family: "Syne", sans-serif;
 	font-size: clamp(42px, 6vw, 100px);
 	font-weight: 600;
 	line-height: 1;
@@ -5158,8 +5157,8 @@ body:not(.is-mobile) .tt-accordion.tt-ac-hover .tt-accordion-item.active .tt-acc
 /* ------------------------------------------------------------- */
 
 .tt-haci-title {
-	text-transform: uppercase;
-	font-family: var(--tt-alter-font);
+	/*text-transform: uppercase;*/
+	font-family: "Syne", sans-serif;
 	font-size: clamp(34px, 4vw, 76px);
 	font-weight: 600;
 	color: inherit;
@@ -5173,7 +5172,7 @@ body:not(.is-mobile) .tt-accordion.tt-ac-hover .tt-accordion-item.active .tt-acc
 .tt-hac-item-count::before {
 	display: block;
 	content: counter(tt-hac-item-counter, decimal-leading-zero);
-	font-family: var(--tt-alter-font);
+	font-family: "Syne", sans-serif;
 	line-height: 1;
 }
 
@@ -5511,7 +5510,7 @@ body:not(.is-mobile) .tt-accordion.tt-ac-hover .tt-accordion-item.active .tt-acc
 	display: block;
 	counter-increment: tt-testimonials-counter;
 	content: counter(tt-testimonials-counter, decimal-leading-zero);
-	font-family: var(--tt-alter-font);
+	font-family: "Syne", sans-serif;
 	font-size: clamp(28px, 2vw, 34px);
 	font-weight: normal;
 	line-height: 1;
@@ -5756,8 +5755,8 @@ body.ttgr-cat-fixed-on .tt-grid-top {
 	display: inline-block;
 	padding-top: 8px;
 	padding-bottom: 8px;
-	text-transform: uppercase;
-	font-family: var(--tt-alter-font);
+	/*text-transform: uppercase;*/
+	font-family: "Syne", sans-serif;
 	font-size: calc(26px + 1.3vw);
 	font-weight: bold;
 	font-weight: 700;
@@ -5799,8 +5798,8 @@ body:not(.is-mobile) {
 	top: 25px;
 	right: 20px;
 	margin-bottom: 40px;
-	text-transform: uppercase;
-	font-family: var(--tt-alter-font);
+	/*text-transform: uppercase;*/
+	font-family: "Syne", sans-serif;
 	font-size: 19px;
 	letter-spacing: 1px;
 	z-index: 9;
@@ -6627,8 +6626,8 @@ video.pgi-video {
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
-	text-transform: uppercase;
-	font-family: var(--tt-alter-font);
+	/*text-transform: uppercase;*/
+	font-family: "Syne", sans-serif;
 	font-size: clamp(34px, 4vw, 64px);
 	font-weight: bold;
 	font-weight: 600;
@@ -6863,7 +6862,7 @@ body:not(.is-mobile) #portfolio-grid.pgi-cap-inside.pgi-cap-hover .portfolio-gri
 .tt-ppli-count::before {
 	display: block;
 	content: counter(tt-ppli-counter, decimal-leading-zero);
-	font-family: var(--tt-alter-font);
+	font-family: "Syne", sans-serif;
 	font-size: clamp(34px, 6vw, 114px);
 	font-weight: normal;
 	color: var(--tt-text-color);
@@ -6881,8 +6880,8 @@ body:not(.is-mobile) #portfolio-grid.pgi-cap-inside.pgi-cap-hover .portfolio-gri
 
 .tt-ppli-title {
 	margin: 0;
-	text-transform: uppercase;
-	font-family: var(--tt-alter-font);
+	/*text-transform: uppercase;*/
+	font-family: "Syne", sans-serif;
 	font-size: clamp(32px, 6vw, 82px);
 	font-weight: bold;
 	font-weight: 600;
@@ -7241,7 +7240,7 @@ body:not(.is-mobile) #portfolio-grid.pgi-cap-inside.pgi-cap-hover .portfolio-gri
 .pcli-count::before {
 	display: block;
 	content: counter(pcli-counter, decimal-leading-zero);
-	font-family: var(--tt-alter-font);
+	font-family: "Syne", sans-serif;
 	font-size: clamp(34px, 7vw, 128px);
 	font-weight: normal;
 	color: var(--tt-text-color);
@@ -7272,8 +7271,8 @@ body:not(.is-mobile) #portfolio-grid.pgi-cap-inside.pgi-cap-hover .portfolio-gri
 
 .pcli-title {
 	margin: 0;
-	text-transform: uppercase;
-	font-family: var(--tt-alter-font);
+	/*text-transform: uppercase;*/
+	font-family: "Syne", sans-serif;
 	font-size: clamp(32px, 4vw, 68px);
 	font-weight: bold;
 	font-weight: 600;
@@ -7483,8 +7482,8 @@ body:not(.is-mobile) #portfolio-grid.pgi-cap-inside.pgi-cap-hover .portfolio-gri
 }
 .tt-stp-item-title {
 	margin: 0;
-	text-transform: uppercase;
-	font-family: var(--tt-alter-font);
+	/*text-transform: uppercase;*/
+	font-family: "Syne", sans-serif;
 	font-size: clamp(54px, 5vw, 92px);
 	font-weight: bold;
 	font-weight: 600;
@@ -7609,8 +7608,8 @@ video.tt-posl-video {
 /* Portfolio slider title */
 .tt-posl-item-title {
 	margin: 0;
-	text-transform: uppercase;
-	font-family: var(--tt-alter-font);
+	/*text-transform: uppercase;*/
+	font-family: "Syne", sans-serif;
 	font-size: clamp(54px, 6vw, 114px);
 	font-weight: bold;
 	font-weight: 600;
@@ -9063,8 +9062,8 @@ body:not(.is-mobile) .tt-shs-keep-scrolling {
 }
 .tt-np-title {
 	margin: 0;
-	text-transform: uppercase;
-	font-family: var(--tt-alter-font);
+	/*text-transform: uppercase;*/
+	font-family: "Syne", sans-serif;
 	font-size: clamp(82px, 10vw, 187px);
 	font-weight: bold;
 	font-weight: 600;
@@ -9143,8 +9142,8 @@ body:not(.is-mobile) .tt-shs-keep-scrolling {
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
-	text-transform: uppercase;
-	font-family: var(--tt-alter-font);
+	/*text-transform: uppercase;*/
+	font-family: "Syne", sans-serif;
 	font-size: clamp(38px, 3vw, 42px);
 	font-weight: bold;
 	font-weight: 600;
@@ -9277,7 +9276,7 @@ body.is-mobile .tt-avlist-item:focus {
 .tt-avlist-title {
 	margin: 0;
 	padding: 0;
-	font-family: var(--tt-body-font);
+	font-family: "Syne", sans-serif;
 	font-size: 19px;
 	font-weight: 500;
 }
@@ -9450,8 +9449,8 @@ body.is-mobile .tt-avlist-item:focus {
 }
 .tt-footer-widget-heading {
 	margin-bottom: 34px;
-	text-transform: uppercase;
-	font-family: var(--tt-alter-font);
+	/*text-transform: uppercase;*/
+	font-family: "Syne", sans-serif;
 	font-size: clamp(38px, 4vw, 58px);
 	font-weight: bold;
 	font-weight: 600;
