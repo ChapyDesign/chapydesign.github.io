@@ -74,7 +74,7 @@
 
 :root {
 	/* General */
-	--tt-main-color: #0000fe; /* Template main color. #bf4a1a */
+	--tt-main-color: #336677; /* Template main color. #bf4a1a */
 	--tt-dark-color: #121212; /* Template dark color. #121212 */
 	--tt-light-color: #fff; /* Template light color. #efedea */
 
@@ -99,7 +99,7 @@
 	--tt-ball-color: #FFF; /* Ball view text color. #FFF */
 
 	/* Links */
-	--tt-link-color: #0000fe; /* Link color. #c93b00 */
+	--tt-link-color: #336677; /* Link color. #c93b00 */
 	--tt-link-hover-color: #ff8800; /* Link hover color. #f5533a */
 
 	/* Main menu */
