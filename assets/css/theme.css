@@ -87,7 +87,7 @@
 
 	/* Fonts */
 	--tt-body-font: "Syne", sans-serif; /* Body font. 'Poppins', sans-serif; */
-	--tt-alter-font: "Big Shoulders Display", sans-serif; /* Secondary/Alter font. */
+	--tt-alter-font: "Syne", sans-serif; /* Secondary/Alter font. "Big Shoulders Display", sans-serif;*/
 
 	/* Page transition */
 	--tt-page-trans-overlay-bg-color: #161616; /* Page transition overlay background color. #161616 */
