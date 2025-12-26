@@ -76,10 +76,10 @@
 	/* General */
 	--tt-main-color: #336677; /* Template main color. #bf4a1a */
 	--tt-dark-color: #121212; /* Template dark color. #121212 */
-	--tt-light-color: #fff; /* Template light color. #efedea */
+	--tt-light-color: #efedea; /* Template light color. #efedea */
 
 	--tt-bg-color: #0a0a0a; /* Template background color. #0a0a0a */
-	--tt-text-color: #fff; /* Template text color. #efedea */
+	--tt-text-color: #efedea; /* Template text color. #efedea */
 	--tt-text-muted-color: #8f8f8f; /* Template text muted color. #8f8f8f */
 	--tt-border-color: rgb(133 133 133 / 50%); /* Template borders color. rgb(133 133 133 / 50%) */
 
@@ -1281,7 +1281,7 @@ body:not(.tt-m-menu-open) #tt-header.tt-header-scroll.tt-fly-up {
 	color: #222;
 }
 .tt-logo img {
-	max-height: 48px; /* You may need to change the img height to match your logo type! */
+	max-height: 32px; /* You may need to change the img height to match your logo type! */
 }
 .tt-logo-dark{
 	display: none;
@@ -1290,7 +1290,7 @@ body:not(.tt-m-menu-open) #tt-header.tt-header-scroll.tt-fly-up {
 /* Logo for small screens */
 @media (max-width: 1024px) {
 	.tt-logo img {
-		max-height: 38px; /* You may need to change the img height to match your logo type! */
+		max-height: 32px; /* You may need to change the img height to match your logo type! */
 	}
 }
 
@@ -9479,7 +9479,7 @@ body.is-mobile .tt-avlist-item:focus {
 	display: block;
 }
 .tt-footer-logo img { 
-	max-height: 110px; /* You may need to change the img height to match your logo type! */
+	max-height: 48px; /* You may need to change the img height to match your logo type! */
 }
 
 /* Footer social buttons */
