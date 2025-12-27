@@ -815,193 +815,446 @@
 					* You can use classes "border-top" and "border-bottom" if needed. 
 					* Note: Each situation may be different and each section may need different classes according to your needs. More info about helper classes can be found in the file "helper.css".
 					-->
-					<div class="tt-section no-padding-top padding-top-xlg-80 padding-bottom-20 padding-bottom-xlg-80">
-						<div class="tt-section-inner">
+					<div class="tt-section">
+						<div class="tt-section-inner max-width-2200">
 
-							<!-- Begin portfolio preview list 
-							==================================
-							* Use class "tt-ppli-portrait" to enable preview image portrait mode.
-							* Use class "tt-ppli-hover" to enable item hover effect.
-							-->
-							<div class="tt-portfolio-preview-list tt-ppli-portrait tt-ppli-hover">
-								<div class="tt-ppl-items-list">
+							<!-- Begin portfolio grid (works combined with tt-Ggrid!)
+							========================== 
+							* Use class "pgi-hover" to enable portfolio grid item hover effect (behavior depends on "ttgr-gap-*" classes below!).
+							* Use class "pgi-cap-hover" to enable portfolio grid item caption hover effect (effect only with class "pgi-cap-inside"! Also no effect on mobile devices!).
+							* Use class "pgi-cap-center" to position portfolio grid item caption to center.
+							* Use class "pgi-cap-inside" to position portfolio grid item caption to inside.
+							--> 
+							<div id="portfolio-grid" class="pgi-hover">
 
-									<!-- Begin list item 
-									===================== -->
-									<a href="single-project-1.html" class="tt-ppl-item">
-										<div class="tt-ppli-preview">
-											<div class="tt-ppli-preview-image">
-												<!-- Note: The recommended maximum image width is 800px -->
-												<img src="assets/img/portfolio/800/portfolio-1.jpg" alt="Image">
-											</div> <!-- /.tt-ppli-preview-image -->
-										</div> <!-- /.tt-ppli-preview -->
+								<!-- Begin tt-Grid
+								=================== 
+								* Use class "ttgr-layout-2", "ttgr-layout-3", "ttgr-layout-4" to set grid layout (columns). No class = one column.
+								* Use class "ttgr-layout-1-2", "ttgr-layout-2-1", "ttgr-layout-2-3", "ttgr-layout-3-2", "ttgr-layout-3-4" or "ttgr-layout-4-3" to set grid mixed layout (columns).
+								* Use class "ttgr-layout-creative-1" or "ttgr-layout-creative-2" to set grid creative mixed layout (no effect with classes "ttgr-portrait", "ttgr-portrait-half", "ttgr-not-cropped" and "ttgr-shifted").
+								* Use class "ttgr-portrait" or "ttgr-portrait-half" to enable portrait mode (no effect with classes "ttgr-layout-creative-1", "ttgr-layout-creative-2" and "ttgr-not-cropped").
+								* Use class "ttgr-gap-1", "ttgr-gap-2", "ttgr-gap-3", "ttgr-gap-4", "ttgr-gap-5" or "ttgr-gap-6" to add space between items.
+								* Use class "ttgr-not-cropped" to enable not cropped mode (effect only with classes "ttgr-layout-2", "ttgr-layout-3" and "ttgr-layout-4").
+								* Use class "ttgr-shifted" to enable shifted layout (effect only with classes "ttgr-layout-2", "ttgr-layout-3" and "ttgr-layout-4").
+								-->
+								<div class="tt-grid ttgr-layout-3 ttgr-gap-3">
 
-										<div class="tt-ppl-item-inner">
-											<div class="tt-ppl-item-holder">
-												<div class="tt-ppli-col tt-ppli-col-count">
-													<div class="tt-ppli-count"></div>
-												</div> <!-- /.tt-ppli-col -->
-												<div class="tt-ppli-col tt-ppli-col-caption">
-													<div class="tt-ppli-caption">
-														<h2 class="tt-ppli-title">Tortillas</h2>
-														<div class="tt-ppli-categories">
-															<div class="tt-ppli-category">Lifestyle</div>
-															<!-- <div class="tt-ppli-category">Varia</div> -->
-														</div> <!-- /.tt-ppli-categories -->
-													</div> <!-- /.tt-ppli-caption -->
-												</div> <!-- /.tt-ppli-col -->
-												<div class="tt-ppli-col tt-ppli-col-info tt-justify-content-md-end">
-													<div class="tt-ppli-info"> <!-- Use short text! 3 lines max. -->
-														Visual / Branding
-													</div> <!-- /.tt-ppli-info -->
-												</div> <!-- /.tt-ppli-col -->
-											</div> <!-- /.tt-ppl-item-holder -->
-										</div> <!-- /.tt-ppl-item-inner -->
-									</a>
-									<!-- End list item -->
+									<!-- Begin tt-Ggrid top content 
+									================================ -->
+									<div class="tt-grid-top">
 
-									<!-- Begin list item 
-									===================== -->
-									<a href="single-project-2.html" class="tt-ppl-item">
-										<div class="tt-ppli-preview">
-											<div class="tt-ppli-preview-image">
-												<!-- Note: The recommended maximum image width is 800px -->
-												<img src="assets/img/portfolio/800/portfolio-2.jpg" alt="Image">
-											</div> <!-- /.tt-ppli-preview-image -->
-										</div> <!-- /.tt-ppli-preview -->
+										<!-- Begin tt-Ggrid categories/filter classic
+										============================================== -->
+										<div class="tt-grid-categories-classic">
 
-										<div class="tt-ppl-item-inner">
-											<div class="tt-ppl-item-holder">
-												<div class="tt-ppli-col tt-ppli-col-count">
-													<div class="tt-ppli-count"></div>
-												</div> <!-- /.tt-ppli-col -->
-												<div class="tt-ppli-col tt-ppli-col-caption">
-													<div class="tt-ppli-caption">
-														<h2 class="tt-ppli-title">Coffee Shop</h2>
-														<div class="tt-ppli-categories">
-															<div class="tt-ppli-category">Lifestyle</div>
-															<!-- <div class="tt-ppli-category">Varia</div> -->
-														</div> <!-- /.tt-ppli-categories -->
-													</div> <!-- /.tt-ppli-caption -->
-												</div> <!-- /.tt-ppli-col -->
-												<div class="tt-ppli-col tt-ppli-col-info tt-justify-content-md-end">
-													<div class="tt-ppli-info"> <!-- Use short text! 3 lines max. -->
-														Art Direction / Visual
-													</div> <!-- /.tt-ppli-info -->
-												</div> <!-- /.tt-ppli-col -->
-											</div> <!-- /.tt-ppl-item-holder -->
-										</div> <!-- /.tt-ppl-item-inner -->
-									</a>
-									<!-- End list item -->
+											<!-- Begin tt-Ggrid categories
+											===============================
+											* Use class "ttgr-cat-classic-center" or "ttgr-cat-classic-right" to align categories (no effect on small screens!). No claa = align left.
+											* Use class "ttgr-cat-classic-colored" to enable colored style.
+											-->
+											<div class="ttgr-cat-classic-nav ttgr-cat-classic-center">
+												<ul class="ttgr-cat-classic-list">
+													<li class="ttgr-cat-classic-item"><a href="#portfolio-grid" data-offset="80" class="active">All</a></li>
+													<li class="ttgr-cat-classic-item"><a href="#portfolio-grid" data-offset="80" data-filter=".lifestyle">Lifestyle</a></li>
+													<li class="ttgr-cat-classic-item"><a href="#portfolio-grid" data-offset="80" data-filter=".artistic">Artistic</a></li>
+													<li class="ttgr-cat-classic-item"><a href="#portfolio-grid" data-offset="80" data-filter=".wellness">Wellness</a></li>
+												</ul>
+											</div>
+											<!-- End tt-Ggrid categories-->
 
-									<!-- Begin list item 
-									===================== -->
-									<a href="single-project-3.html" class="tt-ppl-item">
-										<div class="tt-ppli-preview">
-											<div class="tt-ppli-preview-video">
-												<!-- Note: The recommended maximum image width is 800px -->
-												<video loop muted preload="metadata" poster="assets/vids/800/video-4-800.jpg">
-													<source src="assets/vids/placeholder.mp4" data-src="assets/vids/800/video-4-800.mp4" type="video/mp4">
-													<source src="assets/vids/placeholder.webm" data-src="assets/vids/800/video-4-800.webm" type="video/webm">
-												</video>
-											</div> <!-- /.tt-ppli-preview-video -->
-										</div> <!-- /.tt-ppli-preview -->
+										</div>
+										<!-- End tt-Ggrid categories/filter classic -->
 
-										<div class="tt-ppl-item-inner">
-											<div class="tt-ppl-item-holder">
-												<div class="tt-ppli-col tt-ppli-col-count">
-													<div class="tt-ppli-count"></div>
-												</div> <!-- /.tt-ppli-col -->
-												<div class="tt-ppli-col tt-ppli-col-caption">
-													<div class="tt-ppli-caption">
-														<h2 class="tt-ppli-title">Fashion Shoot</h2>
-														<div class="tt-ppli-categories">
-															<div class="tt-ppli-category">Artistic</div>
-															<!-- <div class="tt-ppli-category">Varia</div> -->
-														</div> <!-- /.tt-ppli-categories -->
-													</div> <!-- /.tt-ppli-caption -->
-												</div> <!-- /.tt-ppli-col -->
-												<div class="tt-ppli-col tt-ppli-col-info tt-justify-content-md-end">
-													<div class="tt-ppli-info"> <!-- Use short text! 3 lines max. -->
-														Photographer / Visual / Branding
-													</div> <!-- /.tt-ppli-info -->
-												</div> <!-- /.tt-ppli-col -->
-											</div> <!-- /.tt-ppl-item-holder -->
-										</div> <!-- /.tt-ppl-item-inner -->
-									</a>
-									<!-- End list item -->
+									</div>
+									<!-- End tt-Grid top content -->
 
-									<!-- Begin list item 
-									===================== -->
-									<a href="single-project-4.html" class="tt-ppl-item">
-										<div class="tt-ppli-preview">
-											<div class="tt-ppli-preview-image">
-												<!-- Note: The recommended maximum image width is 800px -->
-												<img src="assets/img/portfolio/800/portfolio-3.jpg" alt="Image">
-											</div> <!-- /.tt-ppli-preview-image -->
-										</div> <!-- /.tt-ppli-preview -->
 
-										<div class="tt-ppl-item-inner">
-											<div class="tt-ppl-item-holder">
-												<div class="tt-ppli-col tt-ppli-col-count">
-													<div class="tt-ppli-count"></div>
-												</div> <!-- /.tt-ppli-col -->
-												<div class="tt-ppli-col tt-ppli-col-caption">
-													<div class="tt-ppli-caption">
-														<h2 class="tt-ppli-title">Postorganic</h2>
-														<div class="tt-ppli-categories">
-															<div class="tt-ppli-category">Artistic</div>
-															<!-- <div class="tt-ppli-category">Varia</div> -->
-														</div> <!-- /.tt-ppli-categories -->
-													</div> <!-- /.tt-ppli-caption -->
-												</div> <!-- /.tt-ppli-col -->
-												<div class="tt-ppli-col tt-ppli-col-info tt-justify-content-md-end">
-													<div class="tt-ppli-info"> <!-- Use short text! 3 lines max. -->
-														Desing / Branding
-													</div> <!-- /.tt-ppli-info -->
-												</div> <!-- /.tt-ppli-col -->
-											</div> <!-- /.tt-ppl-item-holder -->
-										</div> <!-- /.tt-ppl-item-inner -->
-									</a>
-									<!-- End list item -->
+									<!-- Begin tt-Grid items wrap 
+									============================== -->
+									<div class="tt-grid-items-wrap isotope-items-wrap">
 
-									<!-- Begin list item 
-									===================== -->
-									<a href="single-project-5.html" class="tt-ppl-item">
-										<div class="tt-ppli-preview">
-											<div class="tt-ppli-preview-image">
-												<!-- Note: The recommended maximum image width is 800px -->
-												<img src="assets/img/portfolio/800/portfolio-4.jpg" alt="Image">
-											</div> <!-- /.tt-ppli-preview-image -->
-										</div> <!-- /.tt-ppli-preview -->
+										<!-- Begin tt-Grid item
+										======================== -->
+										<div class="tt-grid-item isotope-item lifestyle">
+											<div class="ttgr-item-inner">
 
-										<div class="tt-ppl-item-inner">
-											<div class="tt-ppl-item-holder">
-												<div class="tt-ppli-col tt-ppli-col-count">
-													<div class="tt-ppli-count"></div>
-												</div> <!-- /.tt-ppli-col -->
-												<div class="tt-ppli-col tt-ppli-col-caption">
-													<div class="tt-ppli-caption">
-														<h2 class="tt-ppli-title">Embrace Yourself</h2>
-														<div class="tt-ppli-categories">
-															<div class="tt-ppli-category">Wellness</div>
-															<!-- <div class="tt-ppli-category">Varia</div> -->
-														</div> <!-- /.tt-ppli-categories -->
-													</div> <!-- /.tt-ppli-caption -->
-												</div> <!-- /.tt-ppli-col -->
-												<div class="tt-ppli-col tt-ppli-col-info tt-justify-content-md-end">
-													<div class="tt-ppli-info"> <!-- Use short text! 3 lines max. -->
-														Art Direction / Desing / Branding
-													</div> <!-- /.tt-ppli-info -->
-												</div> <!-- /.tt-ppli-col -->
-											</div> <!-- /.tt-ppl-item-holder -->
-										</div> <!-- /.tt-ppl-item-inner -->
-									</a>
-									<!-- End list item -->
+												<!-- Begin portfolio grid item 
+												===============================
+												* Use class "pgi-image-is-light" if needed, it makes the caption visible better if you use light image (only effect if "pgi-cap-inside" is enabled on "portfolio-grid"! Also no effect on small screens!).
+												-->
+												<div class="portfolio-grid-item">
+													<a href="single-project-1.html" class="pgi-image-wrap" data-cursor="View<br>Project">
+														<!-- Use class "cover-opacity-*" to set image overlay if needed. For example "cover-opacity-2". Useful if class "pgi-cap-inside" is enabled on "portfolio-grid". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
+														<div class="pgi-image-holder">
+															<div class="pgi-image-inner tt-anim-zoomin">
+																<figure class="pgi-image ttgr-height">
+																	<img src="assets/img/portfolio/800/portfolio-1.jpg" loading="lazy" alt="image">
+																</figure> <!-- /.pgi-image -->
+															</div> <!-- /.pgi-image-inner -->
+														</div> <!-- /.pgi-image-holder -->
+													</a> <!-- /.pgi-image-wrap -->
 
-								</div> <!-- /.tt-ppl-items-list -->
+													<div class="pgi-caption">
+														<div class="pgi-caption-inner">
+															<h2 class="pgi-title">
+																<a href="single-project-1.html">Tortillas</a>
+															</h2>
+															<div class="pgi-categories-wrap">
+																<div class="pgi-category">Lifestyle</div>
+																<!-- <a href="" class="pgi-category">Varia</a -->
+															</div> <!-- /.pli-categories-wrap -->
+														</div> <!-- /.pgi-caption-inner -->
+													</div> <!-- /.pgi-caption -->
+												</div>
+												<!-- End portfolio grid item -->
+
+											</div> <!-- /.ttgr-item-inner -->
+										</div>
+										<!-- End tt-Grid item -->
+
+										<!-- Begin tt-Grid item
+										======================== -->
+										<div class="tt-grid-item isotope-item lifestyle">
+											<div class="ttgr-item-inner">
+
+												<!-- Begin portfolio grid item 
+												===============================
+												* Use class "pgi-image-is-light" if needed, it makes the caption visible better if you use light image (only effect if "pgi-cap-inside" is enabled on "portfolio-grid"!).
+												-->
+												<div class="portfolio-grid-item">
+													<a href="single-project-2.html" class="pgi-image-wrap" data-cursor="View<br>Project">
+														<!-- Use class "cover-opacity-*" to set image overlay if needed. For example "cover-opacity-2". Useful if class "pgi-cap-inside" is enabled on "portfolio-grid". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
+														<div class="pgi-image-holder">
+															<div class="pgi-image-inner tt-anim-zoomin">
+																<figure class="pgi-image ttgr-height">
+																	<img src="assets/img/portfolio/800/portfolio-2.jpg" loading="lazy" alt="image">
+																</figure> <!-- /.pgi-image -->
+															</div> <!-- /.pgi-image-inner -->
+														</div> <!-- /.pgi-image-holder -->
+													</a> <!-- /.pgi-image-wrap -->
+
+													<div class="pgi-caption">
+														<div class="pgi-caption-inner">
+															<h2 class="pgi-title">
+																<a href="single-project-2.html">Coffee Shop</a>
+															</h2>
+															<div class="pgi-categories-wrap">
+																<div class="pgi-category">Lifestyle</div>
+																<!-- <div class="pgi-category">Varia</div> -->
+															</div> <!-- /.pli-categories-wrap -->
+														</div> <!-- /.pgi-caption-inner -->
+													</div> <!-- /.pgi-caption -->
+												</div>
+												<!-- End portfolio grid item -->
+
+											</div> <!-- /.ttgr-item-inner -->
+										</div>
+										<!-- End tt-Grid item -->
+
+										<!-- Begin tt-Grid item
+										======================== -->
+										<div class="tt-grid-item isotope-item artistic">
+											<div class="ttgr-item-inner">
+
+												<!-- Begin portfolio grid item 
+												===============================
+												* Use class "pgi-image-is-light" if needed, it makes the caption visible better if you use light image (only effect if "pgi-cap-inside" is enabled on "portfolio-grid"!).
+												-->
+												<div class="portfolio-grid-item">
+													<a href="single-project-3.html" class="pgi-image-wrap" data-cursor="View<br>Project">
+														<!-- Use class "cover-opacity-*" to set image overlay if needed. For example "cover-opacity-2". Useful if class "pgi-cap-inside" is enabled on "portfolio-grid". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
+														<div class="pgi-image-holder">
+															<div class="pgi-image-inner tt-anim-zoomin">
+																<figure class="pgi-video-wrap ttgr-height">
+																	<video class="pgi-video" loop muted preload="metadata" poster="assets/vids/800/video-4-800.jpg">
+																		<source src="assets/vids/placeholder.mp4" data-src="assets/vids/800/video-4-800.mp4" type="video/mp4">
+																		<source src="assets/vids/placeholder.webm" data-src="assets/vids/800/video-4-800.webm" type="video/webm">
+																	</video>
+																</figure> <!-- /.pgi-video-wrap -->
+															</div> <!-- /.pgi-image-inner -->
+														</div> <!-- /.pgi-image-holder -->
+													</a> <!-- /.pgi-image-wrap -->
+
+													<div class="pgi-caption">
+														<div class="pgi-caption-inner">
+															<h2 class="pgi-title">
+																<a href="single-project-3.html">Fashion Shoot</a>
+															</h2>
+															<div class="pgi-categories-wrap">
+																<div class="pgi-category">Artistic</div>
+																<!-- <div class="pgi-category">Varia</div> -->
+															</div> <!-- /.pli-categories-wrap -->
+														</div> <!-- /.pgi-caption-inner -->
+													</div> <!-- /.pgi-caption -->
+												</div>
+												<!-- End portfolio grid item -->
+
+											</div> <!-- /.ttgr-item-inner -->
+										</div>
+										<!-- End tt-Grid item -->
+
+										<!-- Begin tt-Grid item
+										======================== -->
+										<div class="tt-grid-item isotope-item artistic">
+											<div class="ttgr-item-inner">
+
+												<!-- Begin portfolio grid item 
+												===============================
+												* Use class "pgi-image-is-light" if needed, it makes the caption visible better if you use light image (only effect if "pgi-cap-inside" is enabled on "portfolio-grid"!).
+												-->
+												<div class="portfolio-grid-item">
+													<a href="single-project-4.html" class="pgi-image-wrap" data-cursor="View<br>Project">
+														<!-- Use class "cover-opacity-*" to set image overlay if needed. For example "cover-opacity-2". Useful if class "pgi-cap-inside" is enabled on "portfolio-grid". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
+														<div class="pgi-image-holder">
+															<div class="pgi-image-inner tt-anim-zoomin">
+																<figure class="pgi-image ttgr-height">
+																	<img src="assets/img/portfolio/800/portfolio-3.jpg" loading="lazy" alt="image">
+																</figure> <!-- /.pgi-image -->
+															</div> <!-- /.pgi-image-inner -->
+														</div> <!-- /.pgi-image-holder -->
+													</a> <!-- /.pgi-image-wrap -->
+
+													<div class="pgi-caption">
+														<div class="pgi-caption-inner">
+															<h2 class="pgi-title">
+																<a href="single-project-4.html">Postorganic</a>
+															</h2>
+															<div class="pgi-categories-wrap">
+																<div class="pgi-category">Artistic</div>
+																<!-- <div class="pgi-category">Varia</div> -->
+															</div> <!-- /.pli-categories-wrap -->
+														</div> <!-- /.pgi-caption-inner -->
+													</div> <!-- /.pgi-caption -->
+												</div>
+												<!-- End portfolio grid item -->
+
+											</div> <!-- /.ttgr-item-inner -->
+										</div>
+										<!-- End tt-Grid item -->
+
+										<!-- Begin tt-Grid item
+										======================== -->
+										<div class="tt-grid-item isotope-item wellness">
+											<div class="ttgr-item-inner">
+
+												<!-- Begin portfolio grid item 
+												===============================
+												* Use class "pgi-image-is-light" if needed, it makes the caption visible better if you use light image (only effect if "pgi-cap-inside" is enabled on "portfolio-grid"!).
+												-->
+												<div class="portfolio-grid-item">
+													<a href="single-project-5.html" class="pgi-image-wrap" data-cursor="View<br>Project">
+														<!-- Use class "cover-opacity-*" to set image overlay if needed. For example "cover-opacity-2". Useful if class "pgi-cap-inside" is enabled on "portfolio-grid". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
+														<div class="pgi-image-holder">
+															<div class="pgi-image-inner tt-anim-zoomin">
+																<figure class="pgi-image ttgr-height">
+																	<img src="assets/img/portfolio/800/portfolio-4.jpg" loading="lazy" alt="image">
+																</figure> <!-- /.pgi-image -->
+															</div> <!-- /.pgi-image-inner -->
+														</div> <!-- /.pgi-image-holder -->
+													</a> <!-- /.pgi-image-wrap -->
+
+													<div class="pgi-caption">
+														<div class="pgi-caption-inner">
+															<h2 class="pgi-title">
+																<a href="single-project-5.html">Embrace Yourself</a>
+															</h2>
+															<div class="pgi-categories-wrap">
+																<div class="pgi-category">Wellness</div>
+																<!-- <div class="pgi-category">Varia</div> -->
+															</div> <!-- /.pli-categories-wrap -->
+														</div> <!-- /.pgi-caption-inner -->
+													</div> <!-- /.pgi-caption -->
+												</div>
+												<!-- End portfolio grid item -->
+
+											</div> <!-- /.ttgr-item-inner -->
+										</div>
+										<!-- End tt-Grid item -->
+
+										<!-- Begin tt-Grid item
+										======================== -->
+										<div class="tt-grid-item isotope-item lifestyle">
+											<div class="ttgr-item-inner">
+
+												<!-- Begin portfolio grid item 
+												===============================
+												* Use class "pgi-image-is-light" if needed, it makes the caption visible better if you use light image (only effect if "pgi-cap-inside" is enabled on "portfolio-grid"!).
+												-->
+												<div class="portfolio-grid-item">
+													<a href="single-project-6.html" class="pgi-image-wrap" data-cursor="View<br>Project">
+														<!-- Use class "cover-opacity-*" to set image overlay if needed. For example "cover-opacity-2". Useful if class "pgi-cap-inside" is enabled on "portfolio-grid". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
+														<div class="pgi-image-holder">
+															<div class="pgi-image-inner tt-anim-zoomin">
+																<figure class="pgi-image ttgr-height">
+																	<img src="assets/img/portfolio/800/portfolio-5.jpg" loading="lazy" alt="image">
+																</figure> <!-- /.pgi-image -->
+															</div> <!-- /.pgi-image-inner -->
+														</div> <!-- /.pgi-image-holder -->
+													</a> <!-- /.pgi-image-wrap -->
+
+													<div class="pgi-caption">
+														<div class="pgi-caption-inner">
+															<h2 class="pgi-title">
+																<a href="single-project-6.html">Pink Oasis</a>
+															</h2>
+															<div class="pgi-categories-wrap">
+																<div class="pgi-category">Lifestyle</div>
+																<!-- <div class="pgi-category">Varia</div> -->
+															</div> <!-- /.pli-categories-wrap -->
+														</div> <!-- /.pgi-caption-inner -->
+													</div> <!-- /.pgi-caption -->
+												</div>
+												<!-- End portfolio grid item -->
+
+											</div> <!-- /.ttgr-item-inner -->
+										</div>
+										<!-- End tt-Grid item -->
+
+										<!-- Begin tt-Grid item
+										======================== -->
+										<div class="tt-grid-item isotope-item lifestyle">
+											<div class="ttgr-item-inner">
+
+												<!-- Begin portfolio grid item 
+												===============================
+												* Use class "pgi-image-is-light" if needed, it makes the caption visible better if you use light image (only effect if "pgi-cap-inside" is enabled on "portfolio-grid"!).
+												-->
+												<div class="portfolio-grid-item">
+													<a href="single-project-7.html" class="pgi-image-wrap" data-cursor="View<br>Project">
+														<!-- Use class "cover-opacity-*" to set image overlay if needed. For example "cover-opacity-2". Useful if class "pgi-cap-inside" is enabled on "portfolio-grid". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
+														<div class="pgi-image-holder">
+															<div class="pgi-image-inner tt-anim-zoomin">
+																<figure class="pgi-image ttgr-height">
+																	<img src="assets/img/portfolio/800/portfolio-6.jpg" loading="lazy" alt="image">
+																</figure> <!-- /.pgi-image -->
+															</div> <!-- /.pgi-image-inner -->
+														</div> <!-- /.pgi-image-holder -->
+													</a> <!-- /.pgi-image-wrap -->
+
+													<div class="pgi-caption">
+														<div class="pgi-caption-inner">
+															<h2 class="pgi-title">
+																<a href="single-project-7.html">Turbulent Waters</a>
+															</h2>
+															<div class="pgi-categories-wrap">
+																<div class="pgi-category">Lifestyle</div>
+																<!-- <div class="pgi-category">Varia</div> -->
+															</div> <!-- /.pli-categories-wrap -->
+														</div> <!-- /.pgi-caption-inner -->
+													</div> <!-- /.pgi-caption -->
+												</div>
+												<!-- End portfolio grid item -->
+
+											</div> <!-- /.ttgr-item-inner -->
+										</div>
+										<!-- End tt-Grid item -->
+
+										<!-- Begin tt-Grid item
+										======================== -->
+										<div class="tt-grid-item isotope-item wellness">
+											<div class="ttgr-item-inner">
+
+												<!-- Begin portfolio grid item 
+												===============================
+												* Use class "pgi-image-is-light" if needed, it makes the caption visible better if you use light image (only effect if "pgi-cap-inside" is enabled on "portfolio-grid"!).
+												-->
+												<div class="portfolio-grid-item">
+													<a href="single-project-8.html" class="pgi-image-wrap" data-cursor="View<br>Project">
+														<!-- Use class "cover-opacity-*" to set image overlay if needed. For example "cover-opacity-2". Useful if class "pgi-cap-inside" is enabled on "portfolio-grid". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
+														<div class="pgi-image-holder">
+															<div class="pgi-image-inner tt-anim-zoomin">
+																<figure class="pgi-image ttgr-height">
+																	<img src="assets/img/portfolio/800/portfolio-7.jpg" loading="lazy" alt="image">
+																</figure> <!-- /.pgi-image -->
+															</div> <!-- /.pgi-image-inner -->
+														</div> <!-- /.pgi-image-holder -->
+													</a> <!-- /.pgi-image-wrap -->
+
+													<div class="pgi-caption">
+														<div class="pgi-caption-inner">
+															<h2 class="pgi-title">
+																<a href="single-project-8.html">Baby Care</a>
+															</h2>
+															<div class="pgi-categories-wrap">
+																<div class="pgi-category">Wellness</div>
+																<!-- <div class="pgi-category">Varia</div> -->
+															</div> <!-- /.pli-categories-wrap -->
+														</div> <!-- /.pgi-caption-inner -->
+													</div> <!-- /.pgi-caption -->
+												</div>
+												<!-- End portfolio grid item -->
+
+											</div> <!-- /.ttgr-item-inner -->
+										</div>
+										<!-- End tt-Grid item -->
+
+										<!-- Begin tt-Grid item
+										======================== -->
+										<div class="tt-grid-item isotope-item wellness">
+											<div class="ttgr-item-inner">
+
+												<!-- Begin portfolio grid item 
+												===============================
+												* Use class "pgi-image-is-light" if needed, it makes the caption visible better if you use light image (only effect if "pgi-cap-inside" is enabled on "portfolio-grid"!).
+												-->
+												<div class="portfolio-grid-item">
+													<a href="single-project-9.html" class="pgi-image-wrap" data-cursor="View<br>Project">
+														<!-- Use class "cover-opacity-*" to set image overlay if needed. For example "cover-opacity-2". Useful if class "pgi-cap-inside" is enabled on "portfolio-grid". Note: It is individual and depends on the image you use. More info about helper classes in file "helper.css". -->
+														<div class="pgi-image-holder">
+															<div class="pgi-image-inner tt-anim-zoomin">
+																<figure class="pgi-image ttgr-height">
+																	<img src="assets/img/portfolio/800/portfolio-8.jpg" loading="lazy" alt="image">
+																</figure> <!-- /.pgi-image -->
+															</div> <!-- /.pgi-image-inner -->
+														</div> <!-- /.pgi-image-holder -->
+													</a> <!-- /.pgi-image-wrap -->
+
+													<div class="pgi-caption">
+														<div class="pgi-caption-inner">
+															<h2 class="pgi-title">
+																<a href="single-project-9.html">Dream Spa</a>
+															</h2>
+															<div class="pgi-categories-wrap">
+																<div class="pgi-category">Wellness</div>
+																<!-- <div class="pgi-category">Varia</div> -->
+															</div> <!-- /.pli-categories-wrap -->
+														</div> <!-- /.pgi-caption-inner -->
+													</div> <!-- /.pgi-caption -->
+												</div>
+												<!-- End portfolio grid item -->
+
+											</div> <!-- /.ttgr-item-inner -->
+										</div>
+										<!-- End tt-Grid item -->
+
+									</div>
+									<!-- End tt-Grid items wrap  -->
+
+								</div>
+								<!-- End tt-Grid -->
+
+								<!-- Begin tt-pagination (uncomment below code if you want to use pagination)
+								========================= 
+								* Use class "tt-pagin-center" to align center.
+								-->
+								<!-- <div class="tt-pagination tt-pagin-center tt-anim-fadeinup">
+									<div class="tt-pagin-prev">
+										<a href="" class="tt-pagin-item tt-magnetic-item"><i class="fas fa-arrow-left"></i></a>
+									</div>
+									<div class="tt-pagin-numbers">
+										<a href="#" class="tt-pagin-item tt-magnetic-item active">1</a>
+										<a href="" class="tt-pagin-item tt-magnetic-item">2</a>
+										<a href="" class="tt-pagin-item tt-magnetic-item">3</a>
+										<a href="" class="tt-pagin-item tt-magnetic-item">4</a>
+									</div>
+									<div class="tt-pagin-next">
+										<a href="" class="tt-pagin-item tt-pagin-next tt-magnetic-item"><i class="fas fa-arrow-right"></i></a>
+									</div>
+								</div> -->
+								<!-- End tt-pagination -->
+
 							</div>
-							<!-- End portfolio preview list -->
+							<!-- End portfolio grid -->
 
 						</div> <!-- /.tt-section-inner -->
 					</div>
