@@ -326,10 +326,6 @@
 												<div class="pi-list-heading">Role</div>
 												<div class="pi-list-cont">Product Designer & Developer</div> <!-- Describe in a few words -->
 											</li>
-											<!--<li>
-												<div class="pi-list-heading">Website</div>
-												<div class="pi-list-cont"><a href="https://themetorium.net" target="_blank" rel="noopener">Visit site<span class="pi-list-icon"><i class="fas fa-arrow-right"></i></span></a></div>
-											</li>-->
 										</ul>
 									</div>
 									<!-- End project info list -->
@@ -349,8 +345,8 @@
 					* You can use classes "border-top" and "border-bottom" if needed. 
 					* Note: Each situation may be different and each section may need different classes according to your needs. More info about helper classes can be found in the file "helper.css".
 					-->
-					<div class="tt-section no-padding">
-						<div class="tt-section-inner tt-wrap">
+					<div class="tt-section no-padding-top">
+						<div class="tt-section-inner">
 
 							<!-- Begin tt-image
 							====================
@@ -363,9 +359,9 @@
 							* NOTE-1: No above classes = image default size and style.
 							* NOTE-2: Please read the template documentation for instructions to use "tt-image" with lightbox.
 							-->
-							<div class="tt-image tti-landscape tti-border-radius">
+							<div class="tt-image tti-full-height">
 								<figure>
-									<img src="assets/img/portfolio/riviera-paddlesurf/rivi-voyager-Project_1920x1280.jpg" class="tt-anim-zoomin" loading="lazy" alt="Image">
+									<img src="assets/img/portfolio/riviera-paddlesurf/rivi-voyager-Project_1920x1280.jpg" class="tt-image-parallax tt-anim-zoomin" loading="lazy" alt="Image">
 									<!--<figcaption>
 										Image caption
 									</figcaption>-->
@@ -429,168 +425,183 @@
 					* You can use classes "border-top" and "border-bottom" if needed. 
 					* Note: Each situation may be different and each section may need different classes according to your needs. More info about helper classes can be found in the file "helper.css".
 					-->
-					<div class="tt-section no-padding">
-						<div class="tt-section-inner">
+					<div class="tt-section">
+						<div class="tt-section-inner tt-wrap">
 
-							<!-- Begin content carousel 
-							============================
-							* Use class "cursor-drag" to enable cursor drag on carousel hover (requires attribute data-simulate-touch="true").
-							* Use class "cc-scale-down" to enable scale down animation on carousel click (requires attribute data-simulate-touch="true").
-							* Use class "cc-pagination-outside" to bring pagination outside.
-							* Use class "cc-hide-pagination" to hide pagination (for desktop only!).
-							* Use class "cc-hide-navigation" to hide navigation arrows (for desktop only!).
-							* Available data attributes:
-									data-size-small="true"................(true/false)
-									data-speed="900"......................(milliseconds)
-									data-autoplay="5000"..................(milliseconds. Note: disabled after user first interactions)
-									data-simulate-touch="true"............(true/false)
-									data-loop="true"......................(true/false)
-									data-pagination-type="bullets"........(bullets/fraction/progressbar)
-							-->
-							<div class="tt-content-carousel cursor-drag cc-scale-down tt-anim-fadeinup" data-loop="true" data-simulate-touch="true" data-speed="900">
+							<!-- Begin tt-Gallery (works combined with tt-Ggrid!)
+							======================
+							* Use class "ttga-hover" to enable gallery item hover effect (behavior depends on "ttgr-gap-*" classes below).
+							--> 
+							<div class="tt-gallery ttga-hover">
 
-								<!-- Begin swiper container -->
-								<div class="swiper">
+								<!-- Begin tt-Grid
+								=================== 
+								* Use class "ttgr-layout-2", "ttgr-layout-3", "ttgr-layout-4" to set grid layout (columns). No class = one column.
+								* Use class "ttgr-layout-1-2", "ttgr-layout-2-1", "ttgr-layout-2-3", "ttgr-layout-3-2", "ttgr-layout-3-4" or "ttgr-layout-4-3" to set grid mixed layout (columns).
+								* Use class "ttgr-layout-creative-1" or "ttgr-layout-creative-2" to set grid creative mixed layout (no effect with classes "ttgr-portrait", "ttgr-portrait-half", "ttgr-not-cropped" and "ttgr-shifted").
+								* Use class "ttgr-portrait" or "ttgr-portrait-half" to enable portrait mode (no effect with classes "ttgr-layout-creative-1", "ttgr-layout-creative-2" and "ttgr-not-cropped").
+								* Use class "ttgr-gap-1", "ttgr-gap-2", "ttgr-gap-3", "ttgr-gap-4", "ttgr-gap-5" or "ttgr-gap-6" to add space between items.
+								* Use class "ttgr-not-cropped" to enable not cropped mode (effect only with classes "ttgr-layout-2", "ttgr-layout-3" and "ttgr-layout-4").
+								* Use class "ttgr-shifted" to enable shifted layout (effect only with classes "ttgr-layout-2", "ttgr-layout-3" and "ttgr-layout-4").
+								-->
+								<div class="tt-grid ttgr-layout-2 ttgr-gap-2">
 
-									<!-- Begin swiper wrapper (required) -->
-									<div class="swiper-wrapper">
+									<!-- Begin tt-Grid items wrap 
+									============================== -->
+									<div class="tt-grid-items-wrap isotope-items-wrap">
 
-										<!-- Begin swiper slide 
+										<!-- Begin tt-Grid item
 										======================== -->
-										<div class="swiper-slide">
-											<div class="tt-content-carousel-item">
-												<figure class="tt-cc-image-wrap">
-													<img src="assets/img/portfolio/riviera-paddlesurf/rivi-voyagerclassic-Project_1200x800.jpg" class="tt-cc-image" loading="lazy" alt="Image">
-													<div class="swiper-lazy-preloader"></div>
-													<!-- <figcaption>Image Caption</figcaption> -->
-												</figure>
-											</div> <!-- /.tt-content-carousel-item -->
-										</div>
-										<!-- End swiper slide -->
+										<div class="tt-grid-item isotope-item">
+											<div class="ttgr-item-inner">
 
-										<!-- Begin swiper slide 
-										======================== -->
-										<div class="swiper-slide">
-											<div class="tt-content-carousel-item">
-												<figure class="tt-cc-image-wrap">
-													<img src="assets/img/portfolio/riviera-paddlesurf/rivi-theboss-Project_1200x800.jpg" class="tt-cc-image" loading="lazy" alt="Image">
-													<div class="swiper-lazy-preloader"></div>
-													<!-- <figcaption>Image Caption</figcaption> -->
-												</figure>
-											</div> <!-- /.tt-content-carousel-item -->
-										</div>
-										<!-- End swiper slide -->
+												<!-- Begin tt-Gallery item
+												=========================== 
+												* IMPORTANT: Make sure all gallery items contain the same attribute data-fancybox="gallery-*". If you use multiple galleries on a page, the attributes of each gallery must be unique!
+												-->
+												<a href="assets/img/portfolio/riviera-paddlesurf/rivi-voyagerclassic-Project_1920x1280.jpg" class="tt-gallery-item" data-cursor="View" data-fancybox="gallery-459719">
+													<div class="tt-gallery-item-inner">
+														<div class="tt-gallery-image-wrap tt-anim-zoomin">
+															<figure class="tt-gallery-image ttgr-height">
+																<img src="assets/img/portfolio/riviera-paddlesurf/rivi-voyagerclassic-Project_1200x800.jpg" loading="lazy" alt="image">
+															</figure> <!-- /.tt-gallery-image -->
+														</div> <!-- /.tt-gallery-image-wrap -->
+													</div> <!-- /.tt-gallery-item-inner -->
+												</a>
+												<!-- End tt-Gallery item -->
 
-										<!-- Begin swiper slide 
-										======================== -->
-										<div class="swiper-slide">
-											<div class="tt-content-carousel-item">
-												<figure class="tt-cc-image-wrap">
-													<img src="assets/img/portfolio/riviera-paddlesurf/rivi-ad-baker-Project_1200x800.jpg" class="tt-cc-image" loading="lazy" alt="Image">
-													<div class="swiper-lazy-preloader"></div>
-													<!-- <figcaption>Image Caption</figcaption> -->
-												</figure>
-											</div> <!-- /.tt-content-carousel-item -->
+											</div> <!-- /.ttgr-item-inner -->
 										</div>
-										<!-- End swiper slide -->
+										<!-- End tt-Grid item -->
 
-										<!-- Begin swiper slide 
+										<!-- Begin tt-Grid item
 										======================== -->
-										<div class="swiper-slide">
-											<div class="tt-content-carousel-item">
-												<figure class="tt-cc-image-wrap">
-													<img src="assets/img/portfolio/riviera-paddlesurf/rivi-ad-fowdy-Project_1200x800.jpg" class="tt-cc-image" loading="lazy" alt="Image">
-													<div class="swiper-lazy-preloader"></div>
-													<!-- <figcaption>Image Caption</figcaption> -->
-												</figure>
-											</div> <!-- /.tt-content-carousel-item -->
-										</div>
-										<!-- End swiper slide -->
+										<div class="tt-grid-item isotope-item">
+											<div class="ttgr-item-inner">
 
-										<!-- Begin swiper slide 
-										======================== -->
-										<div class="swiper-slide">
-											<div class="tt-content-carousel-item">
-												<figure class="tt-cc-image-wrap">
-													<img src="assets/img/portfolio/riviera-paddlesurf/rivi-ad-downwinder-Project_1200x800.jpg" class="tt-cc-image" loading="lazy" alt="Image">
-													<div class="swiper-lazy-preloader"></div>
-													<!-- <figcaption>Image Caption</figcaption> -->
-												</figure>
-											</div> <!-- /.tt-content-carousel-item -->
-										</div>
-										<!-- End swiper slide -->
+												<!-- Begin tt-Gallery item
+												=========================== 
+												* IMPORTANT: Make sure all gallery items contain the same attribute data-fancybox="gallery-*". If you use multiple galleries on a page, the attributes of each gallery must be unique!
+												-->
+												<a href="assets/img/portfolio/riviera-paddlesurf/rivi-theboss-Project_1920x1280.jpg" class="tt-gallery-item" data-cursor="View" data-fancybox="gallery-459719" data-caption="The Boss of them all.">
+													<div class="tt-gallery-item-inner">
+														<div class="tt-gallery-image-wrap tt-anim-zoomin">
+															<figure class="tt-gallery-image ttgr-height">
+																<img src="assets/img/portfolio/riviera-paddlesurf/rivi-theboss-Project_1200x800.jpg" loading="lazy" alt="image">
+															</figure> <!-- /.tt-gallery-image -->
+														</div> <!-- /.tt-gallery-image-wrap -->
+													</div> <!-- /.tt-gallery-item-inner -->
+												</a>
+												<!-- End tt-Gallery item -->
 
-										<!-- Begin swiper slide 
-										======================== -->
-										<div class="swiper-slide">
-											<div class="tt-content-carousel-item">
-												<figure class="tt-cc-image-wrap">
-													<img src="assets/img/portfolio/riviera-paddlesurf/rivi-helm-1-Project_1200x800.jpg" class="tt-cc-image" loading="lazy" alt="Image">
-													<div class="swiper-lazy-preloader"></div>
-													<!-- <figcaption>Image Caption</figcaption> -->
-												</figure>
-											</div> <!-- /.tt-content-carousel-item -->
+											</div> <!-- /.ttgr-item-inner -->
 										</div>
-										<!-- End swiper slide -->
-										
-										<!-- Begin swiper slide 
+										<!-- End tt-Grid item -->
+
+										<!-- Begin tt-Grid item
 										======================== -->
-										<div class="swiper-slide">
-											<div class="tt-content-carousel-item">
-												<figure class="tt-cc-image-wrap">
-													<img src="assets/img/portfolio/riviera-paddlesurf/rivi-tahiti-helm-Project_1200x800.jpg" class="tt-cc-image" loading="lazy" alt="Image">
-													<div class="swiper-lazy-preloader"></div>
-													<!-- <figcaption>Image Caption</figcaption> -->
-												</figure>
-											</div> <!-- /.tt-content-carousel-item -->
+										<div class="tt-grid-item isotope-item">
+											<div class="ttgr-item-inner">
+
+												<!-- Begin tt-Gallery item
+												=========================== 
+												* IMPORTANT: Make sure all gallery items contain the same attribute data-fancybox="gallery-*". If you use multiple galleries on a page, the attributes of each gallery must be unique!
+												-->
+												<a href="assets/img/portfolio/riviera-paddlesurf/rivi-ad-baker-Project_1920x1280.jpg" class="tt-gallery-item" data-cursor="View" data-fancybox="gallery-459719">
+													<div class="tt-gallery-item-inner">
+														<div class="tt-gallery-image-wrap tt-anim-zoomin">
+															<figure class="tt-gallery-image ttgr-height">
+																<img src="assets/img/portfolio/riviera-paddlesurf/rivi-ad-baker-Project_1200x800.jpg" loading="lazy" alt="image">
+															</figure> <!-- /.tt-gallery-image -->
+														</div> <!-- /.tt-gallery-image-wrap -->
+													</div> <!-- /.tt-gallery-item-inner -->
+												</a>
+												<!-- End tt-Gallery item -->
+
+											</div> <!-- /.ttgr-item-inner -->
 										</div>
-										<!-- End swiper slide -->
-										
-										<!-- Begin swiper slide 
+										<!-- End tt-Grid item -->
+
+										<!-- Begin tt-Grid item
 										======================== -->
-										<div class="swiper-slide">
-											<div class="tt-content-carousel-item">
-												<figure class="tt-cc-image-wrap">
-													<img src="assets/img/portfolio/riviera-paddlesurf/rivi-helm-board-Project_1200x800.jpg" class="tt-cc-image" loading="lazy" alt="Image">
-													<div class="swiper-lazy-preloader"></div>
-													<!-- <figcaption>Image Caption</figcaption> -->
-												</figure>
-											</div> <!-- /.tt-content-carousel-item -->
+										<div class="tt-grid-item isotope-item">
+											<div class="ttgr-item-inner">
+
+												<!-- Begin tt-Gallery item
+												=========================== 
+												* IMPORTANT: Make sure all gallery items contain the same attribute data-fancybox="gallery-*". If you use multiple galleries on a page, the attributes of each gallery must be unique!
+												-->
+												<a href="assets/img/portfolio/riviera-paddlesurf/rivi-ad-fowdy-Project_1920x1280.jpg" class="tt-gallery-item" data-cursor="View" data-fancybox="gallery-459719">
+													<div class="tt-gallery-item-inner">
+														<div class="tt-gallery-image-wrap tt-anim-zoomin">
+															<figure class="tt-gallery-image ttgr-height">
+																<img src="assets/img/portfolio/riviera-paddlesurf/rivi-ad-fowdy-Project_1200x800.jpg" loading="lazy" alt="image">
+															</figure> <!-- /.tt-gallery-image -->
+														</div> <!-- /.tt-gallery-image-wrap -->
+													</div> <!-- /.tt-gallery-item-inner -->
+												</a>
+												<!-- End tt-Gallery item -->
+
+											</div> <!-- /.ttgr-item-inner -->
 										</div>
-										<!-- End swiper slide -->
-										
-										<!-- Begin swiper slide 
+										<!-- End tt-Grid item -->
+
+										<!-- Begin tt-Grid item
 										======================== -->
-										<div class="swiper-slide">
-											<div class="tt-content-carousel-item">
-												<figure class="tt-cc-image-wrap">
-													<img src="assets/img/portfolio/riviera-paddlesurf/rivi-inflatable-2-Project_1200x800.jpg" class="tt-cc-image" loading="lazy" alt="Image">
-													<div class="swiper-lazy-preloader"></div>
-													<!-- <figcaption>Image Caption</figcaption> -->
-												</figure>
-											</div> <!-- /.tt-content-carousel-item -->
+										<div class="tt-grid-item isotope-item">
+											<div class="ttgr-item-inner">
+
+												<!-- Begin tt-Gallery item
+												=========================== 
+												* IMPORTANT: Make sure all gallery items contain the same attribute data-fancybox="gallery-*". If you use multiple galleries on a page, the attributes of each gallery must be unique!
+												-->
+												<a href="assets/img/portfolio/riviera-paddlesurf/rivi-ad-downwinder-Project_1920x1280.jpg" class="tt-gallery-item" data-cursor="View" data-fancybox="gallery-459719">
+													<div class="tt-gallery-item-inner">
+														<div class="tt-gallery-image-wrap tt-anim-zoomin">
+															<figure class="tt-gallery-image ttgr-height">
+																<img src="assets/img/portfolio/riviera-paddlesurf/rivi-ad-downwinder-Project_1200x800.jpg" loading="lazy" alt="image">
+															</figure> <!-- /.tt-gallery-image -->
+														</div> <!-- /.tt-gallery-image-wrap -->
+													</div> <!-- /.tt-gallery-item-inner -->
+												</a>
+												<!-- End tt-Gallery item -->
+
+											</div> <!-- /.ttgr-item-inner -->
 										</div>
-										<!-- End swiper slide -->
+										<!-- End tt-Grid item -->
+
+										<!-- Begin tt-Grid item
+										======================== -->
+										<div class="tt-grid-item isotope-item">
+											<div class="ttgr-item-inner">
+
+												<!-- Begin tt-Gallery item
+												=========================== 
+												* IMPORTANT: Make sure all gallery items contain the same attribute data-fancybox="gallery-*". If you use multiple galleries on a page, the attributes of each gallery must be unique!
+												-->
+												<a href="assets/img/portfolio/riviera-paddlesurf/rivi-helm-1-Project_1920x1280.jpg" class="tt-gallery-item" data-cursor="View" data-fancybox="gallery-459719">
+													<div class="tt-gallery-item-inner">
+														<div class="tt-gallery-image-wrap tt-anim-zoomin">
+															<figure class="tt-gallery-image ttgr-height">
+																<img src="assets/img/portfolio/riviera-paddlesurf/rivi-helm-1-Project_1200x800.jpg" loading="lazy" alt="image">
+															</figure> <!-- /.tt-gallery-image -->
+														</div> <!-- /.tt-gallery-image-wrap -->
+													</div> <!-- /.tt-gallery-item-inner -->
+												</a>
+												<!-- End tt-Gallery item -->
+
+											</div> <!-- /.ttgr-item-inner -->
+										</div>
+										<!-- End tt-Grid item -->
 
 									</div>
-									<!-- End swiper wrapper -->
+									<!-- End tt-Grid items wrap  -->
 
 								</div>
-								<!-- End swiper container -->
-
-								<!-- Content carousel navigation (arrows) -->
-								<div class="tt-cc-nav-prev">
-									<div class="tt-cc-nav-arrow tt-magnetic-item"></div>
-								</div>
-								<div class="tt-cc-nav-next">
-									<div class="tt-cc-nav-arrow tt-magnetic-item"></div>
-								</div>
-
-								<!-- Content carousel pagination -->
-								<div class="tt-cc-pagination hide-cursor"></div>
+								<!-- End tt-Grid -->
 
 							</div>
-							<!-- End content carousel -->
+							<!-- End tt-Gallery -->
 
 						</div> <!-- /.tt-section-inner -->
 					</div>
