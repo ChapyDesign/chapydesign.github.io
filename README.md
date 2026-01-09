@@ -1,2 +1,2 @@
 # chapydesign.github.io
-Official website for Chapy Design — visual design, art direction, and digital experimentation.
+Official website for Michael D. Chapman — visual design, art direction, and digital experimentation.
